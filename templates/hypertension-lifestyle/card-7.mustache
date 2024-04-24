@@ -1,0 +1,144 @@
+{
+  "uuid": "hypertension-lifestyle-card-7",
+  "summary": {
+    "en": "Offer Lifestyle interventions for hypertensive patients.",
+    "es": "Ofrezca intervenciones en el estilo de vida para pacientes hipertensos.",
+    "de": "Bieten Sie Lifestyle -Interventionen für hypertensive Patienten an.",
+    "ro": "Oferiți recomandări pentru schimbarea stilului de viață pentru pacienții hipertensivi."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Lifestyle advice should be offered to every patient with high-normal BP or Grade 1, 2, or 3 hypertension. Please check Diet Management and Exercise Planning pages for detailed diet and exercise plans to be added to the care plan of the patient.",
+    "es": "Se deben ofrecer consejos sobre el estilo de vida a cada paciente con TA normal-alta o hipertensión Grado 1, 2 o 3. Consulte las páginas de manejo de la dieta y planificación de ejercicios para obtener planes detallados de dieta y ejercicio para añadir al plan de atención del paciente.",
+    "de": "Jeder Patient mit hohem Normalzustand oder Hypertonie mit hoher normalem RR oder Grad 1, 2 oder 3 sollte eine Lebensstilberatung erhalten. Bitte prüfen Sie, ob die Diätmanagement- und Trainingsplanungsseiten für detaillierte Diät- und Trainingspläne zum Pflegeplan des Patienten hinzugefügt werden können.",
+    "ro": "Sfaturile pentru schimbarea stilului de viață ar trebui să fie oferite fiecărui pacient cu tensiune arterială normal-ridicată sau hipertensiune gradul 1, 2 sau 3. Vă rugăm să verificați paginile de gestionare a dietei și de planificare a exercițiilor fizice pentru o dietă detaliată și planurile de exerciții fizice care trebuie adăugate la planul de îngrijire al pacientului."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.3.1 [pp. 41]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 12.3.1 [pp. 41]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.3.1 [S. 41]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.3.1 [pp. 41]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Offer lifestyle advice and educational materials to hypertensive patients for healthy diet and physical activity.",
+        "es": "Ofrezca asesoramiento sobre el estilo de vida y materiales educativos a pacientes hipertensos para una seguir una dieta saludable y realizar actividad física.",
+        "de": "Bieten Sie hypertensiven Patienten Lifestyle -Ratschläge und Bildungsmaterialien für gesunde Ernährung und körperliche Aktivität an.",
+        "ro": "Oferiți sfaturi pentru schimbarea stilului de viață și materiale educaționale pacienților hipertensivi pentru o dietă sănătoasă și activitate fizică."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Give education material on healthy diet.",
+            "es": "Dar material educativo sobre una dieta saludable.",
+            "de": "Geben Sie dem Patienten Schulungsmaterial für gesunde Ernährung.",
+            "ro": "Oferiți materiale educaționale pentru o dietă sănătoasă."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on healthy diet",
+                  "es": "Material educativo sobre dieta saludable",
+                  "de": "Schulungsmaterial für gesunde Ernährung",
+                  "ro": "Materiale educaționale pentru o dietă sănătoasă"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/healthy-living/food-and-nutrition",
+                    "es": "https://www.segg.es/media/descargas/GU%C3%8DA%20ALIMENTACI%C3%93N%20Y%20NUTRICI%C3%93N%20SALUDABLE.PDF",
+                    "de": "https://www.bmel.de/DE/themen/ernaehrung/gesunde-ernaehrung/arbeit-und-freizeit/vollwertige-ernaehrung-10regeln-dge.html",
+                    "ro": "https://www.reginamaria.ro/articole-medicale/hipertensiunea-arteriala-dieta-care-ajuta"
+                  },
+                  "title": {
+                    "en": "Diet and nutrition - benefits of a balanced diet",
+                    "es": "Dieta y nutrición: beneficios de una dieta equilibrada",
+                    "de": "Diät und Ernährung - Vorteile einer ausgewogenen Ernährung",
+                    "ro": "Dieta și nutriția - Beneficiile unei diete echilibrate"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Give education material on physical activity for healthy living.",
+            "es": "Entregue material educativo sobre ejercicio físico para una vida saludable.",
+            "de": "Geben Sie dem Patienten Schulungsmaterial über körperliche Aktivität und für einen gesundes Lebensstil.",
+            "ro": "Oferiți materiale educaționale despre activitatea fizică pentru o viață sănătoasă."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on physical activity for healthy living",
+                  "es": "Material educativo sobre actividad física para una vida saludable",
+                  "de": "Schulungsmaterial für körperliche Aktivität und für einen gesunden Lebensstil",
+                  "ro": "Materiale educaționale privind activitatea fizică pentru o viață sănătoasă"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/healthy-living/keeping-active",
+                    "es": "https://www.who.int/es/publications/i/item/9789240014886",
+                    "de": "https://www.gkv-buendnis.de/gesunde-lebenswelten/pflegeeinrichtung/themen-und-inhalte/bewegungsfoerderung-fuer-aeltere-menschen/",
+                    "ro": "https://www.doc.ro/hipertensiune/sportul-este-benefic-pentru-hipertensivi"
+                  },
+                  "title": {
+                    "en": "Physical activity - health benefits of exercise",
+                    "es": "Actividad física: beneficios del ejercicio para la salud",
+                    "de": "Körperliche Aktivität - gesundheitliche Vorteile von Bewegung",
+                    "ro": "Activitate fizică - Beneficiile exercițiilor fizice pentru sănătate"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

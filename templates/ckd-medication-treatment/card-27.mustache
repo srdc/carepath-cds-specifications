@@ -1,0 +1,134 @@
+{
+  "uuid": "ckd-medication-treatment-card-27",
+  "summary": {
+    "en": "The dose and frequency of ESA should be adjusted to keep the rate of Hb increase between 1.0 and 2.0 g/dL/month and maintain the Hb range between 10.0 and 12.0 g/dL.",
+    "es": "La dosis y frecuencia del AEE debe ser ajustada para mantener la velocidad de aumento de la Hb eentre 1,0 y 2,0g/dL7mes y mantener la Hb en un rango entre 10,0 y 12,0 g/dL.",
+    "de": "Dosis und Häufigkeit der ESA-Gabe sollten so angepasst werden, dass die Hb-Anstiegsrate zwischen 1,0 und 2,0 g/dl/Monat liegt und der Hb-Bereich zwischen 10,0 und 12,0 g/dl gehalten wird.",
+    "ro": "Doza și frecvența terapiei cu stimulant eritropoietic ar trebui corectată pentru a ține rata de Hb între 1 și 2 g/dL/lună și mențineți Hb între 10 și 12 g/dL."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "The dose and frequency of ESA should be adjusted to keep the rate of Hb increase between 1.0 and 2.0 g/dL/month and maintain the Hb range between 10.0 and 12.0 g/dL.",
+    "es": "La dosis y frecuencia del AEE debe ser ajustada para mantener la velocidad de aumento de la Hb eentre 1,0 y 2,0g/dL7mes y mantener la Hb en un rango entre 10,0 y 12,0 g/dL.",
+    "de": "Dosis und Häufigkeit der ESA-Gabe sollten so angepasst werden, dass die Hb-Anstiegsrate zwischen 1,0 und 2,0 g/dl/Monat liegt und der Hb-Bereich zwischen 10,0 und 12,0 g/dl gehalten wird.",
+    "ro": "Doza și frecvența terapiei cu stimulant eritropoietic ar trebui corectată pentru a ține rata de Hb între 1 și 2 g/dL/lună și mențineți Hb între 10 și 12 g/dL."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.2 [pp. 61]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.2 [pp. 61]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.2 [PP. 61]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.2 [pp. 61]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Keep hemoglobin under control.",
+        "es": "Mantenga la hemoglobina controlada.",
+        "de": "Halten Sie den Hämoglobinwert unter Kontrolle.",
+        "ro": "Țineți Hb sub control."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep hemoglobin under control (between  10.0-12.0 g/dL)",
+            "es": "Mantenga la hemoglobina controlada (entre 10,0-12,0g/dL)",
+            "de": "Hämoglobin unter Kontrolle halten (zwischen 10,0-12,0 g/dL)",
+            "ro": "Țineți Hb sub control (10-12 g/dL)"
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalHemoglobin"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep hemoglobin under control",
+                  "es": "Mantenga la hemoglobina controlada.",
+                  "de": "Halten Sie den Hämoglobinwert unter Kontrolle.",
+                  "ro": "Țineți Hb sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep hemoglobin under control (between  10.0-12.0 g/dL)",
+                "es": "Mantenga la hemoglobina controlada (entre 10,0 y 12,0g/dL)",
+                "de": "Hämoglobin unter Kontrolle halten (zwischen 10,0-12,0 g/dL)",
+                "ro": "Țineți Hb sub control (între 10-12 g/dL)"
+              },
+              "coding": [
+                {
+                  "system": "http://www.kroniq.srdc.com.tr/fhir/ValueSet/goal-code",
+                  "code": "g0030",
+                  "display": {
+                    "en": "Keep hemoglobin under control",
+                    "es": "Mantenga la hemoglobina controlada.",
+                    "de": "Halten Sie den Hämoglobinwert unter Kontrolle",
+                    "ro": "Țineți Hb sub control"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "718-7",
+                      "display": {
+                        "en": "Hemoglobin [Mass/volume] in Blood",
+                        "es": "Hemoglobina [masa/volumen] en sangre",
+                        "de": "Hämoglobin [Masse/Volumen] im Blut",
+                        "ro": "Hb [masă/volum] în sânge"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus1Month}}",
+                "detailRange": {
+                  "low": {
+                    "value": 10,
+                    "unit": "g/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g/dL"
+                  },
+                  "high": {
+                    "value": 12,
+                    "unit": "g/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g/dL"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

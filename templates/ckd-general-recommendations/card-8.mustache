@@ -1,0 +1,139 @@
+{
+  "uuid": "ckd-general-recommendations-card-8",
+  "summary": {
+    "en": "Consider setting a follow-up appointment to monitor eGFR creatinine.",
+    "es": "Considerar una cita de seguimiento para monitorizar el FGe de creatinina.",
+    "de": "Vereinbaren Sie einen Folgetermin zur Überwachung der eGFR-Kreatininwerte.",
+    "ro": "Luați în considderare unui follow-up pentru a controla eGFR creatinina."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "The frequency of eGFR creatinine monitoring should be tailored according to the underlying cause of CKD, the rate of decline in eGFR or increase in ACR, risk factors like heart failure, diabetes and hypertension, changes in the treatment (such as renin– angiotensin–aldosterone system antagonists, NSAIDs and diuretics), intercurrent illness (for example acute kidney injury), and whether they have chosen conservative management of CKD.",
+    "es": "La frecuencia de monitorización de FGe debe ser adaptado a la causa subyacente de la ERC, la tasa de deterioro del FGe o el aumento del cociente albúmina/creatinina en orina, los factores de riesgo tales como insuficiencia cardiaca, diabetes e hipertensión, cambios en tratamiento (tales como antagonistas del sistema renina-angiotensina-aldosterona, AINEs y diuréticos), enfermedades intercurrentes (por ejemplo fracaso renal agudo) y si han elegido manejo conservados de la ERC.",
+    "de": "Die Häufigkeit der Überwachung der eGFR-Kreatininwerte sollte auf die zugrundeliegende Ursache der chronischen Nierenerkrankung, die Geschwindigkeit des Rückgangs der eGFR oder des Anstiegs der ACR, Risikofaktoren wie Herzinsuffizienz, Diabetes und Bluthochdruck, Änderungen in der Behandlung (z. B. Renin-Angiotensin-Aldosteron-Antagonisten, NSAIDs und Diuretika), interkurrente Erkrankungen (z. B. akute Nierenschädigung) und die Entscheidung für eine konservative Behandlung der chronischen Nierenerkrankung abgestimmt werden.",
+    "ro": "Frecvența la care se monitorizează eGFR creatinina trebuie personalizată la etiologia BCR, rata de înrăutățire a eGFR sau creșterea RAC, factori de risc precum insuficiența cardiacă, diabet sau hiperteniune, schimbări de tratament (precum antagoniști de renină-angiotensină-aldosteron, AINS sau diuretice), boli intercurente (de exemplu injurie acută renală). și dacă au ales un tratament conservativ pentru BCR."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.1 [pp. 58]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.1 [pp. 58]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.1 [PP. 58]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.1 [pp. 58]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider setting a follow-up appointment to monitor eGFR creatinine",
+        "es": "Considerar una cita de seguimiento para monitorizar el FGe.",
+        "de": "Erwägen Sie die Vereinbarung eines Nachfolgetermins zur Überwachung der eGFR-Kreatinin",
+        "ro": "Luați în considderare unui follow-up pentru a controla eGFR creatinina."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to monitor eGFR creatinine",
+            "es": "Considerar una cita de seguimiento para monitorizar el FGe.",
+            "de": "Erwägen Sie die Vereinbarung eines Nachfolgetermins zur Überwachung der eGFR-Kreatinin",
+            "ro": "Luați în considderare unui follow-up pentru a controla eGFR creatinina."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to monitor eGFR creatinine",
+                  "es": "Cita de seguimiento para monitorizar el FGe.",
+                  "de": "Nachfolgetermins zur Überwachung der eGFR-Kreatinin",
+                  "ro": "Follow-up pentru a controla eGFR creatinina"
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to monitor eGFR creatinine",
+              "es": "Cita de seguimiento para monitorizar el FGe.",
+              "de": "Nachfolgetermins zur Überwachung der eGFR-Kreatinin",
+              "ro": "Follow-up pentru a controla eGFR creatinina"
+            },
+            "status": "proposed",
+            "start": "{{todayPlus1Month}}"
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering an eGFR test",
+            "es": "Considere solicitar una analítica con FGe",
+            "de": "Erwägen Sie einen eGFR -Test anzuordnen",
+            "ro": "Luați în considerare cererea eGFR creatinină"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "eGFR Test",
+                  "es": "Análisis de eGFR",
+                  "de": "eGFR -Test",
+                  "ro": "Test eGFR"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "33914-3",
+                  "display": {
+                    "en": "eGFR Test",
+                    "es": "Análisis de eGFR",
+                    "de": "eGFR -Test",
+                    "ro": "Test eGFR"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have eGFR measure before the control visit",
+                "es": "Tener una medida de eGFR antes de la visita de control",
+                "de": "eGFR -Messung vor dem Kontrollbesuch",
+                "ro": "Faceți analize a EGFR înainte de vizita de control"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

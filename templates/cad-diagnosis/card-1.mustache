@@ -1,0 +1,181 @@
+{
+  "uuid": "cad-diagnosis-card-1",
+  "summary": {
+    "en": "Consider non-invasive functional imaging for myocardial ischaemic or coronary computed tomography angiography.",
+    "es": "Considerar pruebas de imagen funcional no invasivas para isquemia miocárdica o angio-TAC coronario",
+    "de": "Nicht-invasive funktionelle Bildgebung bei myokardialer Ischämie oder computertomografische Angiographie erwägen",
+    "ro": "Luați în considerare o investigație imagistică non-invazivă pentru ischemie miocardică sau angioCT."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Non-invasive functional imaging for myocardial ischaemic or coronary computed tomography angiography is recommended as the initial test to diagnose coronary artery disease (CAD) in symptomatic patients in whom obstructive CAD cannot be excluded by clinical assessment alone.",
+    "es": "Las pruebas de imagen funcional no invasivas para isquemia miocárdica o el angio-TAC coronario se recomiendan como pruebas iniciales para diagnosticar enfermedad arterial coronaria (EAC) en pacientes sintomáticos en los que la EAC no puede ser excluida únicamente mediante evaluación clínica.",
+    "de": "Die nicht-invasive funktionelle Bildgebung für die Myokardischämie oder die Koronar-Computertomographie-Angiographie wird als erste Untersuchung zur Diagnose der koronaren Herzkrankheit (KHK) bei symptomatischen Patienten empfohlen, bei denen eine obstruktive KHK durch die klinische Beurteilung allein nicht ausgeschlossen werden kann.",
+    "ro": "Investigația imagistică non-invazivă sau angioCT-ul sunt recomandate ca prim test pentru diagnosticarea unei boli arteriale coronariene (BAC) la pacienții simptomatici cu o formă de obstruție coroariană ce nu poate fi decelată doar prin examenul fizic."
+  },
+  "source": {
+    "label": {
+      "en": "* Holistic patient-centred CAREPATH best practice guideline, Chapter 10.1 [pp. 34]\n* Visseren FLJ, Mach F, Smulders YM, Carballo D, Koskinas KC, Bäck M, et al. 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J [Internet]. 2021 Sep;42(34):3227–337. Available from: https://doi.org/10.1093/eurheartj/ehab484",
+      "es": "* Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 10.1 [pp. 34]\n* Visseren FLJ, Mach F, Smulders YM, Carballo D, Koskinas KC, Bäck M, et al. 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J [Internet]. 2021 Sep;42(34):3227–337. Available from: https://doi.org/10.1093/eurheartj/ehab484",
+      "de": "* Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 10.1 [PP. 34]\n* Visseren FLJ, Mach F, Smulders YM, Carballo D, Koskinas KC, Bäck M, et al. 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J [Internet]. 2021 Sep;42(34):3227–337. Available from: https://doi.org/10.1093/eurheartj/ehab484",
+      "ro": "* Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 10.1 [pp. 34]\n* Visseren FLJ, Mach F, Smulders YM, Carballo D, Koskinas KC, Bäck M, et al. 2021 ESC Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J [Internet]. 2021 Sep;42(34):3227–337. Available from: https://doi.org/10.1093/eurheartj/ehab484"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to Cardiologist for non-invasive functional imaging for myocardial ischaemic.",
+        "es": "Considerar derivar a un Cardiólogo para pruebas de imagen funcional no invasivas para isquemia miocárdica.",
+        "de": "Erwägen Sie eine Überweisung an einen Kardiologen zur nicht-invasiven funktionellen Bildgebung bei Myokardischämie.",
+        "ro": "Luați în considerare o trimitere la cardiolog pentru o investigație imagistică funțională pentru infarctul miocardic."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Cardiologist for non-invasive functional imaging for myocardial ischaemic",
+            "es": "Considerar derivar a un Cardiólogo para pruebas de imagen funcional no invasivas para isquemia miocárdica.",
+            "de": "Erwägen Sie eine Überweisung an einen Kardiologen zur nicht-invasiven funktionellen Bildgebung bei Myokardischämie.",
+            "ro": "Luați în considerare o trimitere la cardiolog pentru o investigație imagistică funțională pentru infarctul miocardic."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Cardiologist",
+                  "es": "Derivar al cardiólogo",
+                  "de": "Überweisung an den Kardiologen",
+                  "ro": "Trimitere la cardiolog"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17565000",
+                  "display": {
+                    "en": "Cardiologist",
+                    "es": "Cardiólogo",
+                    "de": "Kardiologe",
+                    "ro": "Cardiolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Cardiologist for non-invasive functional imaging for myocardial ischaemic",
+                "es": "Derivación a Cardiólogo para pruebas de imagen funcional no invasivas para isquemia miocárdica.",
+                "de": "Überweisung an einen Kardiologen zur nicht-invasiven funktionellen Bildgebung bei ischämischem Myokardinfarkt",
+                "ro": "Trimitere către cardiolog pentru o investigație imagistică funcțională pentru infarctul miocardic."
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "Suggestion 2",
+      "label": {
+        "en": "Consider a Referral to Cardiologist for coronary computed tomography angiography.",
+        "es": "Considerar derivar a un Cardiólogo para angio-TAC coronario",
+        "de": "Ziehen Sie eine Überweisung zum Kardiologen für eine Koronar-Computertomographie in Betracht.",
+        "ro": "Luați în considerare o trimitere la cardiolog pentru o investigație angioCT."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Cardiologist for coronary computed tomography angiography",
+            "es": "Considerar derivar a un Cardiólogo para pruebas de imagen funcional no invasivas para isquemia miocárdica.",
+            "de": "Ziehen Sie eine Überweisung zum Kardiologen für eine Koronar-Computertomographie in Betracht.",
+            "ro": "Luați în considerare o trimitere la cardiolog pentru o investigație angioCT."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Cardiologist",
+                  "es": "Derivar al cardiólogo",
+                  "de": "Überweisung an den Kardiologen",
+                  "ro": "Trimitere la cardiolog"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17565000",
+                  "display": {
+                    "en": "Cardiologist",
+                    "es": "Cardiólogo",
+                    "de": "Kardiologe",
+                    "ro": "Cardiolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Cardiologist for coronary computed tomography angiography",
+                "es": "Derivación a Cardiólogo para pruebas de imagen funcional no invasivas para isquemia miocárdica.",
+                "de": "Überweisung an einen Kardiologen für eine koronare computertomographische Angiographie",
+                "ro": "Trimitere către cardiolog pentru o investigație angioCT."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

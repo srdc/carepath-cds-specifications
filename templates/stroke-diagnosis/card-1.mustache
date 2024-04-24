@@ -1,0 +1,167 @@
+{
+  "uuid": "stroke-diagnosis-card-1",
+  "summary": {
+    "en": "Consider a Referral to Neurologist or A&E department  to confirm the diagnosis of symptomatic ischemic cerebral vascular disease.",
+    "es": "Considere derivación a un Neurólogo o servicios de emergencias para confirmar el diagnóstico de enfermedad cerebrovascular isquémica sintomática.",
+    "de": "Erwägen Sie eine Überweisung zum Neurologen oder in die Notaufnahme, um die Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung zu bestätigen.",
+    "ro": "Considerați o trimitere spre neurolog sau departamentul de urgențe pentru a confirma diagnosticul simptomatic de boală cerebrală vasculară ischemică."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "In patient is suspected of having a stroke or TIA, patient should be reffered and Computed Tomography or Magnetic Resonance Imaging of the brain is recommended to confirm the diagnosis of symptomatic ischaemic cerebral vascular disease.",
+    "es": "Si se sospecha que un paciente puede estar sufriendo un ictus o AIT, se debería derivar al paciente y se recomienda Tomografía Axial Computerizada o Resonancia Magnética cerebral para confirmar el diagnóstico de isquemia sintomática.",
+    "de": "Ausführliche Beschreibung: Bei Verdacht auf einen Schlaganfall oder eine TIA sollte der Patient überwiesen werden, und es wird eine Computertomographie oder Magnetresonanztomographie des Gehirns empfohlen, um die Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung zu bestätigen.",
+    "ro": "La pacienții cu suspiciune de accident vascular cerebral (AVC) sau accident vascular tranzitoriu (AVT), pacienții ar trebui să primească trimiteri către Tomografiere Computerizată (CT) sau Rezonanță Magnetică Nucleară (RMN) la nivel cerebral pentru confirmarea diagnosticului simptomatic de boală cerebrală vasculară ischemică."
+  },
+  "source": {
+    "label": {
+      "en": "* Holistic patient-centred CAREPATH best practice guideline, Chapter 16.2 [pp. 68]  \n* Kleindorfer DO, Towfighi A, Chaturvedi S, Cockroft KM, Gutierrez J, Lombardi-Hill D, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association. Stroke [Internet]. 2021 Jul;52(7):e364– 467. Available from: https://doi.org/10.1161/STR.0000000000000375",
+      "es": "* Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 16.2 [pp. 68]\n* Kleindorfer DO, Towfighi A, Chaturvedi S, Cockroft KM, Gutierrez J, Lombardi-Hill D, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association. Stroke [Internet]. 2021 Jul;52(7):e364– 467. Available from: https://doi.org/10.1161/STR.0000000000000375",
+      "de": "* Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 16.2 [PP. 68]\n* Kleindorfer DO, Towfighi A, Chaturvedi S, Cockroft KM, Gutierrez J, Lombardi-Hill D, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association. Stroke [Internet]. 2021 Jul;52(7):e364– 467. Available from: https://doi.org/10.1161/STR.0000000000000375",
+      "ro": "* Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 16.2 [pp. 68]\n* Kleindorfer DO, Towfighi A, Chaturvedi S, Cockroft KM, Gutierrez J, Lombardi-Hill D, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association. Stroke [Internet]. 2021 Jul;52(7):e364– 467. Available from: https://doi.org/10.1161/STR.0000000000000375"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to Neurologist",
+        "es": "Considere derivación a Neurólogo",
+        "de": "Erwägen Sie eine Überweisung zum Neurologen",
+        "ro": "Considerați trimiterea către un neurolog"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Neurologist to confirm the diagnosis of symptomatic ischemic cerebral vascular disease.",
+            "es": "Considere derivación a Neurólogo para confirmar el diagnoóstico de enfermedad cerebrovascular isquémica sintomática.",
+            "de": "Erwägen Sie eine Überweisung zum Neurologen, um die Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung zu bestätigen",
+            "ro": "Considerați trimiterea către un neurolog pentru a confirma diagnosticul simptomatic de boală cerebrală vasculară ischemică."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivar a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la un specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "56397003",
+                  "display": {
+                    "en": "Neurologist",
+                    "es": "Neurólogo",
+                    "de": "Neurologe",
+                    "ro": "Neurolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Neurologist to confirm the diagnosis of symptomatic ischemic cerebral vascular disease.",
+                "es": "Derivación a Neurólogo para confirmar el diagnoóstico de enfermedad cerebrovascular isquémica sintomática.",
+                "de": "Überweisung an einen Neurologen zur Bestätigung der Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung.",
+                "ro": "Trimitere către un neurolog pentru a confirma diagnosticul simptomatic de boală cerebrală vasculară ischemică."
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "Suggestion 2",
+      "label": {
+        "en": "Consider a Referral to A&E department ",
+        "es": "Considere derivación a servicio de emergencia",
+        "de": "Erwägen Sie eine Überweisung in die Notaufnahme",
+        "ro": "Considerați trimiterea către departamentul de urgențe."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to A&E department to confirm the diagnosis of symptomatic ischemic cerebral vascular disease.",
+            "es": "Considere derivación a servicio de emergencia para confirmar el diagnoóstico de enfermedad cerebrovascular isquémica sintomática.",
+            "de": "Erwägen Sie eine Überweisung in die Notaufnahme, um die Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung zu bestätigen.",
+            "ro": "Consideraţi trimiterea către departamentul de urgențe a confirma diagnosticul simptomatic de boală cerebrală vasculară ischemică."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to emergency services",
+                  "es": "Derivar a un servicios de emergencia",
+                  "de": "Überweisung an einen Rettungsdienst",
+                  "ro": "Trimitere la un servicii de urgență"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to emergency services",
+                      "es": "Derivar al paciente al servicios de emergencia",
+                      "de": "Patientenüberweisung an einen Rettungsdienst",
+                      "ro": "Trimiterea pacientului către serviciile de urgență"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to A&E department to confirm the diagnosis of symptomatic ischemic cerebral vascular disease.",
+                "es": "Derivación a servicio de emergencia para confirmar el diagnoóstico de enfermedad cerebrovascular isquémica sintomática.",
+                "de": "Überweisung in die Notaufnahme zur Bestätigung der Diagnose einer symptomatischen ischämischen zerebralen Gefäßerkrankung.",
+                "ro": "Trimitere către departamentul de urgențe pentru confirmarea diagnosticului simptomatic de boală cerebrală ischemică."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "uuid": "diabetes-treatment-goal-card-18",
+  "summary": {
+    "en": "Consider setting cardiometabolic goals for healthy patients.",
+    "es": "Considerar establecer objetivos cardiometabólicos para pacientes sanos",
+    "de": "Erwägen Sie die Festlegung kardiometabolischer Ziele für gesunde Patienten.",
+    "ro": "Considerați stabilirea unor obiective cardio-metabolice pentru pacienții sănătoși."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Multimorbid older adults with cognitive impairment should have less stringent glycaemic goals than the general population, such as HbA1c &#60;8.0-8.5% (64-69 mmol/mol), unless those who are healthy, with few coexisting chronic illnesses, very low cognitive and functional decline, in which glycaemic goals could be HbA1c &#60;7.0-7.5% (53-58 mmol/mol).",
+    "es": "Los adultos mayores multimórbidos con deterioro cognitivo deberían tener objetivos glicémicos menos estrictos que la población general, tales como HbA1c &#60;8.0-8.5% (64-69mmol/mol), menos aquellos sanos, con pocas enfermedades crónicas coexistentes, deterioro cognitivo y funcional muy leves, en los que los objetivos glicémicos podrían ser HbA1c &#60;7.0-7.5% (53-58mmol/mol).",
+    "de": "Für multimorbide ältere Erwachsene mit kognitiven Beeinträchtigungen sollten weniger strenge Blutzuckerziele gelten als für die Allgemeinbevölkerung, z. B. HbA1c &#60;8,0-8,5 % (64-69 mmol/mol), es sei denn, es handelt sich um gesunde Personen mit wenigen gleichzeitig bestehenden chronischen Erkrankungen und sehr geringen kognitiven und funktionellen Beeinträchtigungen, bei denen die Blutzuckerziele HbA1c &#60;7,0-7,5 % (53-58 mmol/mol) sein könnten.",
+    "ro": "Adulții seniori cu multiple morbidități ce suferă de tuburări neurologice ar trebui să prezinte obiective glicemice mai puțin severe decât pooulația generală, precum HbA1c &#60;8.0-8.5% (64-69 mmol/mol), cu excepția celor sănătoși, cu puține boli cronice, sau declin cognitiv și funcțional foarte scăzut, pentru care obiectivele glicemice ar trebui să fie HbA1c &#60;7.0-7.5% (53-58 mmol/mol)."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1, Table 3 [pp. 49-50]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1, Tabla 3 [pp. 49-50]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1, Tabelle 3 [S. 49-50]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1, Tabelul 3 [pp. 49-50]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider setting HbA1c, blood pressure and lipid goals.",
+        "es": "Considere establecer objetivos HbA1c, presión arterial y lípidos.",
+        "de": "Erwägen Sie, HbA1c-, Glukose-, Blutdruck- und Lipidziele festzulegen.",
+        "ro": "Luați în considerare stabilirea obiectivelor în legătură cu HbA1c, tensiune arterială și lipide."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep HbA1c under control (below 7.0-7.5%).",
+            "es": "Mantener la HbA1c bajo control (por debajo del 7,0-7,5%).",
+            "de": "Halten Sie den HbA1c-Wert unter Kontrolle (unter 7,0-7,5%).",
+            "ro": "Păstrați HbA1c sub control (sub 7,0-7,5%)."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalHbA1c"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep HbA1c under control",
+                  "es": "Mantener la HbA1c bajo control",
+                  "de": "Halten Sie den HbA1c-Wert unter Kontrolle",
+                  "ro": "Menținerea HbA1c sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep HbA1c under control (below 7.0-7.5%)",
+                "es": "Mantener la HbA1c bajo control (por debajo del 7,0-7,5%).",
+                "de": "Halten Sie den HbA1c-Wert unter Kontrolle (unter 7,0-7,5%)",
+                "ro": "Păstrați HbA1c sub control (sub 7,0-7,5%)"
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "698472009",
+                  "display": {
+                    "en": "Blood glucose monitoring (regime/therapy)",
+                    "es": "Control de la glucemia (régimen/terapia)",
+                    "de": "Blutzuckermessung (Regime/Therapie)",
+                    "ro": "Monitorizarea glicemiei (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "4548-4",
+                      "display": {
+                        "en": "Hemoglobin A1c",
+                        "es": "Hemoglobina A1c",
+                        "de": "HBA1c",
+                        "ro": "Hemoglobina A1c"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 7.5,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep systolic blood pressure under control (below 140 mm/Hg)",
+            "es": "Mantenga la tensión arterial sistólica controlada (por debajo de 140 mm/Hg)",
+            "de": "Halten Sie den systolischen Blutdruck unter Kontrolle (unter 140 mm/Hg)",
+            "ro": "Mențineți tensiunea arterială sistolică sub control (sub 140 mm/hg)"
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalSystolicBP"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep systolic blood pressure under control",
+                  "es": "Mantenga la tensión arterial sistólica controlada",
+                  "de": "Halten Sie den systolischen Blutdruck unter Kontrolle",
+                  "ro": "Mențineți tensiunea arterială sistolică sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep systolic blood pressure under control (below 140 mm/Hg)",
+                "es": "Mantenga la tensión arterial sistólica controlada (por debajo de 140 mm/Hg)",
+                "de": "Halten Sie den systolischen Blutdruck unter Kontrolle (unter 140 mm/Hg)",
+                "ro": "Mențineți tensiunea arterială sistolică sub control (sub 140 mm/hg)"
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "135840009",
+                  "display": {
+                    "en": "Blood Pressure monitoring (regime/therapy)",
+                    "es": "Monitorizar la tensión arterial (régimen/terapia)",
+                    "de": "Blutdrucküberwachung (Regime/Therapie)",
+                    "ro": "Monitorizarea tensiunii arteriale (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "8480-6",
+                      "display": {
+                        "en": "Systolic blood pressure",
+                        "es": "Tensión arterial sistólica",
+                        "de": "Systolischer Blutdruck",
+                        "ro": "Tensiunea sistolică"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 140,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep diastolic blood pressure under control (below 90 mm/Hg)",
+            "es": "Mantenga la tensión arterial diastólica controlada (por debajo de 90 mm/Hg)",
+            "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle (unter 90 mm/Hg)",
+            "ro": "Mențineți tensiunea arterială diastolică sub control (sub 90 mm/hg)"
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalDiastolicBP"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep diastolic blood pressure under control",
+                  "es": "Mantenga la tensión arterial diastólica controlada",
+                  "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle",
+                  "ro": "Păstrați sub control tensiunea arterială diastolică"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep diastolic blood pressure under control (below 90 mm/Hg)",
+                "es": "Mantenga la tensión arterial diastólica controlada (por debajo de 90 mm/Hg)",
+                "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle (unter 90 mm/Hg)",
+                "ro": "Mențineți tensiunea arterială diastolică sub control (sub 90 mm/hg)"
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "135840009",
+                  "display": {
+                    "en": "Blood Pressure monitoring (regime/therapy)",
+                    "es": "Monitorizar la tensión arterial (régimen/terapia)",
+                    "de": "Blutdrucküberwachung (Regime/Therapie)",
+                    "ro": "Monitorizarea tensiunii arteriale (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "8462-4",
+                      "display": {
+                        "en": "Diastolic blood pressure",
+                        "es": "Tensión arterial diastólica",
+                        "de": "Diastolischer Blutdruck",
+                        "ro": "Tensiunea diastolică"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 90,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep total cholesterol below 154 mg/dL (4.0 mmol/L).",
+            "es": "Mantenga el colesterol total por debajo de 154 mg/dl (4.0 mmol/L).",
+            "de": "Halten Sie das Gesamtcholesterin unter 154 mg / dl (4,0 mmol / l).",
+            "ro": "Mențineți colesterolul total sub 154 mg/dL (4,0 mmol/L)."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalTotalCholesterol"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep total cholesterol under control",
+                  "es": "Mantenga el colesterol total bajo control",
+                  "de": "Halten Sie das Gesamtcholesterin unter Kontrolle",
+                  "ro": "Păstrați colesterolul total sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep total cholesterol below 154 mg/dL (4.0 mmol/L)",
+                "es": "Mantenga el colesterol total por debajo de 154 mg/dl (4.0 mmol/L)",
+                "de": "Halten Sie das Gesamtcholesterin unter 154 mg / dl (4,0 mmol / l)",
+                "ro": "Mențineți colesterolul total sub 154 mg/dL (4,0 mmol/L)"
+              },
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2093-3",
+                  "display": {
+                    "en": "Cholesterol [Mass/volume] in Serum or Plasma",
+                    "es": "Colesterol [masa/volumen] en suero o plasma",
+                    "de": "Cholesterin [Masse/Volumen] im Serum oder Plasma",
+                    "ro": "Colesterol [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "2093-3",
+                      "display": {
+                        "en": "Cholesterol [Mass/volume] in Serum or Plasma",
+                        "es": "Colesterol [masa/volumen] en suero o plasma",
+                        "de": "Cholesterin [Masse/Volumen] im Serum oder Plasma",
+                        "ro": "Colesterol [masă/volum] în ser sau plasmă"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 154,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep LDL cholesterol below 77 mg/dL (2.0 mmol/L).",
+            "es": "Mantenga el colesterol LDL por debajo de 77 mg/dl (2.0 mmol/L).",
+            "de": "Halten Sie das LDL-Cholesterin unter 77 mg / dl (2,0 mmol / l).",
+            "ro": "Mențineți colesterolul LDL sub 77 mg/dL (2,0 mmol/L)."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalLDLCholesterol"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep LDL cholesterol under control",
+                  "es": "Mantenga el colesterol LDL bajo control",
+                  "de": "Halten Sie LDL-Cholesterin unter Kontrolle",
+                  "ro": "Păstrați colesterolul LDL sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep LDL cholesterol below 77 mg/dL (2.0 mmol/L)",
+                "es": "Mantenga el colesterol LDL por debajo de 77 mg/dl (2.0 mmol/L)",
+                "de": "Halten Sie das LDL-Cholesterin unter 77 mg / dl (2,0 mmol / l)",
+                "ro": "Mențineți colesterolul LDL sub 77 mg/dL (2,0 mmol/L)"
+              },
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2089-1",
+                  "display": {
+                    "en": "Cholesterol in LDL [Mass/volume] in Serum or Plasma",
+                    "es": "Colesterol en LDL [masa/volumen] en suero o plasma",
+                    "de": "Cholesterin in LDL [Masse/Volumen] im Serum oder Plasma",
+                    "ro": "Colesterol în LDL [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "2089-1",
+                      "display": {
+                        "en": "Cholesterol in LDL [Mass/volume] in Serum or Plasma",
+                        "es": "Colesterol en LDL [masa/volumen] en suero o plasma",
+                        "de": "Cholesterin in LDL [Masse/Volumen] im Serum oder Plasma",
+                        "ro": "Colesterol în LDL [masă/volum] în ser sau plasmă"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 77,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep HDL cholesterol below 54 mg/dL (1.4 mmol/L).",
+            "es": "Mantenga el colesterol HDL por debajo de 54 mg/dL (1.4 mmol/L).",
+            "de": "Halten Sie das HDL-Cholesterin unter 54 mg / dl (1,4 mmol / l).",
+            "ro": "Mențineți colesterolul HDL sub 54 mg/dL (1,4 mmol/L)."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalHDLCholesterol"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep HDL cholesterol under control",
+                  "es": "Mantenga el colesterol HDL bajo control",
+                  "de": "Halten Sie das HDL-Cholesterin unter Kontrolle",
+                  "ro": "Păstrați colesterolul HDL sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep HDL cholesterol below 54 mg/dL (1.4 mmol/L)",
+                "es": "Mantenga el colesterol HDL por debajo de 54 mg/dL (1.4 mmol/L)",
+                "de": "Halten Sie das HDL-Cholesterin unter 54 mg / dl (1,4 mmol / l)",
+                "ro": "Mențineți colesterolul HDL sub 54 mg/dL (1,4 mmol/L)"
+              },
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2085-9",
+                  "display": {
+                    "en": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+                    "es": "Colesterol en HDL [masa/volumen] en suero o plasma",
+                    "de": "Cholesterin in HDL [Masse/Volumen] im Serum oder Plasma",
+                    "ro": "Colesterol HDL [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "2085-9",
+                      "display": {
+                        "en": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+                        "es": "Colesterol en HDL [masa/volumen] en suero o plasma",
+                        "de": "Cholesterin in HDL [Masse/Volumen] im Serum oder Plasma",
+                        "ro": "Colesterol HDL [masă/volum] în ser sau plasmă"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 54,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

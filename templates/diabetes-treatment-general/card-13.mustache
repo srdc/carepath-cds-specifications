@@ -1,0 +1,90 @@
+{
+  "uuid": "diabetes-treatment-general-card-13",
+  "summary": {
+    "en": "Assess diabetes symptoms.",
+    "es": "Evaluar los síntomas de la diabetes.",
+    "de": "Beurteilen Sie Diabetes-Symptome.",
+    "ro": "Evaluează simptomele diabetului."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Assess the symptoms of diabetes such as distress, disabilities, depression, anxiety, disordered eating, visual and hearing impairments, cognitive capacities, and other geriatric syndromes using a Comprehensive Geriatric Assessment at the initial visit, at periodic intervals, and when there is a change in disease, treatment, or life circumstance; including caregivers and family members in this assessment.",
+    "es": "Evaluar los síntomas de la diabetes como náuseas, discapacidad, depresión, ansiedad, trastornos alimentarios, problemas visuales y auditivos, capacidad cognitiva y otros síndromes geriátricos mediante una Valoración Geriátrica Integral en la visita inicial, a intervalos periódicos y cuando se produzca un cambio en la enfermedad, el tratamiento o las circunstancias vitales; incluir a los cuidadores y familiares en esta valoración.",
+    "de": "Beurteilen Sie die Symptome von Diabetes wie Stress, Behinderungen, Depressionen, Angstzustände, Essstörungen, Seh- und Hörstörungen, kognitive Fähigkeiten und andere geriatrische Syndrome anhand eines umfassenden geriatrischen Assessments beim ersten Besuch, in regelmäßigen Abständen und bei einer Änderung der Krankheit, der Behandlung oder der Lebensumstände; Einbeziehung von Betreuern und Familienmitgliedern in diese Bewertung ist sinnvoll.",
+    "ro": "Evaluează simptomele diabetului, cum ar fi suferința, dizabilitățile, depresia, anxietatea, alimentația dezordonată, deficiențele vizuale și auditive, capacitățile cognitive și alte sindroame geriatrice folosind o evaluare geriatrică cuprinzătoare la vizita inițială, la intervale periodice și când există o schimbare în boală, tratament sau circumstanțe de viață; inclusiv îngrijitorii și membrii familiei în această evaluare."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 48]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 48]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 48]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 48]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral for Comprehensive Geriatric Assessment (CGA)",
+        "es": "Considerar la derivación para una Valoración Geriátrica Integral (VGI)",
+        "de": "Erwägen Sie eine Überweisung für ein umfassendes geriatrisches Assessment (CGA)",
+        "ro": "Luați în considerare trimiterea pentru evaluarea geriatrică cuprinzătoare (CGA)"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for Comprehensive Geriatric Assessment (CGA)",
+            "es": "Considerar la derivación para una Valoración Geriátrica Integral (VGI)",
+            "de": "Erwägen Sie eine Überweisung für ein umfassendes geriatrisches Assessment (CGA)",
+            "ro": "Luați în considerare trimiterea pentru evaluarea geriatrică cuprinzătoare (CGA)"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for Comprehensive Geriatric Assessment (CGA)",
+                  "es": "Derivación para una Valoración Geriátrica Integral (VGI)",
+                  "de": "Überweisung zum umfassenden geriatrischen Assessment (CGA)",
+                  "ro": "Recomandare pentru evaluarea geriatrică cuprinzătoare (CGA)"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for Comprehensive Geriatric Assessment (CGA)",
+                "es": "Derivación para una Valoración Geriátrica Integral (VGI)",
+                "de": "Überweisung zum umfassenden geriatrischen Assessment (CGA)",
+                "ro": "Recomandare pentru evaluarea geriatrică cuprinzătoare (CGA)"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-referral-management-card-16",
+  "summary": {
+    "en": "Consider Referral for detailed assessment of the need for oxygen therapy.",
+    "es": "Considerar la derivación para una evaluación detallada de la necesidad de oxigenoterapia.",
+    "de": "Erwägen  Sie die Überweisung für eine detaillierte Bewertung der Notwendigkeit einer Sauerstofftherapie.",
+    "ro": "Luați în considerare trimiterea pentru evaluarea necesității terapiei cu oxigen. "
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Assess the need for oxygen therapy in people with very severe airflow obstruction (FEV1 below 30% predicted), cyanosis, polycythaemia, peripheral oedema (swelling), a raised jugular venous pressure, pulmonary hypertension, or an oxygen saturations of 92% or less breathing air. \nBe aware that inappropriate oxygen therapy in people with COPD may cause respiratory depression.",
+    "es": "Evalúe la necesidad de oxigenoterapia en personas con obstrucción muy grave del flujo aéreo (FEV1 inferior al 30% del valor previsto), cianosis, policitemia, edema periférico (hinchazón), presión venosa yugular elevada, hipertensión pulmonar o una saturación de oxígeno del 92% o inferior respirando aire ambiente. \nTenga en cuenta que una oxigenoterapia inadecuada en personas con EPOC puede causar depresión respiratoria.",
+    "de": "Bewerten Sie die Notwendigkeit einer Sauerstofftherapie bei Menschen mit sehr schwerer Luftstromobstruktion (FEV1 unter 30% erwartet, Cyanose, Polycythämie, peripherem Ödem (Schwellung), einem erhöhten Hals -Venendruck, Lungenhypertonie oder einer Sauerstoffsättigung von 92% oder weniger bei Raumluft.\nBeachten Sie, dass eine unangemessene Sauerstofftherapie bei Menschen mit COPD zu Atemdepressionen führen kann.",
+    "ro": "Evaluarea necesității de terapie cu oxigen la persoanele cu obstrucție foarte severă a fluxului de aer (VEMS sub 30%), cianoză, policitemie, edem periferic (umflare), o presiune venoasă jugulară crescută, hipertensiune pulmonară sau o saturație de oxigen mai mica sau egală cu 92% din aerul respirat.\nFiți conștienți de faptul că terapia necorespunzătoare la persoanele cu BPOC poate provoca colapsul respirator"
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 67]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 67]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 67]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 67]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to Pneumologist for detailed assessment of  the need for oxygen therapy.",
+        "es": "Considere la derivación al neumólogo para una evaluación detallada de la necesidad de oxigenerapia.",
+        "de": "Erwägen Sie die Überweisung an den Pneumologen für eine detaillierte Bewertung des Bedarfs an Sauerstofftherapie.",
+        "ro": "Luați în considerare trimiterea către pneumolog pentru evaluarea detaliată a necesității terapiei cu oxigen."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for assessment of the need for oxygen therapy.",
+            "es": "Considere la derivación para la evaluación de la necesidad de oxigenerapia.",
+            "de": "Erwägen  Sie die Überweisung für eine Bewertung der Notwendigkeit einer Sauerstofftherapie.",
+            "ro": "Luați în considerare trimiterea pentru evaluarea nevoii de terapie cu oxigen."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for assessment of the need for oxygen therapy",
+                  "es": "Derivación para la evaluación de la necesidad de oxigenerapia",
+                  "de": "Überweisung zur Bewertung des Bedarfs an Sauerstofftherapie",
+                  "ro": "Recomandare pentru evaluarea necesității terapiei cu oxigen."
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Pneumologist for detailed assessment of the need for oxygen therapy",
+                "es": "Derivación al neumólogo para una evaluación detallada de la necesidad de oxigenerapia",
+                "de": "Überweisung an den Pneumologen für eine detaillierte Bewertung des Bedarfs an Sauerstofftherapie",
+                "ro": "Recomandare la pneumologpentru evaluarea detaliată a necesității terapiei cu oxigen."
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

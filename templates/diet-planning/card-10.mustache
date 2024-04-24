@@ -1,0 +1,248 @@
+{
+  "uuid": "diet-planning-card-10",
+  "summary": {
+    "en": "Recommend nutritional plan for cardiovascular disease patients",
+    "es": "Recomendar un plan nutricional para pacientes con enfermedades cardiovasculares",
+    "de": "Ernährungsplan für Patienten mit Herz -Kreislauf -Erkrankungen empfehlen",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu boli cardiovasculare"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Recommend nutritional plan for cardiovascular disease patients",
+    "es": "Recomendar un plan nutricional para pacientes con enfermedades cardiovasculares",
+    "de": "Ernährungsplan für Patienten mit Herz -Kreislauf -Erkrankungen empfehlen",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu boli cardiovasculare"
+  },
+  "source": {
+    "label": {
+      "en": "CAREPATH Nutritional Care Plan, Slide 14",
+      "es": "Plan de atención nutricional de CAREPATH, diapositiva 14",
+      "de": "Carepath Ernährungsplan, Folie 14",
+      "ro": "Planul de îngrijire nutrițională CAREPATH, diapozitivul 14"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Recommend nutritional plan for cardiovascular disease patients",
+        "es": "Recomendar un plan nutricional para pacientes con enfermedades cardiovasculares",
+        "de": "Ernährungsplan für Patienten mit Herz -Kreislauf -Erkrankungen empfehlen",
+        "ro": "Recomandați planul nutrițional pentru pacienții cu boli cardiovasculare"
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Low-salt diet: reduce table and kitchen salt.",
+            "es": "Dieta baja en sal: reduzca la sal de mesa y cocina.",
+            "de": "Salzarme Diät: Salz bei Tisch und beim Kochen reduzieren.",
+            "ro": "Dieta scăzută în sare: reduceți sarea de masă."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-chf-1",
+                  "display": {
+                    "en": "Low-salt diet: reduce table and kitchen salt.",
+                    "es": "Dieta baja en sal: reduzca la sal de mesa y cocina.",
+                    "de": "Salzarme Diät: Salz bei Tisch und beim Kochen reduzieren.",
+                    "ro": "Dieta scăzută în sare: reduceți sarea de masă."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Recommended salt substitutes: spices, herbs and condiments (garlic, onion, parsley, lemon, saffron, cloves, cumin, mint,...)",
+            "es": "Sustitutos de sal recomendados: especias, hierbas y condimentos (ajo, cebolla, perejil, limón, azafrán, clavo, comino, menta, ...)",
+            "de": "Empfohlene Salzersatzprodukte: Gewürze, Kräuter und Würzmittel (Knoblauch, Zwiebel, Petersilie, Zitrone, Safran, Nelken, Kreuzkümmel, Minze, ...)",
+            "ro": "Înlocuitori de sare recomandați: condimente, ierburi (usturoi, ceapă, pătrunjel, lămâie, șofran, cuișoare, chimen, mentă, ...)"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-chf-2",
+                  "display": {
+                    "en": "Recommended salt substitutes: spices, herbs and condiments (garlic, onion, parsley, lemon, saffron, cloves, cumin, mint,...)",
+                    "es": "Sustitutos de sal recomendados: especias, hierbas y condimentos (ajo, cebolla, perejil, limón, azafrán, clavo, comino, menta, ...)",
+                    "de": "Empfohlene Salzersatzprodukte: Gewürze, Kräuter und Würzmittel (Knoblauch, Zwiebel, Petersilie, Zitrone, Safran, Nelken, Kreuzkümmel, Minze, ...)",
+                    "ro": "Înlocuitori de sare recomandați: condimente, ierburi (usturoi, ceapă, pătrunjel, lămâie, șofran, cuișoare, chimen, mentă, ...)"
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Reduce the consumption of foods with a high salt content: sausages in general (including cured and cooked ham), lard, preserves (tuna, sardines), soup packets, sauces...",
+            "es": "Reduzca el consumo de alimentos con un alto contenido de sal: salchichas en general (incluido jamón curado y cocido), manteca, conservas (atún, sardinas), paquetes de sopa, salsas ...",
+            "de": "Reduzieren Sie den Verbrauch von Lebensmitteln mit einem hohen Salzgehalt: Würste i.A. (einschließlich geräucherten und gekochten Schinken), Schmalz, Konserven (Thunfisch, Sardinen), Suppenpäckchen, Saucen ...",
+            "ro": "Reduceți consumul de alimente cu un conținut ridicat de sare: cârnații în general (inclusiv șuncă), untură, conserve (ton, sardine), pachete de supă, sosuri ..."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-chf-3",
+                  "display": {
+                    "en": "Reduce the consumption of foods with a high salt content: sausages in general (including cured and cooked ham), lard, preserves (tuna, sardines), soup packets, sauces...",
+                    "es": "Reduzca el consumo de alimentos con un alto contenido de sal: salchichas en general (incluido jamón curado y cocido), manteca, conservas (atún, sardinas), paquetes de sopa, salsas ...",
+                    "de": "Reduzieren Sie den Verbrauch von Lebensmitteln mit einem hohen Salzgehalt: Würste i.A. (einschließlich geräucherten und gekochten Schinken), Schmalz, Konserven (Thunfisch, Sardinen), Suppenpäckchen, Saucen ...",
+                    "ro": "Reduceți consumul de alimente cu un conținut ridicat de sare: cârnații în general (inclusiv șuncă), untură, conserve (ton, sardine), pachete de supă, sosuri ..."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

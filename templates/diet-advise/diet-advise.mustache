@@ -1,0 +1,54 @@
+{
+  "uuid": "DIET ADVISE",
+  "summary": "DIET ADVISE",
+  "indicator": "no-show",
+  "detail": "",
+  "source": {
+    "label": "",
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": "DIET ADVISE",
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": "",
+          "resource": {
+            "resourceType": "Observation",
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "status": "final",
+            "effectiveDateTime": "{{effectiveDate}}",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/observation-code",
+                  "code": "diet-advise",
+                  "display": "{{dietAdviseDisplay}}"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/ValueSet/diet-advise",
+                  "code": "{{code}}",
+                  "display": "{{display}}"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/diet-advise-index",
+                "valueInteger": "{{dietAdviseIndex}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

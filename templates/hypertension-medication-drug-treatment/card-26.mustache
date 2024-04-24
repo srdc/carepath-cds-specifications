@@ -1,0 +1,209 @@
+{
+  "uuid": "hypertension-medication-card-26",
+  "summary": {
+    "en": "Arrange a follow-up visit in 3 months.",
+    "es": "Planifique una visita de seguimiento en 3 meses.",
+    "de": "Vereinbaren Sie einen Nachuntersuchungstermin in 3 Monaten.",
+    "ro": "Aranjați o vizită de urmărire a tratamentului în 3 luni."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "* For patients who met their individualised BP Goals, arrange a follow-up visit within three months. \n* Renal function should be frequently assessed to detect possible increases in serum creatinine and reductions in eGFR as a result of BP-related reductions in renal perfusion.",
+    "es": "* En los pacientes que alcanzaron el objetivo individualizado de TA, planifique una visita de seguimiento en tres meses.\n* La función renal debe evaluarse con frecuencia para detectar posibles aumentos en la creatinina sérica y reducciones en eGFR como resultado de reducciones DE perfusión renal relacionadas con la TA.",
+    "de": "* Für Patienten, die ihre individualisierten RR-Ziele erreicht haben, vereinbaren Sie einen Kotrolltermin in drei Monaten.\n* Die Nierenfunktion sollte häufig bewertet werden, um mögliche Erhöhungen des Serumkreatinins und die Verringerung der eGFR infolge einer RR-bedingten Verringerung der Nierenperfusion nachzuweisen.",
+    "ro": "* Pentru pacienții care și-au îndeplinit obiectivele de tensiune arterială individualizate, organizați o vizită de urmărire în termen de trei luni.\n* Funcția renală trebuie evaluată frecvent pentru a detecta posibile creșteri ale creatininei serice și reduceri ale ratei estimate de filtrare glomerurală ca urmare a reducerilor tensiunii de perfuzie renală."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.3.2, Table 1 and Table 2",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 12.3.2, Tabla 1 y Tabla 2",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.3.2, Tabelle 1 und Tabelle 2",
+      "ro": "Ghidul holistic al celor mai bune practici centrate pe pacient, Capitolul 12.3.2, Tabelul 1 și Tabelul 2"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider checking lab tests for eGFR and serum creatinine and setting a follow-up appointment within three months.",
+        "es": "Considere verificar eGFR y creatinina sérica en las pruebas de laboratorio y establecer una cita de seguimiento dentro de los tres meses.",
+        "de": "Überprüfen Sie Labortests für eGFR- und Serum-Kreatinin und vereinbaren Sie einen Kontrolltermin in drei Monaten.",
+        "ro": "Luați în considerare verificarea testelor de laborator pentru eGFR și creatinină serică și stabilirea unei întâlniri de urmărire în termen de trei luni."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment after 3 months for follow-up evaluation of adherence and response to treatment.",
+            "es": "Considere establecer una cita de seguimiento después de 3 meses para evaluar la adherencia y la respuesta al tratamiento.",
+            "de": "Vereinbaren Sie einen Kontrolltermin nach 3 Monaten, um den Behandlungserfolg und das Ansprechen auf die Behandlung zu überprüfen.",
+            "ro": "Luați în considerare stabilirea unei întâlniri de urmărire după 3 luni pentru evaluarea de urmărire a aderenței și răspunsului la tratament."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment after 3 months for follow-up evaluation of adherence and response to treatment",
+                  "es": "Cita de seguimiento después de 3 meses para la evaluación de la adherencia y la respuesta al tratamiento.",
+                  "de": "Vereinbaren Sie einen Kontrolltermin nach 3 Monaten, um den Behandlungserfolg und das Ansprechen auf die Behandlung zu überprüfen.",
+                  "ro": "Vizită de urmărire la 3 luni pentru evaluarea aderenței și răspunsului la tratament."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment after 3 months for follow-up evaluation of adherence and response to treatment.",
+              "es": "Cita de seguimiento después de 3 meses para la evaluación de la adherencia y la respuesta al tratamiento.",
+              "de": "Vereinbaren Sie einen Kontrolltermin nach 3 Monaten, um den Behandlungserfolg und das Ansprechen auf die Behandlung zu überprüfen.",
+              "ro": "Vizită de urmărire la 3 luni pentru evaluarea aderenței și răspunsului la tratament."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus3Months}}"
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a serum creatinine test to assess renal function.",
+            "es": "Considere solicitar un análisis de creatinina sérica para evaluar la función renal.",
+            "de": "Erwägen Sie, einen Serum -Kreatinin -Test durchzuführen, um die Nierenfunktion zu bewerten.",
+            "ro": "Luați în considerare analiza de creatinină serică pentru a evalua funcția renală."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Serum creatinine test",
+                  "es": "Prueba de creatinina sérica",
+                  "de": "Serumkreatinin -Test",
+                  "ro": "Test de creatinină serică"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus3Months}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2160-0",
+                  "display": {
+                    "en": "Creatinine [Mass/volume] in Serum or Plasma",
+                    "es": "Creatinina [masa/volumen] en suero o plasma",
+                    "de": "Kreatinin [Masse/Volumen] im Serum oder Plasma",
+                    "ro": "Creatinină [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have serum creatinine before the control visit",
+                "es": "Tener creatinina sérica antes de la visita de control",
+                "de": "Serumkreatinin-Bestimmung vor dem Kontrollbesuch",
+                "ro": "Faceți analize de creatinină serică înainte de vizita de control"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering an eGFR test to assess renal function.",
+            "es": "Considere solicitar un análisis de eGFR para evaluar la función renal.",
+            "de": "Erwägen Sie, einen eGFR -Test anzuordnen, um die Nierenfunktion zu bewerten.",
+            "ro": "Luați în considerare analiza de eGFR pentru a evalua funcția renală."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "eGFR Test",
+                  "es": "Análisis de eGFR",
+                  "de": "eGFR -Test",
+                  "ro": "Test eGFR"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus3Months}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "33914-3",
+                  "display": {
+                    "en": "eGFR Test",
+                    "es": "Análisis de eGFR",
+                    "de": "eGFR -Test",
+                    "ro": "Test eGFR"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have eGFR measure before the control visit",
+                "es": "Tener una medida de eGFR antes de la visita de control",
+                "de": "eGFR -Messung vor dem Kontrollbesuch",
+                "ro": "Faceți analize a EGFR înainte de vizita de control"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

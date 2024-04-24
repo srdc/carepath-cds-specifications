@@ -1,0 +1,107 @@
+{
+  "uuid": "ckd-risk-card-5",
+  "summary": {
+    "en": "Consider a referral to Nephrologist for specialized assessment.",
+    "es": "Considere la derivación a un Nefrólogo para valoración especializada.",
+    "de": "Erwägen Sie eine Überweisung an einen Nephrologen für eine spezielle Untersuchung.",
+    "ro": "Luați în considerare o trimitere la Nefrolog pentru consult de specialitate."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Accelerated progression of CKD can be considered a sustained decrease in GFR of 25% or more and a change in GFR category within 12 months, or a sustained decrease in GFR of 15 ml/min/1.73 m2 per year.",
+    "es": "La progresión acelerada de la ERC puede ser considerada como una disminución mantenida de FG del 25% o más o un cambio en la categoría de FG en 12 meses, o una disminución mantenida de FG de 15ml/min/1,73m2 al año.",
+    "de": "Als beschleunigtes Fortschreiten der chronischen Nierenerkrankung gilt eine anhaltende Abnahme der GFR um 25 % oder mehr und eine Änderung der GFR-Kategorie innerhalb von 12 Monaten oder eine anhaltende Abnahme der GFR um 15 ml/min/1,73 m2 pro Jahr.",
+    "ro": "Progresia accelerată a BCR poate fi considerată o scădere susținută în scăderi ale eGFR peste 25% sau mai mult și o schimbare a categorier eGFR în ultimile 12 luni, sau o scădere susținută a eGFR de 15mL/min/1.73 m2 pe an."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.2 [pp. 56]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.2 [pp. 56]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.2 [PP. 56]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.2 [pp. 56]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to Nephrologist for specialized assessment",
+        "es": "Considere la derivación a un Nefrólogo para valoración especializada.",
+        "de": "Erwägen Sie eine Überweisung an einen Nephrologen für eine spezielle Untersuchung.",
+        "ro": "Luați în considerare o trimitere la Nefrolog pentru consult de specialitate"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Nephrologist for specialized assessment",
+            "es": "Considere la derivación a un Nefrólogo para valoración especializada.",
+            "de": "Erwägen Sie eine Überweisung an einen Nephrologen für eine spezielle Untersuchung.",
+            "ro": "Luați în considerare o trimitere la Nefrolog pentru consult de specialitate"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Nephrologist",
+                  "es": "Derivación a un Nefrólogo para valoración especializada.",
+                  "de": "Überweisung an einen Nephrologen",
+                  "ro": "Trimitere la Nefrolog"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "11911009",
+                  "display": {
+                    "en": "Nephrologist",
+                    "es": "Nefrólogo",
+                    "de": "Nephrologe",
+                    "ro": "Nefrolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Nephrologist for specialized assessment",
+                "es": "Derivación a un Nefrólogo para valoración especializada.",
+                "de": "Überweisung an einen Nephrologen zur fachlichen Beurteilung",
+                "ro": "Trimitere pacient la nefrolog pentru consult de specialitate"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

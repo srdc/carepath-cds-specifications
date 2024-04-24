@@ -1,0 +1,76 @@
+{
+  "uuid": "{{conceptId}}",
+  "summary": "",
+  "indicator": "no-show",
+  "detail": "",
+  "source": {
+    "label": "",
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": "",
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": "",
+          "resource": {
+            "resourceType": "Condition",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "{{conceptId}}"
+                }
+              ]
+            },
+            "clinicalStatus": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                  "code": "active",
+                  "display": "Active"
+                }
+              ]
+            },
+            "verificationStatus": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                  "code": "confirmed",
+                  "display": "Confirmed"
+                }
+              ]
+            },
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/condition-category",
+                    "code": "diagnosis",
+                    "display": "Diagnosis"
+                  }
+                ]
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "{{system}}",
+                  "code": "{{code}}",
+                  "display": "{{display}}"
+                }
+              ]
+            },
+            "recordedDate": "{{today}}",
+            "onsetDateTime": "{{today}}"
+          }
+        }
+      ]
+    }
+  ]
+}

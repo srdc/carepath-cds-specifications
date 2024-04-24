@@ -1,0 +1,57 @@
+{
+  "uuid": "copd-severity",
+  "summary": "",
+  "indicator": "no-show",
+  "detail": "",
+  "source": {
+    "label": "",
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": "",
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": "",
+          "resource": {
+            "resourceType": "Observation",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "COPDSeverity"
+                }
+              ]
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/observation-code",
+                  "code": "copd-severity",
+                  "display": "COPD Severity"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "effectiveDateTime": "{{today}}",
+            "valueBoolean": true,
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/copd-severity",
+                  "code": "{{code}}",
+                  "display": "{{display}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

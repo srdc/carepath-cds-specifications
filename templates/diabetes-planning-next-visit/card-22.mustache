@@ -1,0 +1,279 @@
+{
+  "uuid": "diabetes-planning-next-visit-card-22",
+  "summary": {
+    "en": "Arrange a follow-up visit in 6 months.",
+    "es": "Organice una visita de seguimiento en 6 meses.",
+    "de": "Vereinbaren Sie einen Folgebesuch in 6 Monaten.",
+    "ro": "Aranjați un recontrol în 6 luni."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Measure HbA1c levels in adults with type 2 diabetes every 6 months once the HbA1c level and blood glucose lowering therapy are stable. Discuss and agree an individual HbA1c target with patients and caregivers.",
+    "es": "Medir los niveles de HbA1c en adultos con diabetes tipo 2 cada 6 meses, una vez que el nivel de HbA1c y el tratamiento hipoglucemiante se hayan estabilizado. Discutir y acordar un objetivo individual de HbA1c con los pacientes y sus cuidadores.",
+    "de": "Messen Sie den HbA1c-Spiegel bei Erwachsenen mit Typ-2-Diabetes alle 6 Monate, sobald der HbA1c-Spiegel und die blutzuckersenkende Therapie stabil sind. Besprechen und vereinbaren Sie ein individuelles HbA1c-Ziel mit Patienten und Pflegepersonal.",
+    "ro": "Măsurați nivelurile de HbA1c la adulții cu diabet zaharat de tip 2 la fiecare 6 luni până când HbA1c se stabilizeaza sub un protocol terapeutic nemodificat. Discutați și cădeți de acord asupra unei  valori țintă de HbA1c cu pacienții și îngrijitorii."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 48]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 48]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 48]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 48]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider planning a follow-up visit in adults with type 2 diabetes.",
+        "es": "Considere planificar una visita de seguimiento en adultos con diabetes tipo 2.",
+        "de": "Erwägen Sie, einen Nachsorgebesuch bei Erwachsenen mit Typ-2-Diabetes zu planen.",
+        "ro": "Luați în considerare planificarea recontrolului la fiecare 3 luni pentru adulții cu diabet de tip 2."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to follow HbA1c levels in 6 months.",
+            "es": "Considere establecer una cita de seguimiento para control del nivel de HbA1C en 6 meses.",
+            "de": "Erwägen Sie, einen Folgetermin festzulegen, um den HbA1c-Spiegel in 6 Monaten zu verfolgen.",
+            "ro": "Luați în considerare stabilirea recontrol pentru urmarirea nivelurilor de HbA1c în 6 luni."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to follow HbA1c levels after 6 months.",
+                  "es": "Cita de seguimiento para control del nivel de HbA1C tras 6 meses.",
+                  "de": "Nachsorgetermin zur Überwachung des HbA1c-Spiegels nach 6 Monaten.",
+                  "ro": "Stabilirea recontroalelor ulterioare pentru masurarea nivelurile HbA1c după 6 luni."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to follow HbA1c levels after 6 months.",
+              "es": "Cita de seguimiento para control del nivel de HbA1C tras 6 meses.",
+              "de": "Nachsorgetermin zur Überwachung des HbA1c-Spiegels nach 6 Monaten.",
+              "ro": "Stabilirea recontroalelor ulterioare pentru masurarea nivelurile HbA1c după 6 luni."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus6Months}}"
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Create an order for HbA1c test",
+            "es": "Crear una petición para la prueba de HbA1c",
+            "de": "Veranlassen Sie einen HbA1c-Test",
+            "ro": "Creați o comandă pentru testul HbA1c"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "HbA1c test",
+                  "es": "Prueba de HbA1c",
+                  "de": "HbA1c-Test",
+                  "ro": "Testarea HbA1c"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus6Weeks}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Petición de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "4548-4",
+                  "display": {
+                    "en": "Hemoglobin A1c/Hemoglobin.total in Blood",
+                    "es": "Hemoglobina A1c/Hemoglobina total en sangre",
+                    "de": "Hämoglobin A1c/Hämoglobin.total im Blut",
+                    "ro": "Hemoglobină A1c/hemoglobină totală în sânge"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have HbA1c test before the control visit",
+                "es": "Hacer la prueba de HbA1c antes de la visita de control",
+                "de": "Lassen Sie sich vor dem Kontrollbesuch auf HbA1c testen",
+                "ro": "Efectuați/testarea HbA1c înainte de recontrol"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Create an order for Fasting Glucose test",
+            "es": "Crear una petición de Prueba de glucosa en ayunas",
+            "de": "Veranlassen Sie einen Nüchternglukosetest",
+            "ro": "Creați o comandă pentru testul de glucoză bazală"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Fasting glucose test",
+                  "es": "Prueba de glucosa en ayunas",
+                  "de": "Nüchtern-Glukose-Test",
+                  "ro": "Testarea glucozei bazale"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus6Weeks}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Petición de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "1558-6",
+                  "display": {
+                    "en": "Fasting Glucose",
+                    "es": "Glucosa en ayunas",
+                    "de": "Nüchternglukose",
+                    "ro": "Glucoza a jeun"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Fasting Glucose test before the control visit",
+                "es": "Tener una prueba de glucosa en ayunas antes de la visita de control",
+                "de": "Lassen Sie vor dem Kontrollbesuch einen Nüchternglukosetest durchführen",
+                "ro": "Efectuați testarea glucozei bazale înainte de recontrol"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Create an order for eGFR test",
+            "es": "Crear una petición de prueba de eGFR",
+            "de": "Veranlassen Sie einen eGFR-Test",
+            "ro": "Creați o comandă pentru testul rata filtrării glomerulare (eGFR)"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "eGFR test",
+                  "es": "Prueba de eGFR",
+                  "de": "eGFR-Test",
+                  "ro": "Testarea rata filtrării glomerulare (eGFR)"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus6Weeks}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Petición de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "33914-3",
+                  "display": {
+                    "en": "eGFR Test",
+                    "es": "Prueba de eGFR",
+                    "de": "eGFR-Test",
+                    "ro": "Testarea rata filtrării glomerulare (eGFR)"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have eGFR test before the control visit",
+                "es": "Tener una prueba eGFR antes de la visita de control",
+                "de": "Lassen Sie sich vor dem Kontrollbesuch einen eGFR-Test unterziehen",
+                "ro": "Faceți testul rata filtrării glomerulare (eGFR) înainte de recontrol"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

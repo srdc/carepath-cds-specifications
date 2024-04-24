@@ -1,0 +1,134 @@
+{
+  "uuid": "hypertension-lifestyle-card-9",
+  "summary": {
+    "en": "Weight Loss advice for hypertensive patients.",
+    "es": "Consejos de pérdida de peso para pacientes hipertensos.",
+    "de": "Gewichtsreduktion für hypertensive Patienten empfehlen.",
+    "ro": "Sfaturi pentru pierderea în greutate pentru pacienții hipertensivi."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Weight loss is recommended to reduce BP in adults with elevated BP or hypertension who are overweight or obese.",
+    "es": "Se recomienda la pérdida de peso para reducir la TA en adultos con TA elevada o hipertensión que tienen sobrepeso u obesidad.",
+    "de": "Gewichtsreduktion wird empfohlen, um RR bei Erwachsenen mit erhöhtem Blutdruck oder Bluthochdruck zu reduzieren, die übergewichtig oder fettleibig sind.",
+    "ro": "Pierderea în greutate este recomandată pentru a reduce tensiunea arterială la adulții cu tensiune normal-ridicată sau hipertensiune arterială, care sunt supraponderali sau obezi."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.3.1 [pp. 41]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 12.3.1 [pp. 41]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.3.1 [S. 41]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.3.1 [pp. 41]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider setting a Goal for weight loss in case it works for the patient.",
+        "es": "Considere establecer un objetivo para la pérdida de peso.",
+        "de": "Erwägen Sie, ein Ziel für die Gewichtsreduktion festzulegen, falls es für den Patienten funktioniert.",
+        "ro": "Luați în considerare stabilirea unui obiectiv pentru pierderea în greutate în cazul în care este posibil pentru pacient."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Set weight loss goal.",
+            "es": "Establecer el objetivo de pérdida de peso.",
+            "de": "Gewichtsreduktionsziel setzen.",
+            "ro": "Obiectiv de pierdere în greutate."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalWeight"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Reduce weight",
+                  "es": "Reducir peso",
+                  "de": "Gewicht reduzieren",
+                  "ro": "Reducerea greutății"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Reduce weight",
+                "es": "Reducir peso",
+                "de": "Gewicht reduzieren",
+                "ro": "Reducerea greutății"
+              },
+              "coding": [
+                {
+                  "system": "http://www.kroniq.srdc.com.tr/fhir/ValueSet/goal-code",
+                  "code": "g0013",
+                  "display": {
+                    "en": "Reduce weight",
+                    "es": "Reducir peso",
+                    "de": "Gewicht reduzieren",
+                    "ro": "Reducerea greutății"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "29463-7",
+                      "display": {
+                        "en": "Weight",
+                        "es": "Peso",
+                        "de": "Gewicht",
+                        "ro": "Greutate"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{targetDueDate}}",
+                "detailRange": {
+                  "low": {
+                    "value": "{{weightTargetLow}}",
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                  },
+                  "high": {
+                    "value": "{{weightTargetHigh}}",
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

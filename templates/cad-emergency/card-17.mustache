@@ -1,0 +1,90 @@
+{
+  "uuid": "cad-emergency-card-17",
+  "summary": {
+    "en": "Consider a Referral to emergency department (A&E) if sysmptoms remain for angina.",
+    "es": "Considerar una derivación al Servicio de Urgencias (SU) si persisten síntomas anginosos.",
+    "de": "Ziehen Sie eine Überweisung in die Notaufnahme in Betracht, wenn weiterhin Symptome einer Angina pectoris bestehen.",
+    "ro": "Luați în considerare trimiterea pacientului la UPU dacă persistă angina."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Consider a Referral to emergency department (A&E) if sysmptoms remain for angina.",
+    "es": "Considerar una derivación al Servicio de Urgencias (SU) si persisten síntomas anginosos.",
+    "de": "Ziehen Sie eine Überweisung in die Notaufnahme in Betracht, wenn weiterhin Symptome einer Angina pectoris bestehen.",
+    "ro": "Luați în considerare trimiterea pacientului la UPU dacă persistă angina."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 10.1 [pp. 34]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 10.1 [pp. 34]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 10.1 [PP. 34]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 10.1 [pp. 34]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to emergency department (A&E) if sysmptoms remain for angina.",
+        "es": "Considerar una derivación al Servicio de Urgencias (SU) si persisten síntomas anginosos.",
+        "de": "Ziehen Sie eine Überweisung in die Notaufnahme in Betracht, wenn weiterhin Symptome einer Angina pectoris bestehen.",
+        "ro": "Luați în considerare trimiterea pacientului la UPU dacă persistă angina."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Refer patient to emergency department (A&E) if sysmptoms remain for angina",
+            "es": "Derivar al paciente al Servicio de Urgencias (SU) si persisten síntomas anginosos.",
+            "de": "Überweisung in die Notaufnahme, wenn weiterhin Symptome einer Angina pectoris bestehen.",
+            "ro": "Trimiteți pacientul la UPU dacă persistă angina."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist or emergency services",
+                  "es": "Derivar a un especialista o servicios de emergencia",
+                  "de": "Überweisung an einen Spezialisten oder einen Rettungsdienst",
+                  "ro": "Trimitere la un specialist sau servicii de urgență"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Refer patient to emergency department (A&E) if sysmptoms remain for angina",
+                "es": "Derivar al paciente al Servicio de Urgencias (SU) si persisten síntomas anginosos.",
+                "de": "Überweisung in die Notaufnahme, wenn weiterhin Symptome einer Angina pectoris bestehen.",
+                "ro": "Trimiteți pacientul la UPU dacă persistă angina."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

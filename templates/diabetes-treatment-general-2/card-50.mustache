@@ -1,0 +1,104 @@
+{
+  "uuid": "diabetes-treatment-general-card-50",
+  "summary": {
+    "en": "Consider referral to an ophthalmologist for emergency review.",
+    "es": "Considerar la derivación a un oftalmólogo para revisión de urgencia.",
+    "de": "Erwägen Sie die Überweisung an einen Augenarzt zur Notfallüberprüfung.",
+    "ro": "Luați în considerare trimiterea la un oftalmolog pentru o evaluare de urgență."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Arrange an emergency review by an ophthalmologist for sudden loss of vision or visual acuity reduction or flashes.",
+    "es": "Solicite una revisión urgente por un oftalmólogo en caso de pérdida repentina de visión o reducción de la agudeza visual o destellos.",
+    "de": "Vereinbaren Sie eine Notfalluntersuchung durch einen Augenarzt bei plötzlichem Verlust des Sehvermögens oder Visusminderung oder Blitzen.",
+    "ro": "Aranjați o evaluare de urgență de către un oftalmolog pentru pierderea bruscă a vederii, reducerea acesteia sau alte complicații."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 52]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 52]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 52]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 52]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to an ophthalmologist for emergency review",
+        "es": "Considerar la derivación a un oftalmólogo para una revisión de urgencia",
+        "de": "Erwägen Sie die Überweisung an einen Augenarzt zur Notfalluntersuchung",
+        "ro": "Luați în considerare trimiterea la un oftalmolog pentru o evaluare de urgență"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to ophthalmologist for emergency review",
+            "es": "Considerar la derivación a un oftalmólogo para una revisión de urgencia",
+            "de": "Erwägen Sie eine Überweisung an einen Augenarzt zur Notfallüberprüfung",
+            "ro": "Luați în considerare o trimitere la oftalmolog pentru o evaluare de urgență"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to ophthalmologist for emergency review",
+                  "es": "Derivación al oftalmólogo para revisión de urgencia",
+                  "de": "Überweisung an einen Augenarzt zur Notfalluntersuchung",
+                  "ro": "Recomandare la oftalmolog pentru o evaluare de urgență"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "28229004",
+                  "display": {
+                    "en": "Optometrist",
+                    "es": "Optometrista",
+                    "de": "Augenoptiker",
+                    "ro": "Optometrist"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to ophthalmologist for emergency review",
+                "es": "Derivación al oftalmólogo para revisión de urgencia",
+                "de": "Überweisung an einen Augenarzt zur Notfalluntersuchung",
+                "ro": "Recomandare la oftalmolog pentru o evaluare de urgență"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "uuid": "mci-md-general-recommendation-card-20",
+  "summary": {
+    "en": "Plan for ADL and consider referral for occupational theraphy, if available.",
+    "es": "Planifique actividades de la vida diaria y considere derivar a terapia ocupacional, si es posible.",
+    "de": "Planen Sie für ADL (activity of daily life = Aktivitäten im täglichen Leben)  und berücksichtigen Sie die Überweisung an den Ergotherapeuten, falls verfügbar.",
+    "ro": "Planificați activitățile de trai zilnic (ADL) și luați în considerare trimiterea la terapie profesională, dacă este disponibilă."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Plan for ADL in a way that maximises independent activity, enhances function, helps to adapt and develop skills, and minimises the need for support. Facilitate functioning and participation in the community involving people and their carers in planning and implementation of these interventions. Assist in liaison with available social resources. Advise recreational activities tailored to severity of cognitive impairment. Refer for occupational therapy, if available.",
+    "es": "Planifique actividades de la vida diaria de manera que maximicen la actividad independiente, mejore la función, ayude a adaptar y desarrollar habilidades, y minimice la necesidad de apoyos. Facilite la intervención y la participación en la comunidad implicando a pacientes y cuidadores en la planificación e implementación de estas intervenciones. Asesore en las actividades recreativas adaptadas a la severidad del deterioro cognitivo. Derive a terapia ocupacional, si es posible.",
+    "de": "Planen Sie ADL in einer Weise, die die unabhängige Aktivität maximiert, die Funktion verbessert, die Fähigkeiten anpasst und entwickelt und die Notwendigkeit einer Unterstützung minimiert. Erleichterung der Funktionsweise und Teilnahme an der Gemeinschaft, bei der Menschen und ihre Betreuer in die Planung und Umsetzung dieser Interventionen einbezogen werden. Unterstützung in Verbindung mit verfügbaren sozialen Ressourcen. Beratung bezüglich Freizeitaktivitäten - wenn verfügbar, die auf die Schwere der kognitiven Beeinträchtigung zugeschnitten sind. ",
+    "ro": "Planificați activitățile de trai zilnic (ADL) într -un mod care maximizează activitatea independentă, îmbunătățește funcțiile, ajută la adaptarea și dezvoltarea abilităților și minimizează nevoia de sprijin. Facilitați funcționarea și participarea în comunitatea care implică pacienții și îngrijitorii lor în planificarea și implementarea acestor intervenții. Asistați la legătura cu resursele sociale disponibile. Recomandați activități recreative adaptate la severitatea deficienței cognitive. Recomandați terapia ocupațională, dacă este disponibil."
+  },
+  "source": {
+    "label": {
+      "en": "* Holistic patient-centred CAREPATH best practice guideline, Chapter 5.3.1 [pp. 21]\n* World Health Organization. mhGAP Intervention Guide for Mental, Neurological and Substance Use Disorders in Non-Specialized Health Settings: Mental Health Gap Action Programme (mhGAP) - Version 2.0 [Internet]. Geneva; 2019. Available from: https://www.who.int/publications/i/item/9789241549790",
+      "es": "* Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 5.3.1 [pp. 21] \n* World Health Organization. mhGAP Intervention Guide for Mental, Neurological and Substance Use Disorders in Non-Specialized Health Settings: Mental Health Gap Action Programme (mhGAP) - Version 2.0 [Internet]. Geneva; 2019. Available from: https://www.who.int/publications/i/item/9789241549790",
+      "de": "* Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 5.3.1 [PP. 21]  \n* World Health Organization. mhGAP Intervention Guide for Mental, Neurological and Substance Use Disorders in Non-Specialized Health Settings: Mental Health Gap Action Programme (mhGAP) - Version 2.0 [Internet]. Geneva; 2019. Available from: https://www.who.int/publications/i/item/9789241549790",
+      "ro": "* Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 5.3.1 [pp. 21]\n* World Health Organization. mhGAP Intervention Guide for Mental, Neurological and Substance Use Disorders in Non-Specialized Health Settings: Mental Health Gap Action Programme (mhGAP) - Version 2.0 [Internet]. Geneva; 2019. Available from: https://www.who.int/publications/i/item/9789241549790"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to an occupational therapist.",
+        "es": "Considere derivar a un terapeuta ocupacional.",
+        "de": "Erwägen Sie eine Überweisung an einen Ergotherapeuten.",
+        "ro": "Luați în considerare o trimitere la un terapeut ocupațional."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to an occupational therapist.",
+            "es": "Considere derivar a un terapeuta ocupacional.",
+            "de": "Erwägen Sie eine Überweisung an einen Ergotherapeuten.",
+            "ro": "Luați în considerare o trimitere la un terapeut ocupațional."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a occupational therapist",
+                  "es": "Derivación a un terapeuta ocupacional",
+                  "de": "Überweisung an einen Ergotherapeuten",
+                  "ro": "Trimitere la un terapeut ocupațional"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "80546007",
+                  "display": {
+                    "en": "Occupational therapist",
+                    "es": "Terapeuta ocupacional",
+                    "de": "Ergotherapeut/in",
+                    "ro": "Terapeut ocupațional"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to occupational therapist for in-depth assessment and management.",
+                "es": "Derivación al terapeuta ocupacional para una evaluación y manejo en profundidad.",
+                "de": "Überweisung an den Ergotherapeuten zur eingehenden Bewertung und Behandlung.",
+                "ro": "Trimitere la terapeut ocupațional pentru evaluare și gestionare aprofundată."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

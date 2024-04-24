@@ -1,0 +1,104 @@
+{
+  "uuid": "cad-diagnosis-card-3",
+  "summary": {
+    "en": "Invasive coronary angiography is recommended as an alternative test to diagnose CAD in high-risk patients.",
+    "es": "La angiografía coronaria invasiva se recomienda como prueba alternativa para diagnosticar EAC en pacientes de alto riesgo.",
+    "de": "Die invasive Koronarangiographie wird als alternativer Test zur Diagnose von KHK bei Hochrisikopatienten empfohlen.",
+    "ro": "Coronarografia este recomadată ca o alternativă de test diagnostic pentru boală arteriala coronariană (CAD) la pacienții cu multipli factori de risc."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Invasive coronary angiography is recommended as an alternative test to diagnose CAD in patients with a high clinical likelihood, severe symptoms refractory to medical therapy or typical angina at a low level of exercise, and clinical evaluation that indicates high event risk.",
+    "es": "La angiografía coronaria invasiva se recomienda como prueba alternativa para diagnosticar EAC en pacientes con alta probabilidad clínica, síntomas severos refractarios a tratamiento médico o angina típica con ejercicio físico ligero, y evaluación clínica que indica alto riesgo de eventos.",
+    "de": "Eine invasive Koronarangiographie wird als alternativer Test zur Diagnose einer KHK bei Patienten mit hoher klinischer Wahrscheinlichkeit, schweren Symptomen, die auf eine medikamentöse Therapie nicht ansprechen, oder typischer Angina pectoris bei geringer Belastung und einer klinischen Bewertung, die auf ein hohes Ereignisrisiko hinweist, empfohlen.",
+    "ro": "Coronarografia este recomadată ca o alternativă de test diagnostic pentru boală arteriala coronariană (CAD) la pacienții cu multipli factori de risc, simptome severe refractare la terapia medicamentoasă sau la angina stabilă la efort mic și evaluări clinice ce sugerează un eveniment ischemic major."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 10.1 [pp. 34]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 10.1 [pp. 34]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 10.1 [PP. 34]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 10.1 [pp. 34]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to Cardiologist for invasive coronary angiography.",
+        "es": "Considerar derivar a un Cardiólogo para angiografía coronaria invasiva.",
+        "de": "Ziehen Sie eine Überweisung zum Kardiologen für eine invasive Koronarangiographie in Betracht.",
+        "ro": "Luați în considerare o trimitere către cardiolog pentru o coronarografie."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Cardiologist for invasive coronary angiography",
+            "es": "Considerar derivar a un Cardiólogo para angiografía coronaria invasiva.",
+            "de": "Ziehen Sie eine Überweisung zum Kardiologen für eine invasive Koronarangiographie in Betracht.",
+            "ro": "Trimitere către cardiolog pentru o coronarografie."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Cardiologist",
+                  "es": "Derivar al cardiólogo",
+                  "de": "Überweisung an den Kardiologen",
+                  "ro": "Trimitere la cardiolog"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17565000",
+                  "display": {
+                    "en": "Cardiologist",
+                    "es": "Cardiólogo",
+                    "de": "Kardiologe",
+                    "ro": "Cardiolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Cardiologist for invasive coronary angiography",
+                "es": "Derivación a Cardiólogo para angiografía coronaria invasiva.",
+                "de": "Überweisung zum Kardiologen für eine invasive Koronarangiographie",
+                "ro": "Trimitere către cardiolog pentru o coronarografie."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

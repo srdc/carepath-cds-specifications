@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-referral-management-card-17",
+  "summary": {
+    "en": "Consider Referral for detailed assessment of the need for Non-invasive mechanical ventilation.",
+    "es": "Considerar la derivación para una evaluación detallada de la necesidad de ventilación mecánica no invasiva.",
+    "de": "Erwägen Sie die Überweisung für eine detaillierte Bewertung des Bedarfs an nicht-invasiver mechanischer Beatmung",
+    "ro": "Luați în considerare trimiterea pentru evaluarea detaliată a necesității ventilației mecanice neinvazive."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "* Consider Non-invasive mechanical ventilation when: \na. Respiratory acidosis (pH ≤ 7.35 or partial pressure of carbon dioxide ≥45 mm Hg)\nb. Severe dyspnoea with signs of respiratory muscle fatigue such as use of accessory muscle, paradoxical motion of abdomen, or retraction of the intercostal spaces, especially in the presence of thoracical deformation.\nc. Persistent hypoxemia despite adequate oxygen supply.\n* Consider Referral for assessing the need for Non-invasive mechanical ventilation.",
+    "es": "* Considerar la ventilación mecánica no invasiva cuando: \na. Acidosis respiratoria (pH ≤ 7,35 o presión parcial de dióxido de carbono ≥45 mm Hg).\nb. Disnea grave con signos de fatiga de la musculatura respiratoria como uso de musculatura accesoria, movimiento paradójico del abdomen o retracción de los espacios intercostales, especialmente en presencia de deformación torácica.\nc. Hipoxemia persistente a pesar de un aporte adecuado de oxígeno.\n* Considerar la derivación para valorar la necesidad de ventilación mecánica no invasiva.",
+    "de": "* Erwägen Sie die nicht-invasive mechanische Beatmung, wenn:\nA. respiratorische Azidose (pH ≤ 7,35 oder Partialdruck von Kohlendioxid ≥ 45 mm Hg)\nB. Schwere Dyspnoe mit Anzeichen einer Atemmuskelermüdung wie der Verwendung von Atemhilfsmuskeln, der paradoxen Bewegung von Bauch oder Einzug der Interkostalräume, insbesondere bei einer thorakalen Deformation.\nC. Persistente Hypoxämie trotz angemessener Sauerstoffversorgung.\n* Erwägen Sie die Überweisung zur Bewertung der Notwendigkeit einer nicht-invasiven mechanischen Beatmung.",
+    "ro": "* Luați în considerare ventilația mecanică non-invazivă în cazul în care există:\nA. Acidoză respiratorie (pH ≤ 7,35 sau presiune parțială a dioxidului de carbon ≥45 mm Hg)\nb. Dispnee severă cu semne de oboseală a musculaturii respiratorii, cum ar fi utilizarea mușchilor accesorii, mișcări abdominale paroxistice sau retragerea spațiilor intercostale, în special în prezența deformării toracice.\nC. Hipoxemie persistentă, în ciuda aprovizionării adecvate cu oxigen.\n* Luați în considerare trimiterea pentru evaluarea nevoii de ventilație mecanică neinvazivă."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 67]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 67]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 67]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 67]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to Pneumologist for detailed assessment of the need for Non-invasive mechanical ventilation.",
+        "es": "Considere la derivación al neumólogo para una evaluación detallada de la necesidad de ventilación mecánica no invasiva.",
+        "de": "Erwägen Sie die Überweisung an den Pneumologen für eine detaillierte Bewertung des Bedarfs an nicht-invasiver mechanischer Beatmung.",
+        "ro": "Luați în considerare trimiterea către pneumolog pentru evaluarea detaliată a necesității ventilației mecanice neinvazive."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for detailed assessment of the need for Non-invasive mechanical ventilation.",
+            "es": "Considerar la derivación para una evaluación detallada de la necesidad de ventilación mecánica no invasiva.",
+            "de": "Erwägen Sie die Überweisung für eine detaillierte Bewertung des Bedarfs an nicht-invasiver mechanischer Belatmung.",
+            "ro": "Luați în considerare trimiterea pentru evaluarea detaliată a necesității ventilației mecanice neinvazive."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for detailed assessment of the need for Non-invasive mechanical ventilation",
+                  "es": "Derivación para una evaluación detallada de la necesidad de ventilación mecánica no invasiva",
+                  "de": "Überweisung zur detaillierten Bewertung der Notwendigkeit einer nicht-invasiven mechanischen Beatmung",
+                  "ro": "Recomandare pentru evaluarea detaliată a nevoii de ventilație mecanică neinvazivă"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Pneumologist for detailed assessment of the need for Non-invasive mechanical ventilation",
+                "es": "Derivación al neumólogo para una evaluación detallada de la necesidad de ventilación mecánica no invasiva",
+                "de": "Überweisung an den Pneumologen für eine detaillierte Bewertung der Notwendigkeit einer nicht-invasiven mechanischen Belüftung",
+                "ro": "Recomandare către pneumolog pentru evaluarea detaliată a necesității de ventilație mecanică neinvazivă"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

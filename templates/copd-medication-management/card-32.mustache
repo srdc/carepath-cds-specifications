@@ -1,0 +1,213 @@
+{
+  "uuid": "copd-medication-management-card-32",
+  "summary": {
+    "en": "Consider therapy for fatigue.",
+    "es": "Considere la terapia para la fatiga.",
+    "de": "Erwägen Sie eine Therapie gegen Müdigkeit.",
+    "ro": "Luați în considerare terapia pentru oboseală."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Fatigue can be improved by self-management education, pulmonary rehabilitation, and mind-body interventions.",
+    "es": "La fatiga puede mejorarse mediante la educación para el autocontrol, la rehabilitación pulmonar y las intervenciones cuerpo-mente.",
+    "de": "Müdigkeit kann durch Selbsthilfeschulung, Lungenrehabilitation und psychosomatische Interventionen verbessert werden.",
+    "ro": "Oboseala poate fi îmbunătățită prin educația de autogestionare, reabilitarea pulmonară și intervențiile minții-corp."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.2 [pp. 67]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.2 [pp. 67]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.2 [S. 67]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.2 [pp. 67]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Consider self-management education, pulmonary rehabilitation, and mind-body interventions.",
+        "es": "Considere la educación para el autocontrol, la rehabilitación pulmonar y las intervenciones cuerpo-mente.",
+        "de": "Erwägen Sie Selbsthilfeschulung, Lungenrehabilitation und psychosomatische Interventionen.",
+        "ro": "Luați în considerare educația de autogestionare, reabilitarea pulmonară și intervențiile minții-corp."
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Give education material on self-management of COPD.",
+            "es": "Entregar material educativo sobre el autocontrol de la EPOC.",
+            "de": "Stellen Sie Informationsmaterial zur Selbsthilfeschulung der COPD bereit.",
+            "ro": "Oferiți materiale de educație cu privire la autogestionarea BPOC."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on self-management of COPD",
+                  "es": "Material educativo sobre el autocontrol de la EPOC.",
+                  "de": "Informationsmaterial zur Selbsthilfeschulung der COPD",
+                  "ro": "Material de educație privind autogestionarea BPOC"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/copd/living-well-with-copd/",
+                    "es": "https://www.osakidetza.euskadi.eus/kronikon-programa/-/epoc-paciente-cronico/",
+                    "de": "https://www.aok.de/pk/magazin/cms/fileadmin/pk/pdf/copd-handbuch.pdf",
+                    "ro": "https://www.reginamaria.ro/articole-medicale/bpoc-si-alimentatia"
+                  },
+                  "title": {
+                    "en": "Living well with COPD",
+                    "es": "Vivir bien con EPOC",
+                    "de": "Gut mit COPD leben",
+                    "ro": "Trăind bine cu BPOC"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Give education material on mental wellbeing and mind-body interventions.",
+            "es": "Facilitar material educativo sobre bienestar mental e intervenciones mente-cuerpo.",
+            "de": "Stellen Sie Informationsmaterial zum seelischen Wohlbefinden und zu psychosomatischen  Interventionen bereit.",
+            "ro": "Oferiți materiale de educație despre bunăstarea mentală și intervențiile minții-corp."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on mental wellbeing",
+                  "es": "Material educativo sobre bienestar mental",
+                  "de": "Informationsmaterial zum seelischen Wohlbefinden",
+                  "ro": "Material de educație privind bunăstarea mentală"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/healthy-living/mental-wellbeing/five-steps-to-mental-wellbeing",
+                    "es": "https://www.osakidetza.euskadi.eus/kronikon-programa/-/epoc-paciente-cronico/",
+                    "de": "https://www.patienten-information.de/patientenblaetter/copd-seelische-belastungen",
+                    "ro": "https://www.reginamaria.ro/articole-medicale/sanatatea-mintala-ce-este-si-cum-ne-dam-seama-cand-avem-nevoie-de-ajutor"
+                  },
+                  "title": {
+                    "en": "Five steps to mental wellbeing",
+                    "es": "La Enfermedad Pulmonar Obstructiva Crónica (EPOC)",
+                    "de": "COPD – Warum alltägliche und seelische Belastungen wichtig werden können",
+                    "ro": "Sanatatea mintala: ce este si cum ne dam seama cand avem nevoie de ajutor"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for pulmonary rehabilitation.",
+            "es": "Considerar la derivación a rehabilitación pulmonar.",
+            "de": "Erwägen Sie die Überweisung zur Lungenrehabilitation.",
+            "ro": "Luați în considerare trimiterea pentru reabilitarea pulmonară."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for pulmonary rehabilitation",
+                  "es": "Derivación para rehabilitación pulmonar",
+                  "de": "Überweisung zur Lungenrehabilitation",
+                  "ro": "Recomandare pentru reabilitare pulmonară"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for pulmonary rehabilitation",
+                "es": "Derivación para rehabilitación pulmonar",
+                "de": "Überweisung zur Lungenrehabilitation",
+                "ro": "Recomandare pentru reabilitare pulmonară"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

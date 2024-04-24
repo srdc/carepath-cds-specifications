@@ -1,0 +1,91 @@
+{
+  "uuid": "mci-md-general-recommendation-card-23",
+  "summary": {
+    "en": "Consider a personalized multicomponent sleep management approach.",
+    "es": "Considere un enfoque multicomponente y personalizado para el manejo del sueño.",
+    "de": "Erwägen Sie einen personalisierten Multikomponenten-Schlaf -Management -Ansatz.",
+    "ro": "Luați în considerare o abordare multicomponentă, personalizată de gestionare a somnului."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "For older adults living with MCI or mild dementia who have sleep problems, consider a personalized multicomponent sleep management approach that includes sleep hygiene education, exposure to daylight, exercise and personalized activities.",
+    "es": "En las personas mayores con DCL o demencia leve que tienen problemas de sueño, considere un manejo del sueño multicomponente y personalizado que incluya educación sobre higiene del sueño, exposición a la luz del día, ejercicio y actividades personalizadas.",
+    "de": "Für ältere Erwachsene, die mit MCI oder mildem Demenz leben, die Schlafprobleme haben, sollten Sie einen personalisierten Multikomponenten -Schlafmanagement -Ansatz in Betracht ziehen, der die Schulung von Schlafhygiene, Tageslicht, Bewegung und personalisierte Aktivitäten umfasst.",
+    "ro": "Pentru adulții în vârstă care trăiesc cu MCI sau demență ușoară, care au probleme de somn, luați în considerare o abordare personalizată și multicomponentă de gestionare a somnului care include educația în igiena somnului, expunerea la lumina zilei, exerciții fizice și activități personalizate."
+  },
+  "source": {
+    "label": {
+      "en": "* Holistic patient-centred CAREPATH best practice guideline, Chapter 5.3.1 [pp. 22]\n* National Institute for Health and Care Excellence. Dementia: Assessment, management and support for people living with dementia and their carers. NICE Guideline [NG97] [Internet]. London; 2018 Jun. Available from: https://www.nice.org.uk/guidance/ng97",
+      "es": "* Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 5.3.1 [pp. 22] \n* National Institute for Health and Care Excellence. Dementia: Assessment, management and support for people living with dementia and their carers. NICE Guideline [NG97] [Internet]. London; 2018 Jun. Available from: https://www.nice.org.uk/guidance/ng97",
+      "de": "* Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 5.3.1 [PP. 21]  \n* National Institute for Health and Care Excellence. Dementia: Assessment, management and support for people living with dementia and their carers. NICE Guideline [NG97] [Internet]. London; 2018 Jun. Available from: https://www.nice.org.uk/guidance/ng97",
+      "ro": "* Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 5.3.1 [pp. 22]\n* National Institute for Health and Care Excellence. Dementia: Assessment, management and support for people living with dementia and their carers. NICE Guideline [NG97] [Internet]. London; 2018 Jun. Available from: https://www.nice.org.uk/guidance/ng97"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Give educational material on sleep hygiene education.",
+        "es": "Entregue material educativo sobre educación de higiene del sueño.",
+        "de": "Geben Sie Informationsmaterial zur Schulung von Schlafhygiene.",
+        "ro": "Oferiți materiale educaționale cu privire la igiena somnului."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Give educational material on sleep hygiene education.",
+            "es": "Entregue material educativo sobre educación de higiene del sueño.",
+            "de": "Geben Sie Informationsmaterial zur Schulung von Schlafhygiene.",
+            "ro": "Oferiți materiale educaționale cu privire la igiena somnului."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on sleep hygiene",
+                  "es": "Material educativo sobre higiene del sueño",
+                  "de": "Informationsmaterial zur Schlafhygiene",
+                  "ro": "Material educative cu privire la igiena somnului"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.sleepscore.com/blog/the-importance-of-sleep-hygiene/",
+                    "es": "http://www.madrid.org/bvirtual/BVCM050390.pdf",
+                    "de": "https://www.uni-hamburg.de/campuscenter/beratung/beratungsangebote/psychologische-beratung/ressourcencafe/schlaf2.pdf",
+                    "ro": "https://www.cdt-babes.ro/articole/igiena-somnului.php"
+                  },
+                  "title": {
+                    "en": "Sleep hygiene benefits",
+                    "es": "Beneficios de la higiene del sueño",
+                    "de": "Schlafhygiene Vorteile",
+                    "ro": "Beneficiile de igienă a somnului"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

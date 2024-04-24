@@ -1,0 +1,209 @@
+{
+  "uuid": "ckd-general-recommendations-card-15",
+  "summary": {
+    "en": "Carry out testing to diagnose iron deficiency and determine potential responsiveness to iron therapy.",
+    "es": "Lleve a cabo analíticas para diagnosticar déficit de hierro y determinar la potencial respuesta al tratamiento con hierro.",
+    "de": "Durchführung von Tests zur Diagnose von Eisenmangel und zur Ermittlung des möglichen Ansprechens auf eine Eisentherapie.",
+    "ro": "Faceți investigații pentru diagnosticul anemiei feriprive și determinați răspinsul la terapia cu fier."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Carry out testing to diagnose iron deficiency and determine potential responsiveness to iron therapy and long-term iron requirements every 3 months (every 1 to 3 months for people having haemodialysis). Use a combination of transferrin saturation (&#60;20%) and serum ferritin measurement (&#60;100 mcg/L). Do not routinely measure erythropoietin levels.",
+    "es": "Lleve a cabo analíticas para diagnosticar déficit de hierro y determinar la potencial respuesta al tratamiento con hierro y los requerimientos de hierro a largo plazo cada 3 meses (cada 1 a 3 meses en personas en hemodiálisis). Use una combinación de saturación de transferrina (&#60;20%) y medición de ferritina sérica (&#60;100mcg/L). No mida de forma rutinaria los niveles de eritropoyetina.",
+    "de": "Führen Sie alle 3 Monate (bei Hämodialysepatienten alle 1 bis 3 Monate) Tests durch, um Eisenmangel zu diagnostizieren und das mögliche Ansprechen auf eine Eisentherapie sowie den langfristigen Eisenbedarf zu bestimmen. Verwenden Sie eine Kombination aus Transferrinsättigung (&#60;20%) und Serumferritinmessung (&#60;100 mcg/L). Messen Sie nicht routinemäßig den Erythropoietinspiegel.",
+    "ro": "Faceți investigații pentru diagnosticul anemiei feriprive și determinați răspinsul la terapia cu fier și reevaluați necesarul de fier odată la 3 luni (1-3 luni la pcienții cu dializă). Folosiți atât saturația transferinei (&#60;20%) cât și feritina (&#60;100 mcg/L). Nu se măsoară eritropoietina de rutină."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.1 [pp. 59]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.1 [pp. 59]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.1 [PP. 59]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.1 [pp. 59]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Perform iron studies.",
+        "es": "Realizar estudio del hierro.",
+        "de": "Bestimmung des Eisenhaushalts",
+        "ro": "Efectuați teste pentru monitorizarea metabolismului fierului"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider checking Ferritin",
+            "es": "Considerar medir ferritina.",
+            "de": "Bestimmung von Ferritin erwägen",
+            "ro": "Luați în considerare măsurarea feritinei"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Ferritin Test",
+                  "es": "Analítica con ferritina.",
+                  "de": "Ferritin-Bestimmung",
+                  "ro": "Măsurare feritină"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2276-4",
+                  "display": {
+                    "en": "Ferritin [Mass/volume] in Serum or Plasma",
+                    "es": "Ferritina (masa/volumen) en suero o plasma.",
+                    "de": "Ferritin [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "Feritină [Mas[/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Ferritin measure before the control visit",
+                "es": "Medir ferritina antes de la visita de control.",
+                "de": "Lassen Sie Ferritin vor dem Kontrollbesuch messen.",
+                "ro": "Măsurați feritina înainte de vizita de control."
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider checking Iron saturation",
+            "es": "Considerar medir saturación del hierro.",
+            "de": "Prüfung der Transferrinsättigung in Betracht ziehen",
+            "ro": "Luați în considerare măsurarea saturației cu fier"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Iron saturation Test",
+                  "es": "Analítica con ferritina",
+                  "de": "Transferrin-Sättigungstest",
+                  "ro": "Masurare saturare Fe"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "86913-1",
+                  "display": {
+                    "en": "Iron saturation goal Serum or Plasma",
+                    "es": "Objetivo de saturación de hierro Suero o Plasma",
+                    "de": "Ziel der Transferrinsättigung Serum oder Plasma",
+                    "ro": "Țintă saturație Fe în plasmă sau ser"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Iron saturation measurement before the control visit",
+                "es": "Mida la saturación de hierro antes de la visita de control",
+                "de": "Messung der Transferrinsättigung vor dem Kontrollbesuch",
+                "ro": "Măsurați saturația Fe înainte de vizita de control."
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment for monitoring Iron deficiency and determine potential responsiveness to iron therapy ",
+            "es": "Considere una cita de seguimiento para monitorizar el déficit de hierro y determinar la respuesta potencial al tratamiento con hierro.",
+            "de": "Erwägen Sie die Vereinbarung eines Nachfolgetermins zur Überwachung des Eisenmangels und zur Feststellung eines möglichen Ansprechens auf eine Eisentherapie",
+            "ro": "Luați în considerare un follow-up pentru monitorizarea deficienței de fier și determinați răspunsul la terapia cu fier."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment for  monitoring Iron deficiency and determine potential responsiveness to iron therapy",
+                  "es": "Cita de seguimiento para monitorizar el déficit de hierro y determinar la respuesta potencial al tratamiento con hierro.",
+                  "de": "Nachfolgetermins zur Überwachung des Eisenmangels und zur Feststellung eines möglichen Ansprechens auf eine Eisentherapie\"",
+                  "ro": "Follow-up pentru monitorizarea deficienței de fier și determinați răspunsul de terapia cu fier."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment for  monitoring Iron deficiency and determine potential responsiveness to iron therapy",
+              "es": "Cita de seguimiento para monitorizar el déficit de hierro y determinar la respuesta potencial al tratamiento con hierro.",
+              "de": "Nachfolgetermins zur Überwachung des Eisenmangels und zur Feststellung eines möglichen Ansprechens auf eine Eisentherapie",
+              "ro": "Follow-up pentru monitorizarea deficienței de fier și determinați răspunsul de terapia cu fier."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus1Month}}"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "uuid": "hf-diagnosis-card-2",
+  "summary": {
+    "en": "Refer people with suspected heart failure (HF) and an NTproBNP levels are between 400 and 2,000 ng/litre (47 to 236 pmol/litre) urgently to have specialist assessment and transthoracic echocardiography within 6 weeks.",
+    "es": "Derivar a pacientes con sospecha de insuficiencia cardiaca (IC) y un NT-proBNP entre 400 y 2,00ng/litro (47 a 236pmol/litro) urgentemente para valoración por especialista y ecocardiograma transtorácico en 6 semanas.",
+    "de": "Überweisen Sie Menschen mit Verdacht auf Herzinsuffizienz (HF) und einem NTproBNP-Wert zwischen 400 und 2.000 ng/Liter (47 bis 236 pmol/Liter) dringend zu einer fachärztlichen Untersuchung und transthorakalen Echokardiographie innerhalb von 6 Wochen.",
+    "ro": "Trimiteți pacienții cu suspiciune de insuficiență cardiacă și nivel seric de NTproBNP peste 2000 ng/L (236 pmol/L) de urgență la medicul specialist pentru o ecografie transtoracică în următoarele 2 săptămâni."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Refer people with suspected heart failure (HF) and an NTproBNP levels are between 400 and 2,000 ng/litre (47 to 236 pmol/litre) urgently to have specialist assessment and transthoracic echocardiography within 6 weeks.",
+    "es": "Derivar a pacientes con sospecha de insuficiencia cardiaca (IC) y un NT-proBNP entre 400 y 2,00ng/litro (47 a 236pmol/litro) urgentemente para valoración por especialista y ecocardiograma transtorácico en 6 semanas.",
+    "de": "Überweisen Sie Menschen mit Verdacht auf Herzinsuffizienz (HF) und einem NTproBNP-Wert zwischen 400 und 2.000 ng/Liter (47 bis 236 pmol/Liter) dringend zu einer fachärztlichen Untersuchung und transthorakalen Echokardiographie innerhalb von 6 Wochen.",
+    "ro": "Trimiteți pacienții cu suspiciune de insuficiență cardiacă și nivel seric de NTproBNP peste 2000 ng/L (236 pmol/L) de urgență la medicul specialist pentru o ecografie transtoracică în următoarele 2 săptămâni."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 11.1 [pp. 37]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 11.1 [pp. 37]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 11.1 [PP. 37]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 11.1 [pp. 37]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Refer to have specialist assessment and transthoracic echocardiography.",
+        "es": "Derivar para valoración por especialista y ecocardiograma transtorácico.",
+        "de": "Überweisung zur fachärztlichen Untersuchung und transthorakalen Echokardiographie",
+        "ro": "Recomandați o evaluare la medicul specialist și o ecografie transtoracică."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Refer to have specialist assessment and transthoracic echocardiography",
+            "es": "Derivar para valoración por especialista y ecocardiograma transtorácico.",
+            "de": "Überweisung zur fachärztlichen Untersuchung und transthorakalen Echokardiographie",
+            "ro": "Recomandați o evaluare la medicul specialist și o ecografie transtoracică."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Refer to have specialist assessment and transthoracic echocardiography in 6 weeks",
+                "es": "Derivar para valoración por especialista y ecocardiograma transtorácico en 6 semanas.",
+                "de": "Überweisung zur fachärztlichen Untersuchung und transthorakalen Echokardiographie in 6 Wochen",
+                "ro": "Recomandați o evaluare la medicul specialist și o ecografie transtoracică în următoarele 6 săptămâni."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

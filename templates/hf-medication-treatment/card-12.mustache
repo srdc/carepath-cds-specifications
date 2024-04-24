@@ -1,0 +1,90 @@
+{
+  "uuid": "hf-medication-treatment-card-12",
+  "summary": {
+    "en": "Refer patient to a specialist for further advice if does not respond to treatment with combination of a loop diuretic and thiazide-type diuretics.",
+    "es": "Derivar al paciente a un especialista para valoració si no responde al tratamiento combinado con diurético de asa y diurético tiazídico.",
+    "de": "Überweisen Sie den Patienten zur weiteren Beratung an einen Facharzt, wenn er nicht auf die Behandlung mit einer Kombination aus einem Schleifendiuretikum und Diuretika vom Thiazid-Typ anspricht.",
+    "ro": "Luați în considerare o trimitere la medicul specialist dacă pacientul nu răspunde la o combinație între direticile de ansă și tiazidice."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "People whose HF does not respond to this treatment will need further specialist advice.",
+    "es": "Los pacientes cuya IC no responda a este tratamiento necesitarán asesoramiento por especialista.",
+    "de": "Menschen, deren Herzinsuffizienz-Symptome nicht auf diese Behandlung anspricht, benötigen weiteren fachlichen Rat.",
+    "ro": "Pacienții cu IC care nu răspund la acest plan de tratament ar trebui trimiși la un medic specialist."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 11.2.2 [pp. 38]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 11.2.2 [pp. 38]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 11.2.2 [PP. 38]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 11.2.2 [pp. 38]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to a specialist for further advice.",
+        "es": "Considerar derivar a especialista para más asesoramiento.",
+        "de": "Erwägen Sie eine Überweisung an einen Spezialisten für weitere Beratung.",
+        "ro": "Luați în considerare o trimitere la medicul specialist."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to a specialist for further advice  if the patient does not respond to treatment with combination of a loop diuretic and thiazide-type diuretics.",
+            "es": "Considerar derivar a especialista para más asesoramiento si el paciente no responde al tratamiento combinado con diurético de asa y diurético tiazídico.",
+            "de": "Erwägen Sie eine Überweisung an einen Spezialisten zur weiteren Beratung, wenn der Patient nicht auf die Behandlung mit einer Kombination aus einem Schleifendiuretikum und Diuretika vom Thiazid-Typ anspricht.",
+            "ro": "Luați în considerare o trimitere la medicul specialist dacă pacientul nu răspunde la o combinație între direticile de ansă și tiazidice."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for further advice if the patient does not respond to treatment with combination of a loop diuretic and thiazide-type diuretics.",
+                "es": "Derivar a especialista para más asesoramiento si el paciente no responde al tratamiento combinado con diurético de asa y diurético tiazídico.",
+                "de": "Überweisung zur weiteren Beratung, wenn der Patient nicht auf die Behandlung mit einer Kombination aus einem Schleifendiuretikum und Diuretika vom Thiazidtyp anspricht.",
+                "ro": "Luați în considerare o trimitere la medicul specialist dacă pacientul nu răspunde la o combinație între direticile de ansă și tiazidice."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

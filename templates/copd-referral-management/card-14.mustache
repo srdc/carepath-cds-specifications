@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-referral-management-card-14",
+  "summary": {
+    "en": "Consider Referral for therapy optimization when onset of cor-pulmonale.",
+    "es": "Considerar la derivación para la optimización de la terapia cuando aparezca cor-pulmonale.",
+    "de": "Ziehen  Sie die Überweisung zur Therapieoptimierung bei Erstdiagnose eines Cor-Pulmonale in Betracht.",
+    "ro": "Luați în considerare o trimitere pentru optimizarea terapiei atunci când debutează insuficiența cardiacă dreaptă."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Refer older adults for specialist advice for therapy optimization when onset of cor-pulmonale.",
+    "es": "Derive a los adultos mayores a un especialista para la optimización de la terapia cuando aparezca el cor-pulmonale.",
+    "de": "Überweisen Sie ältere Erwachsene zur Fachberatung für die Therapieoptimierung bei Erstdiagnose eines Cor-Pulmonale.",
+    "ro": "Trimiteți adulții în vârstă la medic de specialitate pentru optimizarea terapiei la debutul insuficienței cardiace drepte."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to Cardiologist for therapy optimization when onset of cor-pulmonale.",
+        "es": "Considerar la derivación al cardiólogo para la optimización de la terapia cuando aparezca el cor-pulmonale.",
+        "de": "Ziehen Sie die Überweisung an den Kardiologen zur Therapieoptimierung be Erstdiagnose eines Cor-Pulmonale in Betracht.",
+        "ro": "Luați în considerare trimiterea către cardiolog pentru optimizarea terapiei la debutul  insuficienței cardiace drepte."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral to Cardiologist for therapy optimization when onset of cor-pulmonale.",
+            "es": "Considerar la derivación al cardiólogo para la optimización de la terapia cuando aparezca el cor-pulmonale.",
+            "de": "Ziehen Sie die Überweisung an den Kardiologen zur Therapieoptimierung be Erstdiagnose eines Cor-Pulmonale in Betracht.",
+            "ro": "Luați în considerare trimiterea către cardiolog pentru optimizarea terapiei la debutul  insuficienței cardiace drepte."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Cardiologist for therapy optimization",
+                  "es": "Derivación al cardiólogo para la optimización de la terapia",
+                  "de": "Überweisung an den Kardiologen zur Therapieoptimierung",
+                  "ro": "Trimitere la cardiolog pentru optimizarea terapiei"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17561000",
+                  "display": {
+                    "en": "Cardiologist",
+                    "es": "Cardiólogo",
+                    "de": "Kardiologe",
+                    "ro": "Cardiolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Cardiologist for therapy optimization when onset of cor-pulmonale",
+                "es": "Derivación al cardiólogo para la optimización de la terapia cuando aparezca el cor-pulmonale.",
+                "de": "Überweisung an den Kardiologen zur Therapieoptimierung bei Erstdaignose eines  Cor-Pulmonale.",
+                "ro": "Trimitere la cardiolog pentru optimizarea terapiei la debutul insuficienței cardiace drepte."
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

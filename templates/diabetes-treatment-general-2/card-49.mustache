@@ -1,0 +1,104 @@
+{
+  "uuid": "diabetes-treatment-general-card-49",
+  "summary": {
+    "en": "Consider screening for retinopathy.",
+    "es": "Considere el cribado de retinopatía.",
+    "de": "Erwägen Sie ein Screening auf Retinopathie.",
+    "ro": "Luați în considerare screeningul pentru retinopatie."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Screening and evaluation for diabetic retinopathy should be performed by an experienced vision care professional (optometrist or ophthalmologist) at the time of diagnosis of diabetes. In those with no or minimal retinopathy, the recommended interval for testing is 1–2 years.",
+    "es": "El cribado y la evaluación de la retinopatía diabética deben ser realizados por un optometrista u oftalmólogo en el momento del diagnóstico de la diabetes. En las personas sin retinopatía o con retinopatía mínima, el intervalo recomendado para las pruebas es de 1 a 2 años.",
+    "de": "Das Screening und die Bewertung auf diabetische Retinopathie sollten zum Zeitpunkt der Diagnose von Diabetes von einem erfahrenen Augenarzt durchgeführt werden. Bei Patienten mit fehlender oder minimaler Retinopathie beträgt das empfohlene Testintervall 1-2 Jahre.",
+    "ro": "Screeningul și evaluarea retinopatiei diabetice ar trebui să fie efectuate de un profesionist cu experiență în îngrijirea vederii (optometrist sau oftalmolog) la momentul diagnosticului diabetului. La cei cu retinopatie minimă sau inexistentă, intervalul recomandat pentru testare este de 1-2 ani."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 52]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 52]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 52]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 52]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral for retinopathy review",
+        "es": "Considerar la derivación para revisión de retinopatía",
+        "de": "Erwägen Sie eine Überweisung zur Überprüfung der Retinopathie",
+        "ro": "Luați în considerare trimiterea pentru revizuirea retinopatiei"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to ophthalmologist for retinopathy review",
+            "es": "Considerar una derivación al oftalmólogo para revisión de retinopatía",
+            "de": "Erwägen Sie eine Überweisung an einen Augenoptiker zur Überprüfung der Retinopathie",
+            "ro": "Luați în considerare o trimitere la oftalmolog pentru evaluarea retinopatiei"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to ophthalmologist for retinopathy review",
+                  "es": "Derivación al oftalmólogo para revisión de urgencia",
+                  "de": "Überweisung an einen Augenoptiker zur Überprüfung der Retinopathie",
+                  "ro": "Recomandare la oftalmolog pentru evaluarea retinopatiei"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "28229004",
+                  "display": {
+                    "en": "Optometrist",
+                    "es": "Optometrista",
+                    "de": "Augenoptiker",
+                    "ro": "Optometrist"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to ophthalmologist for retinopathy review",
+                "es": "Derivación al oftalmólogo para revisión de urgencia",
+                "de": "Überweisung an einen Augenoptiker zur Überprüfung der Retinopathie",
+                "ro": "Recomandare la oftalmolog pentru evaluarea retinopatiei"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

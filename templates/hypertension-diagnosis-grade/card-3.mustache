@@ -1,0 +1,141 @@
+{
+  "uuid": "hypertension-diagnosis-grade-card-3",
+  "summary": {
+    "en": "Consider short-term self-monitoring of blood pressure levels for patients to confirm the diagnosis of hypertension and setting a follow-up appointment.",
+    "es": "Considere el autocontrol a corto plazo de los niveles de tensión arterial para que los pacientes confirman el diagnóstico de hipertensión y establezcan una cita de seguimiento.",
+    "de": "Ziehen Sie die kurzfristige Selbstüberwachung des Blutdrucks für die Patienten in Betracht, um die Diagnose Bluthochdruck zu bestätigen und einen Follow-up-Termin festzulegen.",
+    "ro": "Luați în considerare auto-monitorizarea pe termen scurt a tensiunii arteriale pentru pacienți pentru a confirma diagnosticul de hipertensiune arterială și stabilirea unei programări de urmărire a evoluției acesteia."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Of-office BP measurements are recommended to confirm the diagnosis of hypertension and for titration of BP-lowering medication, in conjunction with telehealth counselling or clinical interventions.",
+    "es": "Se recomiendan mediciones de la TA fuera de la consulta para confirmar el diagnóstico de hipertensión y la titulación de la medicación para reducir la TA, junto con el asesoramiento mediante telemedicina o la intervenciones clínicas.",
+    "de": "Es werden  RR-Messungen außerhalb der Arztpraxis empfohlen, um die Diagnose von Hypertonie und zur Titration der RR-Senkung in Verbindung mit der Telemedizin-Beratung oder klinischen Interventionen zu bekräftigen.",
+    "ro": "Măsurătorile tensiunii luate de pacient la domiciliu sunt recomandate pentru a confirma diagnosticul de hipertensiune arterială și pentru dozarea medicamentelor care scad nivelul tensiunii arteriale, în combinație cu consilierea prin  tele-health (întâlniri/conversații cu medicul prin intermediul telefonului sau online) sau cu intervențiile clinice."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.2 [pp. 40]",
+      "es": "Guía de mejores prácticas centradas en el paciente, Capítulo 12.2 [pp. 40]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.2 [PP. 40]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.2 [pp. 40]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider short-term self-monitoring of blood pressure levels to confirm diagnosis of hypertension.",
+        "es": "Considere el autocontrol a corto plazo de los niveles de tensión arterial para confirmar el diagnóstico de hipertensión.",
+        "de": "Ziehen Sie die kurzfristige Selbstüberwachung des Blutdrucks in Betracht, um die Diagnose Bluthochdruck zu bestätigen.",
+        "ro": "Luați în considerare auto-monitorizarea pe termen scurt a nivelului tensiunii arteriale pentru a confirma diagnosticul de hipertensiune arterială."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider short-term self-monitoring of blood pressure levels.",
+            "es": "Considere el autocontrol a corto plazo de los niveles de tensión arterial.",
+            "de": "Ziehen Sie die kurzfristige Selbstüberwachung des Blutdrucks in Betracht.",
+            "ro": "Luați în considerare auto-monitorizarea pe termen scurt a nivelului tensiunii arteriale."
+          },
+          "resource": {
+              "resourceType": "ServiceRequest",
+              "status": "draft",
+              "extension": [
+                {
+                  "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                  "valueString": {
+                    "en": "Self monitoring of BP",
+                    "es": "Automonitorización de la TA",
+                    "de": "Selbstüberwachung von RR",
+                    "ro": "Auto - monitorizarea tensiunii arteriale"
+                  }
+                }
+              ],
+              "intent": "proposal",
+              "occurrenceTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "{{today}}",
+                    "end": "{{todayPlus2Weeks}}"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              },
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                      "code": "patient-order",
+                      "display": {
+                        "en": "Patient Order",
+                        "es": "Pedido del paciente",
+                        "de": "Patientenverordnung",
+                        "ro": "Triajul pacientului"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "authoredOn": "{{today}}",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "85354-9",
+                    "display": {
+                      "en": "Blood pressure panel",
+                      "es": "Panel de tensión arterial",
+                      "de": "Blutdruckpanel",
+                      "ro": "Panelul de tensiune arterială"
+                    }
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "Patient/{{context.patientId}}"
+                }
+              ]
+            }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to confirm the diagnosis after 2-4 weeks.",
+            "es": "Considere establecer una cita de seguimiento para confirmar el diagnóstico después de 2-4 semanas.",
+            "de": "Erwägen Sie, einen Follow-up-Termin festzulegen, um die Diagnose nach 2-4 Wochen zu bestätigen.",
+            "ro": "Luați în considerare stabilirea unei programări de urmărire a evoluției afecțiunii pentru a confirma diagnosticul după 2-4 săptămâni."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to confirm the hypertension diagnosis after 2-4 weeks.",
+                  "es": "Cita de seguimiento para confirmar el diagnóstico de hipertensión después de 2-4 semanas.",
+                  "de": "Nachfolgetermin zur Bestätigung der Bluthochdruckdiagnose nach 2-4 Wochen.",
+                  "ro": "Programare de urmărire pentru a confirma diagnosticul de hipertensiune arterială după 2-4 săptămâni."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to confirm the hypertension diagnosis after 2-4 weeks.",
+              "es": "Cita de seguimiento para confirmar el diagnóstico de hipertensión después de 2-4 semanas.",
+              "de": "Nachfolgetermin zur Bestätigung der Bluthochdruckdiagnose nach 2-4 Wochen.",
+              "ro": "Programare de urmărire pentru a confirma diagnosticul de hipertensiune arterială după 2-4 săptămâni."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus2Weeks}}"
+          }
+        }
+      ]
+    }
+  ]
+}

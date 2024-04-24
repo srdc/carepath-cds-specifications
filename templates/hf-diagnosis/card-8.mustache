@@ -1,0 +1,91 @@
+{
+  "uuid": "hf-diagnosis-card-8",
+  "summary": {
+    "en": "Offer self-management education for patients with HF and their caregivers.",
+    "es": "Ofrecer educación para la autogestión en pacientes con IC y sus cuidadores.",
+    "de": "Bieten Sie Patienten mit Herzinsuffizienz und ihren Betreuern Schulungen zum Selbstmanagement an.",
+    "ro": "Oferiți resurse educaționale pentru managementul insuficienței cardiace atât pacientului, cât și aparținătorului."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Self-management education for patients with HF and their caregivers is recommended to decrease hospitalisation and mortality. It should commence soon after diagnosis, be patient-centred, appropriate to their level of health literacy, culturally appropriate, and revised throughout the person’s life.",
+    "es": "La educación para la autogestión en pacientes con IC y sus cuidadores se recomienda para disminuir la hospitalización y la mortalidad. Debería comenzar pronto tras el diagnóstico, ser centrada en el paciente, apropiada a su nivel de conocimiento sanitario, culturalmente apropiada y revisada a lo largo de la vida de la persona.",
+    "de": "Um die Zahl der Krankenhausaufenthalte und die Sterblichkeitsrate zu senken, wird empfohlen, Herzinsuffizienz-Patienten und ihre Betreuer im Selbstmanagement zu schulen. Die Schulung sollte bald nach der Diagnose beginnen, auf den Patienten ausgerichtet sein, dem Grad seiner Gesundheitskompetenz entsprechen, kulturell angepasst sein und während des gesamten Lebens der Person wiederholt werden.",
+    "ro": "Când pacienții și aparținătorii sunt informați despre managementul insuficienței cardiace, perioada de internare și mortalitatea sunt reduse. Acestora trebuie să le fie oferite resurse educaționale cât mai repede după stabilirea diagnosticului, să fie centrate pe nevoile pacientului, să fie adaptate nivelului de înțelegere și culturii pacientului și să fie recapitulate de mai multe ori."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 11.2.1 [pp. 37]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 11.2.1 [pp. 37]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 11.2.1 [PP. 37]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 11.2.1 [pp. 37]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Offer educational materials to Heart Failure patients.",
+        "es": "Ofrecer materiales educativos a los pacientes con IC.",
+        "de": "Bereitstellung von Aufklärungsmaterial für Patienten mit Herzinsuffizienz.",
+        "ro": "Oferiți pacientului resurse educaționale pentru managementul insuficienței cardiace."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Give self-management education materials for patients with HF and their caregivers",
+            "es": "Dar materiales educativos de autogestión para pacientes con IC y sus cuidadores.",
+            "de": "Bereitstellung von Schulungsmaterial zur Selbstverwaltung für Herzinsuffizienz-Patienten und ihre Betreuer",
+            "ro": "Oferiți resurse educaționale pentru managementul insuficienței cardiace atât pacientului, cât și aparținătorului."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on self-management of heart failure",
+                  "es": "Educación en la autogestión de la insuficiencia cardiaca.",
+                  "de": "Schulungsmaterial zum Selbstmanagement bei Herzinsuffizienz",
+                  "ro": "Material educațional pentru managementulul insuficienței cardiace pentru pacient."
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/illnesses-and-conditions/heart-and-blood-vessels/conditions/heart-failure/",
+                    "es": "https://fundaciondelcorazon.com/informacion-para-pacientes/enfermedades-cardiovasculares/insuficiencia-cardiaca.html",
+                    "de": "http://www.leitlinien.de/themen/herzinsuffizienz/patientenblaetter",
+                    "ro": "https://www.medlife.ro/glosar-medical/afectiuni-medicale/insuficienta-cardiaca-cauze-simptome-tratament"
+                  },
+                  "title": {
+                    "en": "Educational material on Heart failure",
+                    "es": "¿Qué es la insuficiencia cardiaca?",
+                    "de": "Aufklärungsmaterial über Herzinsuffizienz",
+                    "ro": "Material educațional pentru managementulul insuficienței cardiace pentru pacient."
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

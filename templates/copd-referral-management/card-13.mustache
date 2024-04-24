@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-referral-management-card-13",
+  "summary": {
+    "en": "Consider Referral for therapy optimization when suspected severe COPD.",
+    "es": "Considerar la derivación para la optimización de la terapia ante la sospecha de EPOC grave.",
+    "de": "Ziehen Sie die Überweisung für die Therapieoptimierung in Betracht, wenn eine schwere COPD vermutet werden kann.",
+    "ro": "Luați în considerare o trimitere pentru optimizarea terapiei atunci când este suspectat BPOC sever."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Refer older adults for specialist advice for therapy optimization when suspected severe COPD.",
+    "es": "Derivar a los adultos mayores a un especialista para la optimización del tratamiento cuando se sospeche una EPOC grave.",
+    "de": "Überweisen Sie ältere Erwachsene, um sich bei Verdacht auf schwere COPD zur Therapieoptimierung mit einem Spezialisten zu beraten.",
+    "ro": "Trimiteți adulții în vârstă la medicul specialist pentru optimizarea terapiei atunci când suspectați BPOC sever."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to Pneumologist for therapy optimization when suspected severe COPD.",
+        "es": "Considere la derivación al neumólogo para la optimización de la terapia cuando se sospecha de EPOC severa.",
+        "de": "Ziehen Sie die Überweisung zum Pneumologen zur Therapieoptimierung in Betracht, wenn eine schwere COPD vermutet werden kann.",
+        "ro": "Luați în considerare trimiterea la pneumolog pentru optimizarea terapiei atunci când pacientul este suspect de BPOC sever."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral to Pneumologist for therapy optimization when suspected severe COPD.",
+            "es": "Considere la derivación al neumólogo para la optimización de la terapia cuando se sospecha de EPOC severa.",
+            "de": "Ziehen Sie die Überweisung an den Pneumologen zur Therapieoptimierung bei Verdacht auf schwerer COPD in Betracht",
+            "ro": "Luați în considerare trimiterea la pneumolog pentru optimizarea terapiei atunci când pacientul este suspect de BPOC sever."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for therapy optimization",
+                  "es": "Derivación para la optimización de la terapia",
+                  "de": "Überweisung zur Therapieoptimierung",
+                  "ro": "Recomandare pentru optimizarea terapiei"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Pneumologist for therapy optimization when suspected severe COPD",
+                "es": "Derivación al neumólogo para la optimización de la terapia cuando se sospecha de EPOC severa",
+                "de": "Überweisung an den Pneumologen zur Therapieoptimierung bei Verdacht auf schwere COPD",
+                "ro": "Recomandare la pneumolog pentru optimizarea terapiei atunci când este suspectat BPOC sever"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

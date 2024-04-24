@@ -1,0 +1,111 @@
+{
+  "uuid": "copd-diagnosis-card-2",
+  "summary": {
+    "en": "Consider performing spirometry to confirm COPD diagnosis.",
+    "es": "Considere la realización de espirometría para confirmar el diagnóstico de EPOC.",
+    "de": "Erwägen Sie die Durchführung einer Spirometrie, um die COPD -Diagnose zu bestätigen.",
+    "ro": "Luați în considerare efectuarea spirometriei pentru a confirma diagnosticul BPOC."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Spirometry should be performed at diagnosis to reconsider the diagnosis for people who show an exceptionally good response to treatment, and to monitor disease progression. Post-bronchodilator spirometry must be realized to confirm the diagnosis of COPD. However, in multi-morbid older adults with cognitive impairment, spirometry may be difficult to be realized, and results may not be accurate.",
+    "es": "La espirometría debe realizarse en el momento del diagnóstico para reconsiderar el diagnóstico de las personas que muestran una respuesta excepcionalmente buena al tratamiento, y para controlar la progresión de la enfermedad. La espirometría posbroncodilatadora debe realizarse para confirmar el diagnóstico de EPOC. Sin embargo, en los adultos mayores con multimorbilidad y deterioro cognitivo, la espirometría puede ser difícil de realizar y los resultados pueden no ser exactos.",
+    "de": "Die Spirometrie sollte bei Diagnosestellung durchgeführt werden, um die Diagnose für Menschen zu überprüfen, die eine außergewöhnlich gute Reaktion auf die Behandlung zeigen, und um das Fortschreiten der Krankheit zu überwachen. Die Post-Bronchodilatator-Spirometrie muss realisiert werden, um die Diagnose der COPD zu bestätigen. Bei multimorbiden älteren Erwachsenen mit kognitiver Beeinträchtigung kann die Spirometrie jedoch schwierig zu realisieren sein, und die Ergebnisse sind möglicherweise nicht genau.",
+    "ro": "Spirometria trebuie efectuată pentru stabilirea diagnosticului/confirmarea diagnosticului pentru persoanele care prezintă un răspuns excepțional de bun la tratament și pentru a monitoriza evoluția bolii. Spirometria post-bronhodilatatorie trebuie realizată pentru a confirma diagnosticul BPOC. Cu toate acestea, la adulții în vârstă cu multimorbidități și deficit cognitiv, spirometria poate fi dificil de realizat, iar rezultatele pot să nu fie exacte."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.2 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.2 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.2 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.2 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Consider ordering spirometry to confirm COPD diagnosis.",
+        "es": "Considere solicitar una espirometría para confirmar el diagnóstico de EPOC.",
+        "de": "Fordern Sie eine Spirometrie an, um die COPD -Diagnose zu bestätigen.",
+        "ro": "Luați în considerare spirometria pentru a confirma diagnosticul BPOC."
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering spirometry to confirm COPD diagnosis.",
+            "es": "Considere solicitar una espirometría para confirmar el diagnóstico de EPOC.",
+            "de": "Fordern Sie eine Spirometrie an, um die COPD -Diagnose zu bestätigen.",
+            "ro": "Luați în considerare spirometria pentru a confirma diagnosticul BPOC."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Spirometry test",
+                  "es": "Prueba de espirometría",
+                  "de": "Spirometrie -Test",
+                  "ro": "Test de spirometrie"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab Request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81459-0",
+                  "display": {
+                    "en": "Spirometry panel",
+                    "es": "Panel de espirometría",
+                    "de": "Spirometrie",
+                    "ro": "Spirometrie"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have a spirometry test for COPD diagnosis",
+                "es": "Tenga una prueba de espirometría para el diagnóstico de EPOC",
+                "de": "Fordern Sie einen Spirometrie -Test für die COPD -Diagnose",
+                "ro": "Efectuați spirometria pentru confirmarea diagnosticului BPOC"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "uuid": "stroke-assessment-card-2",
+  "summary": {
+    "en": "Consider a Referral to rehabilitation specialist for in-depth assessment and management.",
+    "es": "Considere derivación a un especialista en rehabilitación para una valoración y manejo en profundidad.",
+    "de": "Erwägen Sie eine Überweisung an einen Rehabilitationsspezialisten zur eingehenden Beurteilung und Behandlung.",
+    "ro": "Considerați o trimitere către un specialist în reabilitare pentru o evaluare amplă și management."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Consider referral to a rehabilitation specialist when having new neurological impairments and functional limitations, for in-depth assessment and management.",
+    "es": "Considere derivación a un especialista en rehabilitación para una valoración y manejo en profundidad cuando existan nuevos déficits neurológicos y limitaciones funcionales.",
+    "de": "Erwägen Sie die Überweisung an einen Rehabilitationsspezialisten, wenn neue neurologische Beeinträchtigungen und Funktionseinschränkungen auftreten, um eine eingehende Beurteilung und Behandlung zu erhalten.",
+    "ro": "Considerați o trimitere către un specialist în reabilitare atunci când apare o nouă tulburare neurologică și limitări funcționale pentru o evaluare amplă și manageriere."
+  },
+  "source": {
+    "label": {
+      "en": "* Holistic patient-centred CAREPATH best practice guideline, Chapter 16.3.1 [pp. 68]  \n* Gladstone DJ, Lindsay MP, Douketis J, Smith EE, Dowlatshahi D, Wein T, et al. Canadian Stroke Best Practice Recommendations: Secondary Prevention of Stroke Update 2020. Can J Neurol Sci [Internet]. 2022 May;49(3):315–37. Available from: https://doi.org/10.1017/cjn.2021.127",
+      "es": "* Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 16.3.1 [pp. 68]\n* Gladstone DJ, Lindsay MP, Douketis J, Smith EE, Dowlatshahi D, Wein T, et al. Canadian Stroke Best Practice Recommendations: Secondary Prevention of Stroke Update 2020. Can J Neurol Sci [Internet]. 2022 May;49(3):315–37. Available from: https://doi.org/10.1017/cjn.2021.127",
+      "de": "* Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 16.3.1 [PP. 68]\n* Gladstone DJ, Lindsay MP, Douketis J, Smith EE, Dowlatshahi D, Wein T, et al. Canadian Stroke Best Practice Recommendations: Secondary Prevention of Stroke Update 2020. Can J Neurol Sci [Internet]. 2022 May;49(3):315–37. Available from: https://doi.org/10.1017/cjn.2021.127",
+      "ro": "* Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 16.3.1 [pp. 68]\n* Gladstone DJ, Lindsay MP, Douketis J, Smith EE, Dowlatshahi D, Wein T, et al. Canadian Stroke Best Practice Recommendations: Secondary Prevention of Stroke Update 2020. Can J Neurol Sci [Internet]. 2022 May;49(3):315–37. Available from: https://doi.org/10.1017/cjn.2021.127"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to rehabilitation specialist",
+        "es": "Considere derivación a un especialista en rehabilitación.",
+        "de": "Überweisung an einen Rehabilitationsspezialisten erwägen",
+        "ro": "Considerați trimiterea către un specialist în reabilitare"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to rehabilitation specialist for in-depth assessment and management.",
+            "es": "Considere derivación a un especialista en rehabilitación para una valoración y manejo en profundidad.",
+            "de": "Erwägen Sie eine Überweisung an einen Rehabilitationsspezialisten zur eingehenden Beurteilung und Behandlung.",
+            "ro": "Considerați trimiterea către un specialist în reabilitare pentru evaluarea amplă și management."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivar a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la un specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394602003",
+                  "display": {
+                    "en": "Rehabilitation - specialty",
+                    "es": "Rehabilitación - especialidad",
+                    "de": "Rehabilitationsspezialist",
+                    "ro": "Specialist în reabilitare"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Consider a Referral to rehabilitation specialist for in-depth assessment and management.",
+                "es": "Considere derivación a un especialista en rehabilitación para una valoración y manejo en profundidad.",
+                "de": "Ziehen Sie eine Überweisung an einen Rehabilitationsspezialisten für eine eingehende Beurteilung und Behandlung in Betracht.",
+                "ro": "Considerați trimiterea către un specialist în reabilitare pentru evaluarea amplă și management"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

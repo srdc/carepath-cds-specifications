@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-referral-management-card-15",
+  "summary": {
+    "en": "Consider Referral for detailed assessment.",
+    "es": "Considerar la derivación para una evaluación detallada.",
+    "de": "Ziehen  Sie die Überweisung für ein detailliertes Assessment in Betracht",
+    "ro": "Luați în considerare o trimitere pentru evaluare detaliată."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Refer older adults for specialist advice for assessment for oxygen therapy, or long-term nebuliser therapy, or need for continued treatment or supervise withdrawal.",
+    "es": "Derivar a los adultos mayores al especialista para que evalúe la necesidad de oxigenoterapia o nebulización a largo plazo, o la necesidad de continuar el tratamiento o supervisar la retirada.",
+    "de": "Überweisen Sie ältere Erwachsene, um die Notwendigkeit einer  Sauerstofftherapie oder einer Langzeit-Vernebler-Therapie zu bewerten oder die Notwendigkeit zur Fortsetzung der  Behandlung oder Überwachung der Entwöhnung zu prüfen.",
+    "ro": "Trimiteți adulții în vârstă la medic de specialitate pentru evaluarea necesității terapiei cu oxigen sau a terapiei cu nebulizator pe termen lung sau nevoia de tratament continuu sau de supraveghere a retragerii."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral to Pneumologist for detailed assessment.",
+        "es": "Considerar la derivación al Neumólogo para una evaluación detallada.",
+        "de": "Ziehen Sie die Überweisung an den Pneumologen für eine detaillierte Bewertung in Betracht.",
+        "ro": "Luați în considerare trimiterea către pneumolog pentru evaluare detaliată."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for assessment for oxygen therapy, or long-term nebuliser therapy, or need for continued treatment or supervise withdrawal.",
+            "es": "Considerar la derivación para evaluación de oxigenoterapia, o terapia con nebulizador a largo plazo, o necesidad de tratamiento continuado o supervisar la retirada.",
+            "de": "Ziehen Sie die Überweisung zur Bewertung der Sauerstofftherapie oder zur Langzeit-Vernebler-Therapie oderder Bewertung einer  fortgesetzten Behandlung oder die Überwachung deren Entwöhnung in  Betracht.",
+            "ro": "Luați în considerare trimiterea la pneumolog pentru evaluarea necesității terapiei cu oxigen sau a terapiei cu nebulizator pe termen lung, nevoia de tratament continuu sau de supraveghere a retragerii din tratament."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for detailed assessment",
+                  "es": "Derivación para una evaluación detallada",
+                  "de": "Überweisung für eine detaillierte Bewertung",
+                  "ro": "Recomandare pentru evaluare detaliată"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Pneumologist for assessment for oxygen therapy, or long-term nebuliser therapy, or need for continued treatment or supervise withdrawal",
+                "es": "Derivación al Neumólogo para valoración de oxigenoterapia, o terapia con nebulizador a largo plazo, o necesidad de continuar el tratamiento o supervisar la retirada.",
+                "de": "Überweisung an den Pneumologen für eine detaillierte Bewertung des Bedarfs an Sauerstofftherapie",
+                "ro": "Trimitere la pneumolog pentru evaluarea necesității terapiei cu oxigen sau a terapiei cu nebulizator pe termen lung, nevoia de tratament continuu sau de supraveghere a retragerii din tratament."
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

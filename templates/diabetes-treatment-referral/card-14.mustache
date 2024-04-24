@@ -1,0 +1,90 @@
+{
+  "uuid": "diabetes-treatment-referral-card-14",
+  "summary": {
+    "en": "Consider a referral for the management of depression as a diabetes symptom.",
+    "es": "Considerar la derivación para el tratamiento de la depresión como síntoma de la diabetes.",
+    "de": "Erwägen Sie eine Überweisung zur Behandlung von Depressionen als Diabetes-Symptom.",
+    "ro": "Luați în considerare o sesizare pentru gestionarea depresiei ca simptom diabet."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Referral to an interprofessional team with specialized training may be considered for adults with depression and diabetes for collaborative care.",
+    "es": "Se puede considerar la derivación a un equipo interprofesional con formación especializada para adultos con depresión y diabetes para una atención colaborativa.",
+    "de": "Die Überweisung an ein interprofessionelles Team mit spezialisierter Ausbildung kann für Erwachsene mit Depressionen und Diabetes zur kollaborativen Versorgung in Betracht gezogen werden.",
+    "ro": "Recomandarea la o echipă interprofesională cu pregătire specializată poate fi luată în considerare pentru adulții cu depresie și diabet pentru îngrijiri de colaborare."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 48]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 48]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 48]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 48]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral for depression management.",
+        "es": "Considerar la derivación para el tratamiento de la depresión.",
+        "de": "Erwägen Sie eine Überweisung für das Depressionsmanagement.",
+        "ro": "Luați în considerare trimiterea pentru gestionarea depresiei."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral to local specialist service for depression management.",
+            "es": "Considerar la derivación a un servicio local especializado para el tratamiento de la depresión.",
+            "de": "Erwägen Sie die Überweisung an einen lokalen Fachdienst für das Management von Depressionen.",
+            "ro": "Luați în considerare trimiterea la serviciul local de specialitate pentru gestionarea depresiei."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to local specialist service for depression management",
+                  "es": "Derivación a un servicio local especializado en el tratamiento de la depresión",
+                  "de": "Überweisung an den lokalen Fachdienst für Depressionsmanagement",
+                  "ro": "Recomandare la serviciul local de specialitate pentru gestionarea depresiei"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to local specialist service for depression management",
+                "es": "Derivación a un servicio local especializado en el tratamiento de la depresión",
+                "de": "Überweisung an den lokalen Fachdienst für Depressionsmanagement",
+                "ro": "Recomandare la serviciul local de specialitate pentru gestionarea depresiei"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

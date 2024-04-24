@@ -1,0 +1,167 @@
+{
+  "uuid": "hypertension-medication-card-19",
+  "summary": {
+    "en": "Management of suspected Obstructive Sleep Apnoea in resistant hypertension patients.",
+    "es": "Manejo de la sospecha de apnea obstructiva del sueño (AOS) en pacientes con hipertensión resistente.",
+    "de": "Behandlung von vermuteter obstruktiver Schlafapnoe bei therapieresistenten Bluthochdruckpatienten.",
+    "ro": "Managementul apneei obstructive în somn suspectată la pacienții cu hipertensiune arterială rezistentă."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "In patients with snoring/apnoea, nocturia, nocturnal dyspnoea, nighttime cardiovascular events or resistant hypertension in addition to sleepiness during the daytime, obstructive sleep apnoea should be suspected.",
+    "es": "En pacientes con ronquido/apnea, nicturia, disnea nocturna, eventos cardiovasculares nocturnos o hipertensión resistente, además de somnolencia durante el día, se debe sospechar apnea obstructiva del sueño.",
+    "de": "Bei Patienten mit Schnarchen/Apnoe, Nykturie, nächtlicher Dyspnoe, nächtlichen kardiovaskulären Ereignissen oder therapieresistenter Hypertonie und zusätzlicher Schläfrigkeit tagsüber sollte eine obstruktive Schlafapnoe in Betracht gezogen werden.",
+    "ro": "La pacienții cu apnee, nocturie, dispnee nocturnă, evenimente cardiovasculare nocturne sau hipertensiune arterială rezistentă la tratament, pe lângă somnolență, în timpul zilei, trebuie suspectată și existența apneei obstructive în somn."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.1 [pp. 40]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 12.1 [pp. 40]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 12.1 [S. 40]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.1 [pp. 40]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider referring to respiratory clinicians for OSA.",
+        "es": "Considere derivar al neumólogo para la AOS.",
+        "de": "Erwägen Sie, an einen Lungenfacharzt wegen Obstruktiver Schlaf Apnoe zu überweisen.",
+        "ro": "Luați în considerare referirea la clinicienii care se ocupă de afecțiuni respiratorii pentru apneea obstructivă în somn."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to respiratory clinicians for Obstructive Sleep Apnoea.",
+            "es": "Considere derivar al neumólogo por la apnea obstructiva del sueño.",
+            "de": "Erwägen Sie, an einen Lungenfacharzt wegen Obstruktiver Schlaf Apnoe zu überweisen.",
+            "ro": "Luați în considerare o trimitere la clinicienii specializați în afecțiuni respiratorii pentru apnee obstructivă în somn."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Respiratory disease specialist",
+                  "es": "Derivar al especialista en enfermedades respiratorias",
+                  "de": "Überweisung an Spezialist für Atemwegserkrankungen",
+                  "ro": "Referință la specialist în patologiile aparatului respirator"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Überweisung des Patienten an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory disease specialist",
+                    "es": "Especialista en enfermedades respiratorias",
+                    "de": "Spezialist für Atemwegserkrankungen",
+                    "ro": "Specialist în patologii respiratorii"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to respiratory clinicians for Obstructive Sleep Apnoea.",
+                "es": "Derivar al neumólgo para la apnea obstructiva del sueño.",
+                "de": "Überweisung an Lungenfacharzt zur Abklärung Obstruktiver Schlafapnoe.",
+                "ro": "Referință către clinicienii care se ocupă de afecțiuni respiratorii pentru apnee obstructivă în somn."
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "Suggestion 2",
+      "label": {
+        "en": "Consider referring to OSA services.",
+        "es": "Considere derivar a la unidad de apnea obstructiva del sueño (AOS).",
+        "de": "Erwägen Sie die Einbeziehung von spezieller Versorgung der Obstruktiven Schlaf Apnoe.",
+        "ro": "Luați în considerare referirea la specialiștii din domeniul apneei"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to OSA services",
+            "es": "Considere la derivación a la unidad de apnea obstructiva del sueño (AOS).",
+            "de": "Erwägen Sie die Einbeziehung von spezieller Versorgung der Obstruktiven Schlaf Apnoe.",
+            "ro": "Luați în considerare o trimitere prin OSA (Open Service Access)."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Obstructive Sleep Apnoe Services",
+                  "es": "Derivar a las unidades de Apnea Obstructiva del Sueño",
+                  "de": "Überweisung an obstruktive Schlafapnoe -Dienste (Schlaflabor)",
+                  "ro": "Recomandare la servicii obstructive de somn apnoe"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Recomandarea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Obstructive Sleep Apnoe Services.",
+                "es": "Derivar a las unidades de Apnea Obstructiva del Sueño",
+                "de": "Überweisung an obstruktive Schlafapnoe -Dienste (Schlaflabor)",
+                "ro": "Recomandare la serviciile de apnoe obstructive pentru somn."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

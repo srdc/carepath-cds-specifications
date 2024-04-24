@@ -1,0 +1,178 @@
+{
+  "uuid": "diet-planning-card-8",
+  "summary": {
+    "en": "Recommend nutritional plan for older adults",
+    "es": "Recomendar un plan nutricional para adultos mayores",
+    "de": "Empfehlen Sie einen Ernährungsplan für ältere Erwachsene",
+    "ro": "Recomandați un plan nutrițional pentru adulții în vârstă"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Recommend nutritional plan for older adults",
+    "es": "Recomendar un plan nutricional para adultos mayores",
+    "de": "Empfehlen Sie einen Ernährungsplan für ältere Erwachsene",
+    "ro": "Recomandați un plan nutrițional pentru adulții în vârstă"
+  },
+  "source": {
+    "label": {
+      "en": "CAREPATH Nutritional Care Plan, Slide 12",
+      "es": "Plan de atención nutricional de CAREPATH, diapositiva 12",
+      "de": "Carepath Ernährungsplan, Folie 12",
+      "ro": "Planul de îngrijire nutrițională CAREPATH, diapozitivul 12"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Recommend nutritional plan for older adults",
+        "es": "Recomendar un plan nutricional para adultos mayores",
+        "de": "Empfehlen Sie einen Ernährungsplan für ältere Erwachsene",
+        "ro": "Recomandați un plan nutrițional pentru adulții în vârstă"
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Select dark, leafy greens, such as spinach; fatty fish, such as salmon, and eggs.",
+            "es": "Seleccionar verduras oscuras y de hoja verde, como espinacas; pescado graso, como salmón y huevos.",
+            "de": "Empfehlen Sie Gemüse wie Spinat, fetthaltigen Fische wie Lachs und Eier.",
+            "ro": "Includeți verdeață, cum ar fi spanacul; și pește gras, cum ar fi somonul, și ouă."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-older-adult-1",
+                  "display": {
+                    "en": "Select dark, leafy greens, such as spinach; fatty fish, such as salmon, and eggs.",
+                    "es": "Seleccionar verduras oscuras y de hoja verde, como espinacas; pescado graso, como salmón y huevos.",
+                    "de": "Empfehlen Sie Gemüse wie Spinat, fetthaltigen Fische wie Lachs und Eier.",
+                    "ro": "Includeți verdeață, cum ar fi spanacul; și pește gras, cum ar fi somonul, și ouă."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Eat 4-5 meals a day and include in all of them foods rich in PROTEINS: meat, fish, dairy products, legumes and eggs.",
+            "es": "Coma 4-5 comidas al día e incluya en todos ellos alimentos ricos en proteínas: carne, pescado, productos lácteos, legumbres y huevos.",
+            "de": "4-5 Mahlzeiten pro Tag essen. Alle Lebensmittel sollten proteinreich sein: Fleisch, Fisch, Milchprodukte, Hülsenfrüchte und Eier.",
+            "ro": "Mâncați 4-5 mese pe zi și includeți în fiecare dintre ele alimentele bogate în proteine: carne, pește, produse lactate, leguminoase și ouă."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-older-adult-2",
+                  "display": {
+                    "en": "Eat 4-5 meals a day and include in all of them foods rich in PROTEINS: meat, fish, dairy products, legumes and eggs.",
+                    "es": "Coma 4-5 comidas al día e incluya en todos ellos alimentos ricos en proteínas: carne, pescado, productos lácteos, legumbres y huevos.",
+                    "de": "4-5 Mahlzeiten pro Tag essen. Alle Lebensmittel sollten proteinreich sein: Fleisch, Fisch, Milchprodukte, Hülsenfrüchte und Eier.",
+                    "ro": "Mâncați 4-5 mese pe zi și includeți în fiecare dintre ele alimentele bogate în proteine: carne, pește, produse lactate, leguminoase și ouă."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

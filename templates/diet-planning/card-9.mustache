@@ -1,0 +1,248 @@
+{
+  "uuid": "diet-planning-card-9",
+  "summary": {
+    "en": "Recommend nutritional plan for diabetes patients",
+    "es": "Recomendar un plan nutricional para pacientes con diabetes",
+    "de": "Ernährungsplan für Diabetespatienten empfehlen",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu diabet zaharat"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Recommend nutritional plan for diabetes patients",
+    "es": "Recomendar un plan nutricional para pacientes con diabetes",
+    "de": "Ernährungsplan für Diabetespatienten empfehlen",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu diabet zaharat"
+  },
+  "source": {
+    "label": {
+      "en": "CAREPATH Nutritional Care Plan, Slide 13",
+      "es": "Plan de atención nutricional de CAREPATH, diapositiva 13",
+      "de": "Carepath Ernährungsplan, Folie 13",
+      "ro": "Planul de îngrijire nutrițională CAREPATH, diapozitiv 13"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Recommend nutritional plan for diabetes patients",
+        "es": "Recomendar un plan nutricional para pacientes con diabetes",
+        "de": "Ernährungsplan für Diabetespatienten empfehlen",
+        "ro": "Recomandați planul nutrițional pentru pacienții cu diabet zaharat"
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Eliminate foods that contain refined sugars; always choose whole grains if possible.",
+            "es": "Elimine los alimentos que contengan azúcares refinados; elija siempre cereales integrales si es posible.",
+            "de": "Vermeiden Sie Lebensmittel, die raffinierten Zucker enthalten; Wählen Sie, wenn möglich, immer Vollkornprodukte.",
+            "ro": "Eliminați alimentele care conțin zaharuri rafinate; alegeți întotdeauna cereale integrale, dacă este posibil."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-diabetes-1",
+                  "display": {
+                    "en": "Eliminate foods that contain refined sugars; always choose whole grains if possible.",
+                    "es": "Elimine los alimentos que contengan azúcares refinados; elija siempre cereales integrales si es posible.",
+                    "de": "Vermeiden Sie Lebensmittel, die raffinierten Zucker enthalten; Wählen Sie, wenn möglich, immer Vollkornprodukte.",
+                    "ro": "Eliminați alimentele care conțin zaharuri rafinate; alegeți întotdeauna cereale integrale, dacă este posibil."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Establish regular meal times and do not skip meals.",
+            "es": "Establezca horarios regulares para las comidas y no se las salte.",
+            "de": "Etablieren Sie reguläre Mahlzeiten und überspringen Sie keine Mahlzeiten.",
+            "ro": "Stabiliți orele obișnuite de masă și nu săriți peste mese."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-diabetes-2",
+                  "display": {
+                    "en": "Establish regular meal times and do not skip meals.",
+                    "es": "Establezca horarios regulares para las comidas y no se las salte.",
+                    "de": "Etablieren Sie reguläre Mahlzeiten und überspringen Sie keine Mahlzeiten.",
+                    "ro": "Stabiliți orele obișnuite de masă și nu săriți peste mese."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Avoid 'special diabetic' foods.",
+            "es": "Evite los alimentos \"especiales para diabéticos\".",
+            "de": "Vermeiden Sie \"besondere diabetische\" Lebensmittel.",
+            "ro": "Evitați alimentele „diabetice speciale”."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-diabetes-3",
+                  "display": {
+                    "en": "Avoid 'special diabetic' foods.",
+                    "es": "Evite los alimentos \"especiales para diabéticos\".",
+                    "de": "Vermeiden Sie \"besondere diabetische\" Lebensmittel.",
+                    "ro": "Evitați alimentele „diabetice speciale”."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "uuid": "diabetes-treatment-goal-card-16",
+  "summary": {
+    "en": "In patients with very complex/poor health, glucose control should be based on avoiding hypoglycemia and symptomatic hyperglycemia instead of reliance on HbA1c.",
+    "es": "En los pacientes con un estado de salud muy complejo/deficiente, el control de la glucosa debe basarse en evitar la hipoglucemia y la hiperglucemia sintomática en lugar de depender de la HbA1c.",
+    "de": "Bei Patienten mit sehr komplexem/schlechtem Gesundheitszustand sollte die Glukosekontrolle auf der Vermeidung von Hypoglykämie und symptomatischer Hyperglykämie basieren, anstatt sich auf den HbA1c zu konzentrieren.",
+    "ro": "La pacienții cu sănătate foarte complexă/precară, controlul glucozei ar trebui să se bazeze pe evitarea hipoglicemiei și a hiperglicemiei simptomatice în loc de dependența de HbA1c."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "* Patients with very complex/poor health refers to patients having long term care or end-stage chronic illnesses (such as stage 3-4 heart failure or oxygen-dependent lung disease, chronic kidney disease requiring dialysis, or uncontrolled metastatic cancer) or moderate-to-severe cognitive impairment or >2 ADL impairments.\n* Glucose goal is recommended as 100-180 mg/dL (5.6-10.0 mmol/L) and BP goals are recommended as &#60;160/90 mmHg in this patient group.",
+    "es": "* Los pacientes con un estado de salud muy complejo/deficiente se refieren a pacientes con cuidados a largo plazo o enfermedades crónicas en fase terminal (como insuficiencia cardiaca en estadio 3-4 o enfermedad pulmonar dependiente de oxígeno, enfermedad renal crónica que requiere diálisis o cáncer metastásico no controlado) o deterioro cognitivo de moderado a grave o >2 alteraciones de las AVD.\n* Se recomienda que el objetivo de glucosa sea de 100-180 mg/dL (5,6-10,0 mmol/L) y que el objetivo de PA sea &#60;160/90 mmHg en este grupo de pacientes.",
+    "de": "* Patienten mit sehr komplexem/schlechtem Gesundheitszustand meint  Patienten mit Langzeitpflege oder chronischen Erkrankungen im Endstadium (wie Herzinsuffizienz im Stadium 3-4 oder sauerstoffabhängige Lungenerkrankung, chronische Nierenerkrankung, die eine Dialyse erfordert, oder unkontrollierter metastasierender Krebs) oder mittelschwerer bis schwerer kognitiver Beeinträchtigung oder >2 ADL-Beeinträchtigungen.\n* Das Glukoseziel wird mit 100-180 mg/dl (5,6-10,0 mmol/l) und das Blutdruckziel mit &#60;160/90 mmHg in dieser Patientengruppe empfohlen.",
+    "ro": "* Pacienții cu sănătate foarte complexă/slabă se referă la pacienții care au îngrijire pe termen lung sau boli cronice în stadiu final (cum ar fi insuficiența cardiacă în stadiul 3-4 sau boala pulmonară dependentă de oxigen, boala renală cronică care necesită dializă sau cancer metastatic necontrolat) sau moderat -Pensionarea cognitivă-severă sau> 2 deficiențe ADL.\n* Obiectivul glucozei este recomandat ca 100-180 mg/dL (5,6-10,0 mmol/L) și obiectivele BP sunt recomandate ca &#60;160/90 mmHg în acest grup de pacienți."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1, Table 3 [pp. 50]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1, Tabla 3 [pp. 50]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1, Tabelle 3 [S. 50]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1, Tabelul 3 [pp. 50]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider setting HbA1c, glucose and blood pressure goals.",
+        "es": "Considere establecer objetivos de HBA1c, glucosa y presión arterial.",
+        "de": "Erwägen Sie, HbA1c-, Glukose- und Blutdruckziele festzulegen.",
+        "ro": "Luați în considerare stabilirea obiectivelor HbA1c, glucoză și tensiune arterială."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep fasting glucose between 100-180 mg/dL (5.6-10.0 mmol/L).",
+            "es": "Mantenga la glucosa en ayunas entre 100-180 mg/dL (5.6-10.0 mmol/L).",
+            "de": "Halten Sie die Nüchternglukose zwischen 100-180 mg / dl (5,6-10,0 mmol / l).",
+            "ro": "Continuați glucoza de post între 100-180 mg/dL (5,6-10,0 mmol/L)."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalFastingGlucose"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep fasting glucose under control",
+                  "es": "Mantener bajo control la glucosa en ayunas",
+                  "de": "Halten Sie die Nüchternglukose unter Kontrolle",
+                  "ro": "Menținerea glucozei bazale sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep fasting glucose between 100-180 mg/dL (5.6-10.0 mmol/L)",
+                "es": "Mantenga la glucosa en ayunas entre 100-180 mg/dL (5.6-10.0 mmol/L)",
+                "de": "Halten Sie die Nüchternglukose zwischen 100-180 mg / dl (5,6-10,0 mmol / l)",
+                "ro": "Continuați glucoza de post între 100-180 mg/dL (5,6-10,0 mmol/L)."
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "698472009",
+                  "display": {
+                    "en": "Blood glucose monitoring (regime/therapy)",
+                    "es": "Control de la glucemia (régimen/terapia)",
+                    "de": "Blutzuckermessung (Regime/Therapie)",
+                    "ro": "Monitorizarea glicemiei (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "76629-5",
+                      "display": {
+                        "en": "Fasting glucose",
+                        "es": "Glucosa en ayunas",
+                        "de": "Nüchternglukose",
+                        "ro": "Glucoza a jeun"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "low": {
+                    "value": 100,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                  },
+                  "high": {
+                    "value": 180,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep systolic blood pressure under control (below 160 mm/Hg)",
+            "es": "Mantenga la tensión arterial sistólica controlada (por debajo de 160 mm/Hg)",
+            "de": "Halten Sie den systolischen Blutdruck unter Kontrolle (unter 160 mm/Hg)",
+            "ro": "Mențineți tensiunea arterială sistolică sub control (sub 160 mm/hg)"
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalSystolicBP"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep systolic blood pressure under control",
+                  "es": "Mantenga la tensión arterial sistólica controlada",
+                  "de": "Halten Sie den systolischen Blutdruck unter Kontrolle",
+                  "ro": "Mențineți tensiunea arterială sistolică sub control"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep systolic blood pressure under control (below 160 mm/Hg)",
+                "es": "Mantenga la tensión arterial sistólica controlada (por debajo de 160 mm/Hg)",
+                "de": "Halten Sie den systolischen Blutdruck unter Kontrolle (unter 160 mm/Hg)",
+                "ro": "Mențineți tensiunea arterială sistolică sub control (sub 160 mm/hg)"
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "135840009",
+                  "display": {
+                    "en": "Blood Pressure monitoring (regime/therapy)",
+                    "es": "Monitorizar la tensión arterial (régimen/terapia)",
+                    "de": "Blutdrucküberwachung (Regime/Therapie)",
+                    "ro": "Monitorizarea tensiunii arteriale (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "8480-6",
+                      "display": {
+                        "en": "Systolic blood pressure",
+                        "es": "Tensión arterial sistólica",
+                        "de": "Systolischer Blutdruck",
+                        "ro": "Tensiunea sistolică"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 160,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Keep diastolic blood pressure under control (below 90 mm/Hg)",
+            "es": "Mantenga la tensión arterial diastólica controlada (por debajo de 90 mm/Hg)",
+            "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle (unter 90 mm/Hg)",
+            "ro": "Mențineți tensiunea arterială diastolică sub control (sub 90 mm/hg)"
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "GoalDiastolicBP"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Keep diastolic blood pressure under control",
+                  "es": "Mantenga la tensión arterial diastólica controlada",
+                  "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle",
+                  "ro": "Păstrați sub control tensiunea arterială diastolică"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code": "safety"
+                  }
+                ]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Keep diastolic blood pressure under control (below 90 mm/Hg)",
+                "es": "Mantenga la tensión arterial diastólica controlada (por debajo de 90 mm/Hg)",
+                "de": "Halten Sie den diastolischen Blutdruck unter Kontrolle (unter 90 mm/Hg)",
+                "ro": "Mențineți tensiunea arterială diastolică sub control (sub 90 mm/hg)"
+              },
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "135840009",
+                  "display": {
+                    "en": "Blood Pressure monitoring (regime/therapy)",
+                    "es": "Monitorizar la tensión arterial (régimen/terapia)",
+                    "de": "Blutdrucküberwachung (Regime/Therapie)",
+                    "ro": "Monitorizarea tensiunii arteriale (regim/terapie)"
+                  }
+                }
+              ]
+            },
+            "target": [
+              {
+                "measure": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "8462-4",
+                      "display": {
+                        "en": "Diastolic blood pressure",
+                        "es": "Tensión arterial diastólica",
+                        "de": "Diastolischer Blutdruck",
+                        "ro": "Tensiunea diastolică"
+                      }
+                    }
+                  ]
+                },
+                "dueDate": "{{todayPlus3Months}}",
+                "detailRange": {
+                  "high": {
+                    "value": 90,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "uuid": "hf-diagnosis-card-2",
+  "summary": {
+    "en": "Review alternative causes for symptoms of HF in people with suspected heart failure (HF) and NT-proBNP levels below 400 ng/litre.",
+    "es": "Valorar causas alternativas para síntomas de IC en pacientes con sospecha de insuficiencia cardiaca (IC) y niveles de NT-proBNP menores de 400ng/litro.",
+    "de": "Prüfen Sie alternative Ursachen für Herzinsuffizienz-Symptome bei Menschen mit Verdacht auf Herzinsuffizienz (HF) und NT-proBNP-Werten unter 400 ng/Liter.",
+    "ro": "Evaluați cauze alternative pentru insuficiență cardiacă la pacienții cu astfel de suspiciune și valori serice a NTproBNP peste 400 ng/L."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Review alternative causes for symptoms of HF in people with suspected heart failure (HF) and NT-proBNP levels below 400 ng/litre. If there is still concern that the symptoms might be related to HF, discuss with an expert physician in HF.",
+    "es": "Valorar causas alternativas para síntomas de IC en pacientes con sospecha de insuficiencia cardiaca (IC) y niveles de NT-proBNP menores de 400ng/litro. Si existen aún dudas de que los síntomas sean relacionados con IC, comentar con un médico experto en IC.",
+    "de": "Prüfen Sie alternative Ursachen für Herzinsuffizienz-Symptome bei Menschen mit Verdacht auf Herzinsuffizienz (HF) und NT-proBNP-Werten unter 400 ng/Liter. Besteht weiterhin der Verdacht, dass die Symptome mit Herzinsuffizienz zusammenhängen könnten, besprechen Sie dies mit einem Herzinsuffizienz-Experten (in der Regel einem Kardiologen/einer Kardiologin).",
+    "ro": "Evaluați cauze alternative pentru insuficiență cardiacă la pacienții cu astfel de suspiciune și valori serice a NTproBNP peste 400 ng/L. Dacă există în continuare suspiciunea că simptomele pacientului sunt legate de insuficiența cardiacă, recomandați pacientului o evaluare la un medic specialist pe insuficiență cardiacă."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 11.1 [pp. 37]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 11.1 [pp. 37]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 11.1 [PP. 37]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 11.1 [pp. 37]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to have specialist assessment.",
+        "es": "Considerar derivar para valoración por especialista.",
+        "de": "Ziehen Sie eine Überweisung an einen Spezialisten in Betracht.",
+        "ro": "Luați în considerare o trimitere către medicul specialist."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to specialist for reviewing alternative causes for symptoms of HF in people with suspected heart failure (HF) and NT-proBNP levels below 400 ng/litre.",
+            "es": "Considerar derivar a un especialista para valorar causas alternativas para síntomas de IC en pacientes con sospecha de insuficiencia cardiaca (IC) y niveles de NT-proBNP menores de 400ng/litro.",
+            "de": "Erwägen Sie eine Überweisung an einen Spezialisten zur Prüfung alternativer Ursachen für HF-Symptome bei Menschen mit Verdacht auf Herzinsuffizienz (HF) und NT-proBNP-Werten unter 400 ng/Liter.",
+            "ro": "Evaluați cauze alternative pentru insuficiență cardiacă la pacienții cu astfel de suspiciune și valori serice a NTproBNP peste 400 ng/L."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Refer to have specialist assessment",
+                "es": "Derivar para valoración por especialista.",
+                "de": "Überweisung zu einer fachlichen Beurteilung",
+                "ro": "Luați în considerare o trimitere către medicul specialist."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

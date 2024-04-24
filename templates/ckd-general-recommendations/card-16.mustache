@@ -1,0 +1,107 @@
+{
+  "uuid": "ckd-general-recommendations-card-16",
+  "summary": {
+    "en": "Refer patients with CKD and renal outflow obstruction to urological services.",
+    "es": "Derive a pacientes con ERC y obstrucción del flujo renal a servicios urológicos.",
+    "de": "Überweisen Sie Patienten mit chronischer Nierenerkrankung und Nierenabflussbehinderung an urologische Dienste.",
+    "ro": "Trimiteți pacientu cu BCR și obstrucție renală la urologie."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "People with CKD and renal outflow obstruction should normally be referred to urological services, unless urgent medical intervention is required – for example, for the treatment of hyperkalaemia, severe uraemia, acidosis or fluid overload",
+    "es": "Las personas con ERC y obstrucción del flujo renal deberían ser normalmente derivadas a servicios urológicos, a menos que se necesite intervención médica urgente - por ejemplo, el tratamiento de una hiperpotasemia, uremia severa, acidosis o sobrecarga de fluidos.",
+    "de": "Menschen mit chronischer Nierenerkrankung und Nierenabflussbehinderung sollten normalerweise an urologische Dienste überwiesen werden, es sei denn, es ist ein dringender medizinischer Eingriff erforderlich - zum Beispiel zur Behandlung von Hyperkaliämie, schwerer Urämie, Azidose oder Flüssigkeitsüberladung.",
+    "ro": "Pacienții cu BCR și obstrucție renală ar trebui în mod normal să fie trimiți la serviciul de urologie, cu excepția cazului intervenției medicale de urgență - pentru hiperkalemie, uremie severă, acidoză sau hipervolemie severă."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.2 [pp. 60]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.2 [pp. 60]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.2 [PP. 60]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.2 [pp. 60]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to urological services.",
+        "es": "Considere derivación a servicios urológicos.",
+        "de": "Erwägen Sie eine Überweisung zum urologischen Dienst.",
+        "ro": "Luați în considerare trimiterea la serviciul de urologie."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Referral to urological services",
+            "es": "Considere derivación a servicios urológicos.",
+            "de": "Überweisung zum urologischen Dienst",
+            "ro": "Trimitere la urologie."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to urological services",
+                  "es": "Considere derivación a servicios urológicos.",
+                  "de": "Überweisung zum urologischen Dienst",
+                  "ro": "Trimitere la urologie"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "31387002",
+                  "display": {
+                    "en": "Urologist",
+                    "es": "Urólogo",
+                    "de": "Urologe",
+                    "ro": "Urolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to urological services",
+                "es": "Derivación a servicios urológicos.",
+                "de": "Überweisung zum urologischen Dienst",
+                "ro": "Trimitere la urologie"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

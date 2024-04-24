@@ -1,0 +1,92 @@
+{
+  "uuid": "diet-planning-card-7",
+  "summary": {
+    "en": "Need for fast clinical assessment in case of volume depletion following fluid and salt loss with vomiting or diarrhea",
+    "es": "Necesidad de una evaluación clínica rápida en caso de depleción de volumen tras una pérdida de líquidos y sales  por vómitos o diarrea.",
+    "de": "Bedarf einer schnellen klinischen Bewertung bei Volumenverlust nach Flüssigkeits- und Salzverlust durch Erbrechen oder Durchfall.",
+    "ro": "Evaluare clinică rapidă a nevoilor în caz de pierdere a masei corporale în urma pierderii de lichid și sare, cauzate de vărsături sau diaree"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Volume depletion following fluid and salt loss with vomiting or diarrhoea should be assessed by checking a set of signs. A person with at least four of the following seven signs is likely to have moderate to severe volume depletion: confusion, non-fluent speech, extremity weakness, dry mucous membranes, dry tongue, furrowed tongue, sunken eyes.\nThe patient needs fast clinical assessment and should be assessed by usual healthcare team or even by emergency service",
+    "es": "La pérdida de volumen tras la pérdida de líquidos y sales por vómitos o diarrea debe evaluarse comprobando una serie de signos. Es probable que una persona con al menos cuatro de los siete signos siguientes presente una pérdida de volumen de moderada a grave: confusión, habla no fluida, debilidad en las extremidades, sequedad de las mucosas, lengua seca, lengua con surcos, ojos hundidos.\nEl paciente necesita una evaluación clínica rápida y debe ser valorado por el equipo sanitario habitual o incluso por el servicio de urgencias.",
+    "de": "Der Volumen- und Salzverlust durch Erbrechen oder Durchfall sollte durch Überprüfung einer Reihe von Anzeichen bewertet werden. Eine Person mit mindestens vier der folgenden sieben Anzeichen dürfte einen mäßigen bis schweren Volumenverlust aufweisen: Verwirrung, nicht flüssige Sprache, Schwäche der Extremitäten, trockene Schleimhäute, trockene Zunge, gefurchte Zunge, eingesunkene Augen.\nDer Patient braucht eine schnelle klinische Bewertung und sollte vom  Gesundheitsteam oder sogar vom Notdienst untersucht werden.",
+    "ro": "Pierderea masei corporale în urma pierderii de lichid și sare din cauza vărsăturilor sau diareei trebuie evaluată prin verificarea unui set de semne. O persoană care prezintă cel puțin patru dintre următoarele șapte semne este probabil să aibă o pierdere a mesei corporale moderată până la severă: confuzie, vorbire non-fluentă, slăbiciune a extremității, membrane mucoase uscate, limbă uscată, limbă îngroșată, ochi scufundați.\nPacientul are nevoie de o evaluare clinică rapidă și ar trebui evaluat de către echipa de asistență medicală obișnuită, sau de serviciul de urgență"
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 7.1, [pp. 27]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 7.1 [pp. 27]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 7.1, [PP. 27]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 7.1, [pp. 27]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Referral for specialised assessment and intervention",
+        "es": "Derivación para evaluación e intervención especializadas",
+        "de": "Überweisung zur speziellen Bewertung und Intervention",
+        "ro": "Recomandare pentru evaluare și intervenție specializată"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral for specialised assessment and intervention",
+            "es": "Considere la derivación para una evaluación e intervención especializadas",
+            "de": "Erwägen Sie eine Überweisung zur speziellen Bewertung und Intervention",
+            "ro": "Luați în considerare o trimitere pentru evaluare și intervenție specializate"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for specialised assessment and intervention",
+                "es": "Derivación para evaluación e intervención especializadas",
+                "de": "Überweisung zur speziellen Bewertung und Intervention",
+                "ro": "Trimitere pentru evaluare și intervenție specializată"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "uuid": "hypertension-emergency-card-50",
+  "summary": {
+    "en": "Consider a Referral to a specialist or emergency services for acute investigation.",
+    "es": "Considere derivar a un especialista o servicios de emergencia para ampliar estudio.",
+    "de": "Ziehen Sie eine Überweisung an einen Spezialisten oder einen Rettungsdienst für akute Untersuchungen in Betracht.",
+    "ro": "Luați în considerare o trimitere la un specialist sau servicii de urgență pentru investigarea afecțiunilor acute."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Consider a Referral to a specialist or emergency services as the patient has a clinic blood pressure above 180/110 mmHg",
+    "es": "Considere derivar a un especialista o servicios de emergencia ya que el paciente tiene una tensión arterial por encima de 180/110 mmHg",
+    "de": "Ziehen Sie eine Überweisung an einen Spezialisten oder einen Rettungsdienst in Betracht, da der Patient einen klinischen Blutdruck über 180/110 mmHg hat.",
+    "ro": "Luați în considerare o trimitere la un specialist sau servicii de urgență, deoarece pacientul are o tensiune arterială clinică de peste 180/110 mmHg"
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.2 [pp. 40]",
+      "es": "Guía de mejores prácticas centradas en el paciente, Capítulo 12.2 [pp. 40]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.2 [PP. 40]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.2 [pp. 40]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to a specialist or emergency services for acute investigation.",
+        "es": "Considere derivar a un especialista o servicios de emergencia para ampliar estudio.",
+        "de": "Ziehen Sie eine Überweisung an einen Spezialisten oder einen Rettungsdienst für akute Untersuchungen in Betracht.",
+        "ro": "Luați în considerare o trimitere la un specialist sau servicii de urgență pentru investigarea afecțiunilor acute."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to a specialist or emergency services for acute investigation.",
+            "es": "Considere derivar a un especialista o servicios de emergencia para ampliar estudio.",
+            "de": "Ziehen Sie eine Überweisung an einen Spezialisten oder einen Rettungsdienst für akute Untersuchungen in Betracht.",
+            "ro": "Luați în considerare o trimitere la un specialist sau servicii de urgență pentru investigația afecțiunilor acute."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist or emergency services",
+                  "es": "Derivar a un especialista o servicios de emergencia",
+                  "de": "Überweisung an einen Spezialisten oder einen Rettungsdienst",
+                  "ro": "Trimitere la un specialist sau servicii de urgență"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for specialist assessment, as the patient has a clinic blood pressure above 180/110 mmHg",
+                "es": "Derivar para una evaluación especializada, ya que el paciente tiene una tensión arterial por encima de 180/110 mmHg",
+                "de": "Überweisung zur Fachbewertung, da der Patient einen klinischen Blutdruck über 180/110 mmHg hat",
+                "ro": "Recomandare pentru evaluarea specială, deoarece pacientul are o tensiune arterială clinică de peste 180/110 mmHg"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

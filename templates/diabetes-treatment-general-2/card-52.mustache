@@ -1,0 +1,90 @@
+{
+  "uuid": "diabetes-treatment-general-card-52",
+  "summary": {
+    "en": "Consider screening for autonomic neuropathy.",
+    "es": "Considerar el cribado de neuropatía autonómica.",
+    "de": "Erwägen Sie ein Screening auf autonome Neuropathie.",
+    "ro": "Luați în considerare screeningul pentru neuropatie autonomă."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Think about the possibility of autonomic neuropathy affecting the gut in older adults with type 2 diabetes who have unexplained diarrhoea that happens particularly at night, and in autonomic neuropathy affecting the bladder in those with unexplained bladder emptying problems.",
+    "es": "Piense en la posibilidad de que la neuropatía autonómica afecte al intestino en adultos mayores con diabetes de tipo 2 que tienen diarrea inexplicable que ocurre sobre todo por la noche, y en la neuropatía autonómica que afecta a la vejiga en aquellos con problemas inexplicables de vaciado de la vejiga.",
+    "de": "Denken Sie an die Möglichkeit einer autonomen Neuropathie, die den Darm bei älteren Erwachsenen mit Typ-2-Diabetes betrifft, die unerklärlichen Durchfall haben, der besonders nachts auftritt, und bei autonomer Neuropathie, die die Blase bei Patienten mit unerklärlichen Blasenentleerungsproblemen betrifft.",
+    "ro": "Gândiți-vă la posibilitatea de neuropatie autonomă care afectează intestinul la adulții în vârstă cu diabet de tip 2 care au diaree inexplicabilă care se întâmplă în special noaptea și în neuropatia autonomă care afectează vezica la cei cu probleme de golire a vezicii urinare inexplicabile."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.3.1 [pp. 52]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.3.1 [pp. 52]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.3.1 [S. 52]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.3.1 [pp. 52]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral for autonomic neuropathy diagnosis.",
+        "es": "Considerar la derivación para diagnóstico de neuropatía autonómica.",
+        "de": "Erwägen Sie eine Überweisung zur Diagnose einer autonomen Neuropathie.",
+        "ro": "Luați în considerare trimiterea pentru diagnosticul de neuropatie autonomă."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for autonomic neuropathy diagnosis",
+            "es": "Considerar la derivación para diagnóstico de neuropatía autonómica.",
+            "de": "Erwägen Sie eine Überweisung zur Diagnose einer autonomen Neuropathie",
+            "ro": "Luați în considerare trimiterea pentru diagnosticul de neuropatie autonomă"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for autonomic neuropathy diagnosis",
+                  "es": "Considerar la derivación para diagnóstico de neuropatía autonómica",
+                  "de": "Überweisung zur Diagnose einer autonomen Neuropathie",
+                  "ro": "Recomandare pentru diagnosticul de neuropatie autonomă"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for autonomic neuropathy diagnosis",
+                "es": "Derivación para diagnóstico de neuropatía autonómica",
+                "de": "Überweisung zur Diagnose einer autonomen Neuropathie",
+                "ro": "Recomandare pentru diagnosticul de neuropatie autonomă"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

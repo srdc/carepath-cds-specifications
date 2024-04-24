@@ -1,0 +1,209 @@
+{
+  "uuid": "ckd-medication-treatment-card-38",
+  "summary": {
+    "en": "In patients receiving calcitriol supplements, monitoring serum calcium and phosphate is recommended.",
+    "es": "En pacientes que reciban suplementos de calcitriol, se recomienda monitorizar el calcio y fosfato séricos.",
+    "de": "Bei Patienten, die Calcitriol-Präparate erhalten, wird eine Überwachung des Serumkalziums und -phosphats empfohlen.",
+    "ro": "La pacienții cu suplimente de calcitriol, monitorizarea calciului seric și fosfatului este recomandată."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Monitor serum calcium and phosphate concentrations in patients receiving calcitriol supplements.",
+    "es": "Monitorice la concentración de calcio y fosfato séricos en pacientes que reciban suplementos de calcitriol.",
+    "de": "Überwachen Sie die Kalzium- und Phosphatkonzentration im Serum von Patienten, die Calcitriol-Präparate erhalten.",
+    "ro": "Monitorizați calciul seric și fosfatul la pacienții cu suplimente de calcitriol."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.2 [pp. 62]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.2 [pp. 62]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.2 [PP. 62]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.2 [pp. 62]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Monitor serum calcium and phosphate concentrations in patients receiving calcitriol supplements.",
+        "es": "Monitorice la concentración de calcio y fosfato séricos en pacientes que reciban suplementos de calcitriol.",
+        "de": "Überwachen Sie die Kalzium- und Phosphatkonzentration im Serum von Patienten, die Calcitriol-Präparate erhalten.",
+        "ro": "Monitorizați cacliul seric și fosfatul la pacienții cu suplimente cu calcitriol."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a calcium test.",
+            "es": "Considere una analítica con calcio.",
+            "de": "Erwägen Sie die Anordnung eines Kalziumtests.",
+            "ro": "Luați în considerare testarea calcemiei."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Calcium test",
+                  "es": "Analítica con calcio.",
+                  "de": "Kalziumtest",
+                  "ro": "Test calcemie"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "17861-6",
+                  "display": {
+                    "en": "Calcium [Mass/volume] in Serum or Plasma",
+                    "es": "Calcio [masa/volumen] en suero o plasma.",
+                    "de": "Kalizium [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "Calciu [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Calcium measure",
+                "es": "Tenga una medición de calcio.",
+                "de": "Kalzium messen lassen",
+                "ro": "Test calcemie"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a serum phosphate test.",
+            "es": "Considere solicitar una analítica con fosfato sérico.",
+            "de": "Erwägen Sie die Anordnung eines Serumphosphat-Tests.",
+            "ro": "Luați în considerare testarea fosfatului seric."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Serum phosphate test",
+                  "es": "Analítica con fosfato sérico.",
+                  "de": "Serumphosphat-Test",
+                  "ro": "Test de fosfat"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2777-1",
+                  "display": {
+                    "en": "Phosphate [Mass/volume] in Serum or Plasma",
+                    "es": "Fosfato [masa/volumen] en suero o plasma.",
+                    "de": "Phosphat [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "Fosfat [masă/volum] în plasmă/ser"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Serum phosphate measure",
+                "es": "Tenga una medición de fosfato sérico.",
+                "de": "Serumphosphat messen lassen",
+                "ro": "Test fosfatemie"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to monitor serum calcium and phosphate concentrations in patients receiving calcitriol supplements.",
+            "es": "Considere programar una cita de seguimiento para monitorizar la concentración de fosfato y calcio séricos en pacientes que reciban suplementos de calcitriol.",
+            "de": "Erwägen Sie die Vereinbarung eines Nachfolgetermins zur Überwachung der Kalzium- und Phosphatkonzentration im Serum von Patienten, die Calcitriol-Präparate erhalten.",
+            "ro": "Luați în considerare stabilirea unui follow-up pentru a monitoriza calcemia și fosfatemia la pacienții cu suplimente de calcitriol."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to monitor serum calcium and phosphate concentrations in patients receiving calcitriol supplements",
+                  "es": "Cita de seguimiento para monitorizar la concentración de fosfato y calcio séricos en pacientes que reciban suplementos de calcitriol.",
+                  "de": "Nachfolgetermins zur Überwachung der Kalzium- und Phosphatkonzentration im Serum von Patienten, die Calcitriol-Präparate erhalten",
+                  "ro": "Follow-up pentru a monitoriza calcemia și fosfatemia la pacienții cu suplimente de calcitriol."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to monitor serum calcium and phosphate concentrations in patients receiving calcitriol supplements",
+              "es": "Cita de seguimiento para monitorizar la concentración de fosfato y calcio séricos en pacientes que reciban suplementos de calcitriol.",
+              "de": "Nachfolgetermins zur Überwachung der Kalzium- und Phosphatkonzentration im Serum von Patienten, die Calcitriol-Präparate erhalten",
+              "ro": "Follow-up pentru a monitoriza calcemia și fosfatemia la pacienții cu suplimente de calcitriol."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus1Month}}"
+          }
+        }
+      ]
+    }
+  ]
+}

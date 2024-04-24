@@ -1,0 +1,89 @@
+{
+  "uuid": "sarcopenia-frailty-assessment-card-4",
+  "summary": {
+    "en": "Consider a Referral to a geriatrician or physician to confirm frailty.",
+    "es": "Considere la derivación a un geriatra o a un médico para confirmar la fragilidad.",
+    "de": "Ziehen Sie eine Überweisung an einen Geriater oder anderen Arzt in Betracht, um die Gebrechlichkeit zu bestätigen.",
+    "ro": "Luați în considerare o trimitere la un geriatrician sau un medic pentru a confirma fragilitatea."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Individuals screened as positive for frailty should be referred to a geriatrician or physician for further assessment to confirm the presence of frailty.",
+    "es": "Los individuos con resultados positivos en el cribado de fragilidad deben ser remitidos a un geriatra o a un médico para una evaluación adicional que confirme la presencia de fragilidad.",
+    "de": "Personen, die als positiv auf Gebrechlichkeit gescreent sind, sollten an einen Geriater oder anderen Arzt überwiesen werden, um die Gebrechlichkeit zu bestätigen.",
+    "ro": "Persoanele confirmate ca pozitive pentru fragilitate ar trebui să fie trimise la un geriatrician sau la un medic pentru o evaluare suplimentară și pentru a confirmarea fragilității."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 9.1 [pp. 32]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 9.1 [pp. 32]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 9.1 [PP. 32]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 9.1 [pp. 32]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Referral to a geriatrician or physician to confirm frailty.",
+        "es": "Derivar a un geriatra o médico para confirmar la fragilidad.",
+        "de": "Überweisung an einen Geriater oder einen anderen Arzt, um die Gebrechlichkeit zu bestätigen.",
+        "ro": "Trimitere la un geriatrician sau un medic pentru a confirma fragilitatea."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to a geriatrician or physician for further assessment to confirm the presence of frailty.",
+            "es": "Considere la derivación al geriatra o médico para una evaluación adicional para confirmar la presencia de fragilidad.",
+            "de": "Ziehen Sie eine Überweisung an den Geriater oder anderen Arzt für eine weitere Bewertung in Betracht, um das Vorhandensein von Gebrechlichkeit zu bestätigen.",
+            "ro": "Luați în considerare o trimitere către un geriatrician sau un medic pentru evaluări suplimentare și pentru a confirma prezența fragilității."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a geriatrician or physician",
+                  "es": "Derivación a un geriatra o a un médico",
+                  "de": "Überweisung an einen Geriater oder anderen Arzt",
+                  "ro": "Trimitere la un geriatrician sau medic"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "div": {
+                "en": "Referral to a geriatrician or physician for further assessment to confirm the presence of frailty.",
+                "es": "Derivar a un geriatra o a un médico para una evaluación adicional para confirmar la presencia de fragilidad.",
+                "de": "Überweisung an einen Geriater oder anderen Arzt zur weiteren Einschätzung, um das Vorhandensein von Gebrechlichkeit zu bestätigen.",
+                "ro": "Trimitere la un geriatrician sau un medic pentru evaluare suplimentară pentru a confirma prezența fragilității."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

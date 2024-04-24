@@ -1,0 +1,93 @@
+{
+  "uuid": "diet-planning-card-3",
+  "summary": {
+    "en": "Consider offering nutritional information, education, and individualised nutritional counselling",
+    "es": "Considere ofrecer información nutricional, educación y asesoramiento nutricional individualizado",
+    "de": "Berücksichtigen Sie das Angebot von Ernährungsinformationen, Bildung und individualisierter Ernährungsberatung",
+    "ro": "Luați în considerare oferirea de informații nutriționale, educație și consiliere nutrițională individualizată"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Older adults with malnutrition or at risk of malnutrition and with eating dependency should be offered nutritional information, education, and individualized nutritional counselling, as part of a comprehensive intervention concept in order to improve awareness of and knowledge about nutritional problems, and/or mealtime assistance, in order to support adequate dietary intake. Fortified food should be offered.",
+    "es": "A los adultos mayores con desnutrición o en riesgo de desnutrición y con dependencia alimentaria se les debe ofrecer información nutricional, educación y asesoramiento nutricional individualizado, como parte de un concepto de intervención integral para mejorar la conciencia y el conocimiento sobre los problemas nutricionales, y/o asistencia a la hora de comer, con el fin de apoyar una ingesta alimentaria adecuada. Deben ofrecerse alimentos enriquecidos.",
+    "de": "Älteren Erwachsenen mit Unterernährung oder an der Schwelle zur Mangelernährung mit/oder ohne Essstörungen sollten im Rahmen eines umfassenden Interventionskonzepts Ernährungsinformationen, Schulung und individualisierte Ernährungsberatung angeboten werden , um eine angemessene Nahrungsaufnahme zu unterstützen. Nahrhafter Lebensmittel sollten angeboten werden.",
+    "ro": "Adulților în vârstă cu malnutriție sau cu risc de malnutriție și cu dependență alimentară ar trebui să li se ofere informații nutriționale, educație și consiliere nutrițională individualizată, ca parte a unui concept de intervenție cuprinzător pentru a îmbunătăți conștientizarea și cunoștințele despre problemele nutriționale și/sau asistența în timpul mesei, pentru a sprijini aportul dietetic adecvat. Ar trebui oferită mâncare hrănitoare."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 7.2.1, [pp. 27,28]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 7.2.1 [pp. 27,28]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 7.2.1, [PP. 27,28]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 7.2.1, [pp. 27,28]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Referral for specialised assessment and intervention by nutritionist/dietitian",
+        "es": "Derivación para evaluación e intervención especializadas por nutricionista/dietista",
+        "de": "Überweisung zur speziellen Bewertung und Intervention durch Ernährungsberater/Diätassistenten",
+        "ro": "Recomandare pentru evaluare și intervenție specializată de către nutriționist/dietetician"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral for specialised assessment and intervention by nutritionist/dietitian",
+            "es": "Considere la derivación para una evaluación e intervención especializadas por nutricionista/dietista",
+            "de": "Erwägen Sie eine Überweisung zum speziellen Assessment und Intervention durch Ernährungsberater/Diätassistenten",
+            "ro": "Luați în considerare o trimitere pentru evaluarea și intervenția specializată de către nutriționist/dietetician"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for specialised assessment and intervention",
+                "es": "Derivación para evaluación e intervención especializadas",
+                "de": "Überweisung zum speziellen Assessment und Intervention",
+                "ro": "Trimitere pentru evaluare și intervenție specializată"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

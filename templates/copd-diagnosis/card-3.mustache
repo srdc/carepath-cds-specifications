@@ -1,0 +1,184 @@
+{
+  "uuid": "copd-diagnosis-card-3",
+  "summary": {
+    "en": "Consider ordering chest radiograph and a full blood count at the time of initial diagnosis.",
+    "es": "Considere solicitar una radiografía de tórax y un hemograma completo en el momento del diagnóstico inicial.",
+    "de": "Erwägen Sie zum Zeitpunkt der Erstdiagnose eine Röntgenaufnahme des Brustkorbs und ein vollständiges Blutbild.",
+    "ro": "Luați în considerare radiografia toracică și analize complete de sânge la momentul diagnosticului inițial."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "At the time of the initial diagnosis, all patients should have a chest radiograph to exclude other pathologies, a full blood count to identify anaemia or polycythaemia, and a Body Mass Index calculated.",
+    "es": "En el momento del diagnóstico inicial, todos los pacientes deben someterse a una radiografía de tórax para excluir otras patologías, un hemograma completo para identificar anemia o policitemia y un cálculo del índice de masa corporal.",
+    "de": "Zum Zeitpunkt der Erstdiagnose sollten alle Patienten eine Röntgenaufnahme des Brustkorbs erhalten, um andere Pathologien auszuschließen, eine vollständiges Blutbild, um Anämie oder Polycythämie zu identifizieren, und ein Body -Mass -Index sollte berechnet werden.",
+    "ro": "În momentul diagnosticului inițial, toți pacienții ar trebui să aibă o radiografie toracică pentru a exclude alte patologii, analize complete de sânge pentru a identifica anemia sau policitemia și calculat indicele de masă corporală (IMC)."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.2 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.2 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.2 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.2 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Consider ordering chest radiograph and a full blood count.",
+        "es": "Considere solicitar una radiografía de tórax y un hemograma completo.",
+        "de": "Erwägen Sie, die Röntgenaufnahme des Brustkorbs und ein vollständiges Blutbild anzufordern.",
+        "ro": "Luați în considerare radiografia toracică și analize complete de sânge."
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering chest radiograph to exclude other pathologies.",
+            "es": "Considere solicitar una radiografía de tórax para excluir otras patologías",
+            "de": "Erwägen Sie, die Röntgenaufnahme des Brustkorbs und ein vollständiges Blutbild anzufordern.",
+            "ro": "Luați în considerare radiografia toracică pentru a exclude alte patologii."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Chest radiograph test",
+                  "es": "Radiografía de tórax",
+                  "de": "Röntgenaufnahme des Brustkorbs",
+                  "ro": "Examinare radiografică toracală"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab Request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "168731009",
+                  "display": {
+                    "en": "Standard chest X-ray",
+                    "es": "Radiografía de tórax estándar",
+                    "de": "Standard-Thorax-Röntgenaufnahme",
+                    "ro": "Radiografie toracică standard"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have a chest radiograph to exclude other pathologies",
+                "es": "Tenga una radiografía de tórax para excluir otras patologías",
+                "de": "Fordern Sie eine Röntgenaufnahme des Brustkorbs an, um andere Pathologien auszuschließen",
+                "ro": "Faceți o radiografie toracică pentru a exclude alte patologii"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a full blood count to identify anaemia or polycythaemia.",
+            "es": "Considere solicitar un hemograma completo para identificar anemia o policitemia",
+            "de": "Erwägen Sie, ein vollständiges Blutbild anzufordern, um Anämie oder Polycythämie zu identifizieren.",
+            "ro": "Luați în considerare analize complete de sânge pentru a identifica anemia sau policitemia."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Full blood count",
+                  "es": "Hemograma completo",
+                  "de": "Komplettes Blutbild",
+                  "ro": "Analize complete de sânge"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlusOneMonth}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab Request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "58410-2",
+                  "display": {
+                    "en": "CBC panel - Blood by Automated count",
+                    "es": "Hemograma completo - Recuento sanguíneo automatizado",
+                    "de": "Komplettes Blutbild - Automatenblutbild",
+                    "ro": "Hemoleucogramă cu formulă leucocitară +/- reticulocite"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have a full blood count to identify anaemia or polycythaemia",
+                "es": "Tenga un hemograma completo para identificar anemia o policitemia",
+                "de": "Fordern Sie ein vollständiges Blutbild, um Anämie oder Polycythämie zu identifizieren",
+                "ro": "Faceți analize complete de sânge pentru a identifica anemia sau policitemia"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

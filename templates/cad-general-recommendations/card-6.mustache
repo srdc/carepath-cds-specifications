@@ -1,0 +1,142 @@
+{
+  "uuid": "cad-general-recommendations-card-6",
+  "summary": {
+    "en": "Perform comprehensive risk profiling and multi-disciplinary management for smoking cessation.",
+    "es": "Implementar una evaluación de riesgo exhaustiva y un manejo multidisciplinar del cese del tabaquismo.",
+    "de": "Erstellung eines umfassenden Risikoprofils und multidisziplinäres Management der Raucherentwöhnung.",
+    "ro": "Efectuați o evaluare complexă a riscurilor asociate cu fumatul și un plan multi-disciplinar pentru a ajuta pacientul să renunțe la fumat."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Comprehensive risk profiling and multi-disciplinary management, including treatment of major co-morbidities such as hypertension, hyperlipidaemia, diabetes, anaemia, and obesity, as well as smoking cessation and lifestyle modification, are recommended.",
+    "es": "La evaluación de riesgo exhaustiva y el manejo multidisciplinar, incluyendo el tratamiento de las principales comorbilidades tales como la hipertensión, hiperlipidemiam diabetes, anemia y obesidad, así como el cese del tabaquismo y las modificaciones en el estilo de vida, son recomendadas.",
+    "de": "Empfohlen werden eine umfassende Risikoprofilerstellung und ein multidisziplinäres Management, einschließlich der Behandlung der wichtigsten Begleiterkrankungen wie Bluthochdruck, Hyperlipidämie, Diabetes, Anämie und Fettleibigkeit, sowie Raucherentwöhnung und Änderung der Lebensweise.",
+    "ro": "Sunt recomandate evaluarea complexă a riscurilor asociate fumatului și planul multi-disciplincar (incluzând tratamentul co-morbidităților majore precum hipertensiunea, hiperlipidemia, diabetul, anemia, obezitatea), împreună cu renunațrea la fumat și îmbunătățirea stiului de viață."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 10.2.1 [pp. 34]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 10.2.1 [pp. 34]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 10.2.1 [PP. 34]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 10.2.1 [pp. 34]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider setting a Goal for smoking cessation in case it works for the patient and give education material.",
+        "es": "Considere establecer una meta para dejar de fumar y dar material educativo.",
+        "de": "Erwägen Sie, mit dem Patienten ein Ziel für die Raucherentwöhnung festzulegen. Geben Sie ihm Schulungsmaterial mit.",
+        "ro": "Luați în considerare stabilirea unui obiectiv pentru renunțarea la fumat în cazul în care funcționează pentru pacient și oferiți materiale educative."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Set goal for quitting smoking.",
+            "es": "Establecer un objetivo para dejar de fumar.",
+            "de": "Setzen Sie mit dem Patienten das Ziel, mit dem Rauchen aufzuhören.",
+            "ro": "Stabiliți obiectivul de renunțare la fumat."
+          },
+          "resource": {
+            "resourceType": "Goal",
+            "lifecycleStatus": "proposed",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Stop smoking goal",
+                  "es": "Meta de dejar de fumar",
+                  "de": "Stop der Vereinbarung, mit dem Rauchen aufzuhören",
+                  "ro": "Obiectivul de renunțare la fumat"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [{
+                  "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+                  "code": "safety"
+                }]
+              }
+            ],
+            "startDate": "{{today}}",
+            "description": {
+              "text": {
+                "en": "Stop smoking goal",
+                "es": "Meta de dejar de fumar",
+                "de": "Stop der Vereinbarung, mit dem Rauchen aufzuhören",
+                "ro": "Obiectivul de renunțare la fumat"
+              },
+              "coding": [{
+                "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/goal-code",
+                "code": "g0001",
+                "display": {
+                  "en": "Stop smoking",
+                  "es": "Dejar de fumar",
+                  "de": "Aufhören zu rauchen",
+                  "ro": "Renunțarea la fumat"
+                }
+              }]
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Give education material on smoking cessation.",
+            "es": "Entregue material educativo sobre dejar de fumar.",
+            "de": "Geben Sie Schulungsmaterial zur Raucherentwöhnung.",
+            "ro": "Oferiți materiale educative cu privire la renunțarea la fumat."
+          },
+          "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Education material on smoking cessation",
+                  "es": "Material educativo para dejar de fumar",
+                  "de": "Schulungsmaterial zur Raucherentwöhnung",
+                  "ro": "Materiale educative privind renunțarea la fumat"
+                }
+              }
+            ],
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "authoredOn": "{{today}}",
+            "payload": [
+              {
+                "contentAttachment": {
+                  "contentType": "text/html",
+                  "language": {
+                    "en": "en",
+                    "es": "es",
+                    "de": "de",
+                    "ro": "ro"
+                  },
+                  "url": {
+                    "en": "https://www.nhsinform.scot/healthy-living/stopping-smoking",
+                    "es": "https://issuu.com/separ/docs/te_ayudamos_a_dejar_de_fumar?e=3049452/39397680",
+                    "de": "https://herzstiftung.de/ihre-herzgesundheit/gesund-bleiben/rauchen-aufhoeren",
+                    "ro": "https://stopfumat.eu/cum-poti-renunta-la-fumat/"
+                  },
+                  "title": {
+                    "en": "Information on the benefits of quitting smoking & support available",
+                    "es": "Información sobre los beneficios de dejar de fumar y soporte disponible",
+                    "de": "Informationen über die Vorteile mit dem Rauchen aufzuhören und Unterstützungsangebote verfügbar",
+                    "ro": "Informații despre beneficiile renunțării la fumat și asistența disponibilă"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

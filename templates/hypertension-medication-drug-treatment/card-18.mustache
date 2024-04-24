@@ -1,0 +1,207 @@
+{
+  "uuid": "hypertension-medication-card-18",
+  "summary": {
+    "en": "Management of resistant hypertension.",
+    "es": "Manejo de la hipertensión resistente.",
+    "de": "Behandlung von therapieresistentem Bluthochdruck.",
+    "ro": "Gestionarea hipertensiunii arteriale rezistente la tratament."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "The recommended treatment strategy for resistant hypertension should include appropriate lifestyle measures and treatment with optimal or best-tolerated doses of three or more drugs, which should include a diuretic, typically an ACE inhibitor or an ARB, and a CCB.\nSecondary causes have to be ruled out when BP recommended treatment strategy fails to lower office systolic and diastolic BP values to &#60;140 mmHg and/or &#60;90 mmHg, respectively, and the inadequate control of BP is confirmed by Ambulatory BP Monitoring or home BP monitoring in patients whose adherence to therapy has been confirmed.",
+    "es": "La estrategia de tratamiento recomendada para la hipertensión resistente debe incluir cambios en el estilo de vida y tratamiento con dosis óptimas o la mejor tolerada de tres o más fármacos, que deben incluir un diurético, típicamente un IACE o un ARA-II, y un antagonista del calcio. Las causas de hipertensión secundaria deben descartarse cuando la estrategia de tratamiento no disminuye los valores de TA sistólica y diastólica a &#60;140 mmHg y/o &#60;90 mmHg, respectivamente, y el control inadecuado de TA se confirma mediante monitorización ambulatoria de TA o en domicilio en pacientes cuya adherencia terapéutica ha sido confirmada.",
+    "de": "Die empfohlene Behandlungsstrategie für sogenannte therapieresistente Hypertonie sollte angemessene Lebensstilmaßnahmen und Behandlung mit optimalen oder am besten tolerierten Dosen mit drei oder mehr Arzneimitteln beinhalten, einschließlich eines Diuretikums, typischerweise einen ACE-Inhibitor oder ARB und ein Kalziumkanalblocker (CCB).\nSekundäre Ursachen müssen ausgeschlossen werden, wenn die Behandlungsstrategie für den Blutdruck die systolischen und diastolischen RR -Werte (gemessen in der Arztpraxis) auf &#60;140 mmHg bzw./oder &#60;90 mmHg nicht senken kann. Weiterhin wurde die unzureichende Kontrolle des RR durch die ambulante RR -Überwachung oder die RR -Messungen zu Hause bei Patienten bestätigt, deren Therapieeinhaltung bestätigt wurde.",
+    "ro": "Strategia de tratament recomandată pentru hipertensiune arterială rezistentă ar trebui să includă măsuri schimbare a stilului de viață adecvate și tratament cu doze optime sau bine tolerate de trei sau mai multe medicamente, care ar trebui să includă un diuretic, de obicei un inhibitor EAC sau un ARB și un BCC (blocator al canalelor de calciu).\nCauzele secundare trebuie excluse atunci când planul de tratament al tensiunii arteriale nu reușește să scadă valorile tensiunii sistolice și diastolice măsurate în cabinetul medical la &#60;140 mmHg și/sau &#60;90 mmHg, iar controlul inadecvat al TA este confirmat de monitorizarea ambulatorie TA sau de monitorizarea TA la domiciliu pentru pacienții a căror aderență la terapie a fost confirmată."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 12.3.2 [pp. 42] and Chapter 12.2 [pp. 40]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 12.3.2 [pp. 42] y Capítulo 12.2 [pp. 40]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 12.3.2 [S. 42] und Kapitel 12.2 [pp. 40]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 12.3.2 [pp. 42] și capitolul 12.2 [pp. 40]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider short-term self-monitoring of blood pressure levels to confirm inadequate control of BP.",
+        "es": "Considere el autocontrol a corto plazo de los niveles de tensión arterial para confirmar el control inadecuado de la TA.",
+        "de": "Ziehen Sie die kurzfristige Selbstüberwachung des Blutdrucks in Betracht, um die unzureichende Kontrolle des Blutdrucks zu bestätigen.",
+        "ro": "Luați în considerare auto-monitorizarea pe termen scurt a nivelului tensiunii arteriale pentru a confirma controlul inadecvat al acesteia."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider short-term self-monitoring of blood pressure levels to confirm inadequate control of BP.",
+            "es": "Considere el autocontrol a corto plazo de los niveles de tensión arterial para confirmar el control inadecuado de la TA.",
+            "de": "Ziehen Sie die kurzfristige Selbstüberwachung des Blutdrucks in Betracht, um die unzureichende Kontrolle der Blutdrucke zu bestätigen.",
+            "ro": "Luați în considerare auto-monitorizarea pe termen scurt a nivelului tensiunii arteriale pentru a confirma controlul inadecvat al acesteia."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Self monitoring of BP",
+                  "es": "Automonitorización de BATP",
+                  "de": "Selbstüberwachung von RR",
+                  "ro": "Auto-monitorizarea tensiunii arteriale"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{today}}",
+                  "end": "{{todayPlus2Weeks}}"
+                },
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "patient-order",
+                    "display": {
+                      "en": "Patient Order",
+                      "es": "Orden del paciente",
+                      "de": "Patientenverordnung",
+                      "ro": "Triajul pacientului"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "85354-9",
+                  "display": {
+                    "en": "Blood pressure panel",
+                    "es": "Panel de tensión arterial",
+                    "de": "Blutdruckpanel",
+                    "ro": "Panelul de tensiune arterială"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to confirm resistant hypertension after 2-4 weeks.",
+            "es": "Considere establecer una cita de seguimiento para confirmar la hipertensión resistente después de 2-4 semanas.",
+            "de": "Erwägen Sie, einen Nachfolgetermin festzulegen, um eine therapieresistente Hypertonie nach 2-4 Wochen zu bestätigen.",
+            "ro": "Luați în considerare stabilirea unei programări de urmărire a tensiunii arteriale pentru a confirma hipertensiunea rezistentă la tratament după 2-4 săptămâni."
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to confirm resistant hypertension after 2-4 weeks",
+                  "es": "Cita de seguimiento para confirmar la hipertensión resistente después de 2-4 semanas.",
+                  "de": "Nachfolgertermin zur Bestätigung der resistenten Hypertonie nach 2-4 Wochen.",
+                  "ro": "Urmărirea tensiunii pentru a confirma hipertensiunea arterială rezistentă după 2-4 săptămâni."
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to confirm resistant hypertension after 2-4 weeks.",
+              "es": "Cita de seguimiento para confirmar la hipertensión resistente después de 2-4 semanas.",
+              "de": "Nachfolgertermin zur Bestätigung der resistenten Hypertonie nach 2-4 Wochen.",
+              "ro": "Urmărirea tensiunii pentru a confirma hipertensiunea arterială rezistentă după 2-4 săptămâni."
+            },
+            "status": "proposed",
+            "start": "{{todayPlus2Weeks}}"
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Cardiologist for ruling out secondary causes.",
+            "es": "Considere derivar al cardiólogo para descartar causas secundarias.",
+            "de": "Erwägen Sie eine Überweisung an den Kardiologen, um sekundäre Ursachen auszuschließen.",
+            "ro": "Luați în considerare o trimitere către cardiolog pentru a exclude cauze secundare."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Cardiologist",
+                  "es": "Derivar al cardiólogo",
+                  "de": "Überweisung an den Kardiologen",
+                  "ro": "Trimitere la cardiolog"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "17565000",
+                  "display": {
+                    "en": "Cardiologist",
+                    "es": "Cardiólogo",
+                    "de": "Kardiologe",
+                    "ro": "Cardiolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Cardiologist for ruling out secondary causes of resistant hypertension",
+                "es": "Derivar al cardiólogo para descartar causas secundarias de hipertensión resistente",
+                "de": "Überweisung an den Kardiologen, um sekundäre Ursachen fürtherapieresistenten Bluthochdruck auszuschließen",
+                "ro": "Trimitere către cardiolog pentru a exclude cauzele secundare ale hipertensiunii arteriale rezistente"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

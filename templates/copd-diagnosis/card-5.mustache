@@ -1,0 +1,107 @@
+{
+  "uuid": "copd-diagnosis-card-5",
+  "summary": {
+    "en": "Consider referral to Pneumologist when there is diagnostic uncertainty (FEV1/FVC ratio ≥ 70%).",
+    "es": "Considere derivar al Neumólogo cuando existan dudas en el diagnóstico (cociente FEV1/FVC ≥ 70%).",
+    "de": "Ziehen Sie die Überweisung an den Pneumologen in Betracht, wenn es eine diagnostische Unsicherheit gibt (Fev1/FVC -Verhältnis ≥ 70%).",
+    "ro": "Luați în considerare o trimitere la pneumolog atunci când există o incertitudine de diagnostic (raportul  FEV1/FVC ≥ 70%)"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Refer older adults for specialist advice when there is diagnostic uncertainty (FEV1/FVC ratio ≥ 70%).",
+    "es": "Derive a los adultos mayores a un especialista cuando existan dudas en el diagnóstico (cociente FEV1/FVC ≥ 70%).",
+    "de": "Verweisen Sie ältere Erwachsene an Spezialisten, wenn diagnostische Unsicherheiten (FEV1/FVC -Verhältnis ≥ 70%) vorliegen.",
+    "ro": "Trimiteți seniorii la specialist atunci când există o incertitudine de diagnostic (raportul Volum expirator forțat într-o secundă/Capacitate vitală ≥ 70%)."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 15.3.1 [pp. 64]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 15.3.1 [pp. 64]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 15.3.1 [S. 64]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 15.3.1 [pp. 64]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral to Pneumologist for confirming diagnosis and therapy optimization.",
+        "es": "Considere derivar al Neumólogo para confirmar el diagnóstico y optimizar el tratamiento.",
+        "de": "Ziehen Sie eine Überweisung an den Pneumologen zur Bestätigung der Diagnose und Therapieoptimierung in Betracht. ",
+        "ro": "Luați în considerare o trimitere la pneumolog pentru confirmarea diagnosticului și optimizării terapiei."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to Pneumologist for confirming diagnosis and therapy optimization.",
+            "es": "Considere derivar al Neumólogo para confirmar el diagnóstico y optimizar el tratamiento.",
+            "de": "Ziehen Sie eine Überweisung an den Pneumologen zur Bestätigung der Diagnose und Therapieoptimierung in Betracht. ",
+            "ro": "Luați în considerare o trimitere la pneumolog pentru confirmarea diagnosticului și optimizării terapiei."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to Pneumologist",
+                  "es": "Derivación al neumólogo",
+                  "de": "Überweisung an den Pneumologen",
+                  "ro": "Referință la pneumolog"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivar al paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "41672002",
+                  "display": {
+                    "en": "Respiratory physician",
+                    "es": "Neumólogo",
+                    "de": "Pneumologe",
+                    "ro": "Medic pneumolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to Pneumologist for confirming diagnosis and therapy optimization",
+                "es": "Derivación al Neumólogo para confirmar el diagnóstico y optimizar el tratamiento.",
+                "de": "Überweisung an den Pneumologen zur Bestätigung der Diagnose und Therapieoptimierung",
+                "ro": "Trimitere la pneumolog pentru confirmarea diagnosticului și optimizării terapiei"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

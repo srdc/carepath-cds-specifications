@@ -1,0 +1,248 @@
+{
+  "uuid": "diet-planning-card-11",
+  "summary": {
+    "en": "Recommend nutritional plan for renal disease patients",
+    "es": "Recomendar un plan nutricional para pacientes con enfermedad renal",
+    "de": "Empfehlen Sie einen Ernährungsplan für Patienten mit Nierenerkrankungen.",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu boli renale"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Recommend nutritional plan for renal disease patients",
+    "es": "Recomendar un plan nutricional para pacientes con enfermedad renal",
+    "de": "Empfehlen Sie einen Ernährungsplan für Patienten mit Nierenerkrankungen.",
+    "ro": "Recomandați planul nutrițional pentru pacienții cu boli renale"
+  },
+  "source": {
+    "label": {
+      "en": "CAREPATH Nutritional Care Plan, Slide 15",
+      "es": "Plan de atención nutricional de CAREPATH, diapositiva 15",
+      "de": "Carepath Ernährungsplan, Folie 15",
+      "ro": "Planul de îngrijire nutrițională CAREPATH, diapozitiv 15"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": {
+        "en": "Recommend nutritional plan for renal disease patients",
+        "es": "Recomendar un plan nutricional para pacientes con enfermedad renal",
+        "de": "Empfehlen Sie einen Ernährungsplan für Patienten mit Nierenerkrankungen.",
+        "ro": "Recomandați planul nutrițional pentru pacienții cu boli renale"
+      },
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Low salt diet, reduce salt in your meals",
+            "es": "Dieta baja en sal, reducir la sal en las comidas.",
+            "de": "Salzarme Diät, Salz in  Mahlzeiten reduzieren",
+            "ro": "Dieta scăzută în sare, reduceți sarea în mesele dvs."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-ckd-2",
+                  "display": {
+                    "en": "Low salt diet, reduce salt in your meals",
+                    "es": "Dieta baja en sal, reducir la sal en las comidas.",
+                    "de": "Salzarme Diät, Salz in  Mahlzeiten reduzieren",
+                    "ro": "Dieta scăzută în sare, reduceți sarea în mesele dvs."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Avoid excess raw foods and foods rich in potassium such as chocolate, bananas and nuts",
+            "es": "Evite el exceso de alimentos crudos y alimentos ricos en potasio como el chocolate, los plátanos y los frutos secos",
+            "de": "Vermeiden Sie zu viel Rohkost und Lebensmittel, die kaliumreich sind wie Schokolade, Bananen und Nüsse",
+            "ro": "Evitați excesul de alimente și alimente crude bogate în potasiu, cum ar fi ciocolată, banane și nuci"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-ckd-3",
+                  "display": {
+                    "en": "Avoid excess raw foods and foods rich in potassium such as chocolate, bananas and nuts",
+                    "es": "Evite el exceso de alimentos crudos y alimentos ricos en potasio como el chocolate, los plátanos y los frutos secos",
+                    "de": "Vermeiden Sie zu viel Rohkost und Lebensmittel, die kaliumreich sind wie Schokolade, Bananen und Nüsse",
+                    "ro": "Evitați excesul de alimente și alimente crude bogate în potasiu, cum ar fi ciocolată, banane și nuci"
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Eat proteins such as meat, fish and eggs as recommended by your doctor.",
+            "es": "Consuma proteínas como carne, pescado y huevos según las recomendaciones de su médico.",
+            "de": "Essen Sie Proteine wie Fleisch, Fisch und Eier, wie von Ihrem Arzt empfohlen.",
+            "ro": "Mâncați proteine precum carne, pește și ouă, așa cum recomandă medicul dumneavoastră."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "active",
+            "intent": "order",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Diet",
+                  "es": "Dieta",
+                  "de": "Diät",
+                  "ro": "Dieta"
+                }
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "diet",
+                    "display": {
+                      "en": "Diet",
+                      "es": "Dieta",
+                      "de": "Diät",
+                      "ro": "Dieta"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/diet-code",
+                  "code": "diet-ckd-4",
+                  "display": {
+                    "en": "Eat proteins such as meat, fish and eggs as recommended by your doctor.",
+                    "es": "Consuma proteínas como carne, pescado y huevos según las recomendaciones de su médico.",
+                    "de": "Essen Sie Proteine wie Fleisch, Fisch und Eier, wie von Ihrem Arzt empfohlen.",
+                    "ro": "Mâncați proteine precum carne, pește și ouă, așa cum recomandă medicul dumneavoastră."
+                  }
+                }
+              ]
+            },
+            "occurrenceTiming": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "{{startDate}}"
+                }
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "uuid": "ckd-medication-treatment-card-31",
+  "summary": {
+    "en": "In patients with eGFR &#60;60 mL/min/1.73 m2, monitoring serum phosphate, calcium, intact parathyroid hormone (iPTH), and 25-hydroxyvitamin D levels is recommended.",
+    "es": "En pacientes con FGe &#60;60mL/min/1,73m2, se recomienda monitorizar el fosfato, calcio, la hormona paratiroidea intacta (iPTH) y la 25-hidroxivitamina D séricos.",
+    "de": "Bei Patienten mit einer eGFR &#60;60 ml/min/1,73 m² wird die Überwachung von Serumphosphat, Kalzium, intaktem Parathormon (iPTH) und 25-Hydroxyvitamin D empfohlen.",
+    "ro": "La pacienții cu eGFR &#60;60 mL/min/1.73 m2, monitorizați fosfatul seric, calciu, iPTH și 25-hidroxi-vitamina D."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "The frequency of monitoring depends on the eGFR. Measure serum phosphate and calcium\n* every 6 to 12 months if eGFR is between 30-59 mL/min/1.73 m2, \n* every three to six months if GFR is between 15-29 mL/min/1.73 m2, \n* every one to three months if GFR is &#60;15 mL/min/1.73 m2. \n\nMeasure iPTH and vitamin D levels depending on the baseline values and vitamin D treatment.",
+    "es": "La frecuencia de monitorización depende del FGe. Mida el fosfato y calcio séricos:\n* cada 6 a 12 meses si el FGe se encuentra entre 30-59mL/min/1,73m2.\n* cada 3 a 6 meses si el FGe se encuentra entre 15-29mL/min/1,73m2.\n* cada 1 a 3 meses si el FGe es &#60;15mL/min/1,73m2.\n\nMida los niveles de iPTH y vitamina D dependiendo de los valores de base y el tratamiento con vitamina D.",
+    "de": "Die Häufigkeit der Überwachung hängt von der eGFR ab. Messung von Serumphosphat und Kalzium\n* alle 6 bis 12 Monate, wenn die eGFR zwischen 30-59 mL/min/1,73 m2 liegt, \n* alle drei bis sechs Monate, wenn die GFR zwischen 15-29 mL/min/1,73 m2 liegt, \n* alle ein bis drei Monate, wenn die GFR &#60;15 mL/min/1,73 m2 beträgt. \n\nMessen Sie den iPTH- und Vitamin-D-Spiegel in Abhängigkeit von den Ausgangswerten und der Vitamin-D-Behandlung.",
+    "ro": "Frecvența monitorizării depinde de eGFR. Măsurați posfatul seric și calciul\n* odată la 6-12 luni dacă eGFR între 30-59 mL/min/1.73 m2\n* odată la 3-6 luni dacă eGFR între 15-29 mL/min/1.73 m2\n* odată la 1-3 luni dacă eGFR sub 15 ml/min/1.73 m2\n\nMăsurați iPTH și vitamina D în funcție de valorile bazale și tratamentul cu cuplimente de vitamina D."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.1 [pp. 59]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.1 [pp. 59]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.1 [PP. 59]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.1 [pp. 59]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Monitor serum phosphate, calcium, intact parathyroid hormone (iPTH), and 25-hydroxyvitamin D levels.",
+        "es": "Monitorice el fosfato, calcio, la hormona paratiroidea intacta (iPTH) y la 25-hidroxivitamina D séricas.",
+        "de": "Überwachen Sie die Werte von Serumphosphat, Kalzium, intaktem Parathormon (iPTH) und 25-Hydroxyvitamin D.",
+        "ro": "Monitorizați posfatul seric, calciu, iPTH și 25-hidroxi-vitamina D"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a serum phosphate test.",
+            "es": "Considere solicitar una analítica con fosfato.",
+            "de": "Erwägen Sie die Anordnung eines Serumphosphat-Tests.",
+            "ro": "Luați în considerare măsurarea fosfatului seric."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Serum phosphate test",
+                  "es": "Analítica con fosfato sérico.",
+                  "de": "Serumphosphat-Test",
+                  "ro": "Fosat seric"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlusXMonths}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2777-1",
+                  "display": {
+                    "en": "Phosphate [Mass/volume] in Serum or Plasma",
+                    "es": "Fosfato [masa/volumen] en suero o plasma.",
+                    "de": "Phosphat [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "Fosfat [masă/volum] în plasmă sau ser"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Serum phosphate measure",
+                "es": "Tenga una medición de fosfato sérico.",
+                "de": "Serumphosphat messen lassen",
+                "ro": "Fosfat seric"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a calcium test.",
+            "es": "Considere solicitar una anlítica con calcio.",
+            "de": "Erwägen Sie die Anordnung eines Kalizium-Tests.",
+            "ro": "Luați în considerare măsurarea calciului."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Calcium test",
+                  "es": "Analitica con calcio.",
+                  "de": "Kalziumtest",
+                  "ro": "Calcemie"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlusXMonths}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "17861-6",
+                  "display": {
+                    "en": "Calcium [Mass/volume] in Serum or Plasma",
+                    "es": "Calcio [masa/volumen] en suero o plasma.",
+                    "de": "Kalizium [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "Caliu [masă/volum] în plasmă sau ser"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Calcium measure",
+                "es": "Tenga una medición de calcio.",
+                "de": "Kalizium messen lassen",
+                "ro": "Calcemie"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering an intact parathyroid hormone (iPTH) test.",
+            "es": "Considere solicitar una analítica con hormona paratiroidea intacta (iPTH).",
+            "de": "Erwägen Sie die Anordnung eines Tests auf intaktes Parathormon (iPTH).",
+            "ro": "Luați în considerare măsurarea iPTH"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Intact parathyroid hormone (iPTH) test",
+                  "es": "Analítica con hormona paratiroidea intacta (iPTH).",
+                  "de": "Tests auf intaktes Parathormon (iPTH)",
+                  "ro": "Test pentru iPTH"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlusXMonths}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2731-8",
+                  "display": {
+                    "en": "Parathyrin.intact [Mass/volume] in Serum or Plasma",
+                    "es": "Hormona paratioidea intacta [masa/volumen] en suero o plasma.",
+                    "de": "Intaktes Parathormon [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "iPTH [masă/volum] în ser sau plasmă."
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have intact parathyroid hormone (iPTH) measure",
+                "es": "Tenga una medición de hormona paratioidea intacta (iPTH).",
+                "de": "Anordnung eines Tests auf intaktes Parathormon (iPTH)",
+                "ro": "Test pentru iPTH"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a 25-hydroxyvitamin D test.",
+            "es": "Considere solicitar una analítica con 25-hidroxivitamina D.",
+            "de": "Erwägen Sie die Bestimmung eines 25-Hydroxyvitamin-D-Tests.",
+            "ro": "Luați în considerare măsurarea 25-hidroxi-vitamina D"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "25-hydroxyvitamin D test",
+                  "es": "Analítica con 25-hidroxivitamina D.",
+                  "de": "25-Hydroxyvitamin-D-Test",
+                  "ro": "Test pentru 25-hidroxi-vitamina D"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlusXMonths}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "49054-0",
+                  "display": {
+                    "en": "25-hydroxyvitamin D2 [Mass/volume] in Serum or Plasma",
+                    "es": "25-hidroxivitamina D [masa/volumen] en suero o plasma.",
+                    "de": "25-Hydroxyvitamin D [Masse/Volumen] in Serum oder Plasma",
+                    "ro": "25-hidroxi-vitamina D [masă/volum] în ser sau plasmă"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have 25-hydroxyvitamin D measure",
+                "es": "Tenga una medición de vitamina D.",
+                "de": "25-Hydroxyvitamin D messen lassen",
+                "ro": "Test pentru 25-hidroxi-vitamina D"
+              }
+            }
+          }
+        },
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider setting a follow-up appointment to monitor serum phosphate, calcium, intact parathyroid hormone (iPTH), and 25-hydroxyvitamin D levels.",
+            "es": "Considere programar una visita de seguimiento para monitorizar el fosfato, calcio, hormona paratiroidea intacta (iPTH) y 25-hidroxivitamina D séricos.",
+            "de": "Vereinbaren Sie einen Folgetermin zur Überwachung von Serumphosphat, Kalzium, intaktem Parathormon (iPTH) und 25-Hydroxyvitamin D.",
+            "ro": "Luați în considerare stabilirea unui follow-up pentru a monitoriza fosfatul seric, calciul, iPTH și 25-hidroxi-vitamina D"
+          },
+          "resource": {
+            "resourceType": "Appointment",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Follow-up appointment to monitor serum phosphate, calcium, intact parathyroid hormone (iPTH), and 25-hydroxyvitamin D levels",
+                  "es": "Visita de seguimiento para monitorizar el fosfato, calcio, hormona paratiroidea intacta (iPTH) y 25-hidroxivitamina D séricos.",
+                  "de": "Folgetermin zur Überwachung von Serumphosphat, Kalzium, intaktem Parathormon (iPTH) und 25-Hydroxyvitamin D",
+                  "ro": "Follow-up pentru monitorizarea fosfatului seric, calciul, iPTH și 25-hidroxi-vitamina D"
+                }
+              }
+            ],
+            "description": {
+              "en": "Follow-up appointment to monitor serum phosphate, calcium, intact parathyroid hormone (iPTH), and 25-hydroxyvitamin D levels",
+              "es": "Visita de seguimiento para monitorizar el fosfato, calcio, hormona paratiroidea intacta (iPTH) y 25-hidroxivitamina D séricos.",
+              "de": "Folgetermin zur Überwachung von Serumphosphat, Kalzium, intaktem Parathormon (iPTH) und 25-Hydroxyvitamin D",
+              "ro": "Follow-up pentru monitorizarea fosfatului seric, calciul, iPTH și 25-hidroxi-vitamina D"
+            },
+            "status": "proposed",
+            "start": "{{todayPlusXMonths}}"
+          }
+        }
+      ]
+    }
+  ]
+}

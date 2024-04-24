@@ -1,0 +1,108 @@
+{
+  "uuid": "ckd-general-recommendations-card-6",
+  "summary": {
+    "en": "Consider ordering Renal ultrasound scan.",
+    "es": "Considere solicitar una ecografía renal.",
+    "de": "Erwägen Sie die Anordnung einer Ultraschalluntersuchung der Nieren.",
+    "ro": "Luați în considerare o ecografie renală."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Consider ordering a renal ultrasound scan to all adults with CKD who have accelerated progression of CKD, have visible or persistent invisible haematuria, have symptoms of urinary tract obstruction, have a family history of polycystic kidney disease, or have a GFR of less than 30 ml/min/1.73 m2 (GFR category G4 or G5).",
+    "es": "Considere solicitar una ecografía renal en todos los adultos con ERC que presenten una progresión acelerada de la ERC, hematuria visible o invisible persistente, síntomas de obstrucción del tracto urinario, historia familiar de enfermedad poliquística renal o un FG de menos de 30ml/min/1,73m2 (categoría de FG G4 o G5).",
+    "de": "Erwägen Sie die Anordnung einer Ultraschalluntersuchung der Nieren bei allen Erwachsenen mit chronischer Nierenerkrankung (CKD), die ein beschleunigtes Fortschreiten der chronischen Nierenerkrankung aufweisen, eine sichtbare oder anhaltende unsichtbare Hämaturie haben, Symptome einer Harnwegsobstruktion aufweisen, eine Familienanamnese einer polyzystischen Nierenerkrankung haben oder eine GFR von weniger als 30 ml/min/1,73 m2 haben (GFR-Kategorie G4 oder G5).",
+    "ro": "Luați în considerare o ecografie renală la toți pacienții cu BCR care au progresie accelerată de BCR, au hematurie vizibilă sau invizibilă persistentă, au simptome de onstrucșie a tractului urinar, au istoric de boală de rinichi polichistic în familie, sau au eGFR sub 30mL/min/1,73 m2 (eGFR categoria G4 sau G5)"
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.2 [pp. 56]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.2 [pp. 56]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.2 [PP. 56]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.2 [pp. 56]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider ordering Renal ultrasound scan",
+        "es": "Considere solicitar una ecografía renal.",
+        "de": "Erwägen Sie die Anordnung einer Ultraschalluntersuchung der Nieren.",
+        "ro": "Luați în considerare o trimitere la Nefrolog pentru consult de specialitate."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering renal ultrasound scan to all adults with CKD",
+            "es": "Considere solicitar una ecografía renal a todos los adultos con ERC.",
+            "de": "Erwägen Sie die Anordnung einer Ultraschalluntersuchung der Nieren bei allen Erwachsenen mit chronischer Nierenerkrankung (CKD)",
+            "ro": "Luați în considerare o trimitere la Nefrolog pentru consult de specialitate."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Renal ultrasound scan",
+                  "es": "Ecografía renal.",
+                  "de": "Nieren-Ultraschalluntersuchung",
+                  "ro": "Ecografie renală"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "38036-0",
+                  "display": {
+                    "en": "US Kidney",
+                    "es": "Ecografía renal.",
+                    "de": "Nierenultraschall",
+                    "ro": "Eco rinichi"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have Renal ultrasound scan",
+                "es": "Tener una ecografía renal.",
+                "de": "Nieren-Ultraschalluntersuchung durchführen lassen",
+                "ro": "Ecografie renală"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

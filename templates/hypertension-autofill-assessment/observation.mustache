@@ -1,0 +1,48 @@
+{
+  "uuid": "{{conceptId}}",
+  "summary": "",
+  "indicator": "no-show",
+  "detail": "",
+  "source": {
+    "label": "",
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "label": "",
+      "uuid": "Suggestion 1",
+      "actions": [
+        {
+          "type": "create",
+          "description": "",
+          "resource": {
+            "resourceType": "Observation",
+            "meta": {
+              "tag": [
+                {
+                  "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/concept-id",
+                  "code": "{{conceptId}}"
+                }
+              ]
+            },
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "system": "{{system}}",
+                  "code": "{{code}}",
+                  "display": "{{display}}"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            },
+            "effectiveDateTime": "{{today}}",
+            "valueBoolean": true
+          }
+        }
+      ]
+    }
+  ]
+}

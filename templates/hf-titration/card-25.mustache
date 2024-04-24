@@ -1,0 +1,104 @@
+{
+  "uuid": "hf-titration-card-25",
+  "summary": {
+    "en": "Consider liaising with a renal physician.",
+    "es": "Considerar contacto regular con un médico renal.",
+    "de": "Wenden Sie sich an einen Nephrologen.",
+    "ro": "Luați în considerarea consultarea cu un specialist nefrolog."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "For people who have HF and CKD with an eGFR below 30 ml/min/1.73 m2, consider liaising with a renal physician.",
+    "es": "En pacientes con IC y ERC con un FG &#60; 30ml/min/1.72m2, considerar contacto regular con un médico renal.",
+    "de": "Bei Menschen mit Herzinsuffizienz und chronischer Nierenerkrankung mit einer eGFR unter 30 ml/min/1,73 m2 sollte ein Nephrologe hinzugezogen werden.",
+    "ro": "Pentru pacienții cu IC și BCR cu eGFR &#60; 30mL/min/1.73m2, luați în considerare consultarea cu un specialist nefrolog."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 11.2.2 [pp. 39]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 11.2.2 [pp. 39]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 11.2.2 [PP. 39]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 11.2.2 [pp. 39]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider liaising with a renal physician.",
+        "es": "Considerar contacto regular con un médico renal.",
+        "de": "Wenden Sie sich an einen Nephrologen.",
+        "ro": "Luați în considerarea consultarea cu un specialist nefrolog."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral to renal physician.",
+            "es": "Considerar derivar a médico renal.",
+            "de": "Erwägen Sie eine Überweisung an einen Nephrologen.",
+            "ro": "Luați în considerarea consultarea cu un specialist nefrolog."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a physician",
+                  "es": "Derivar a médico",
+                  "de": "Überweisung an einen Arzt",
+                  "ro": "Trimitere către medic"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación del paciente al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "11911009",
+                  "display": {
+                    "en": "Nephrologist",
+                    "es": "Nefrólogo",
+                    "de": "Nephrologe",
+                    "ro": "Nefrolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral to renal physician",
+                "es": "Derivar a médico renal",
+                "de": "Überweisung an einen Nierenarzt",
+                "ro": "Trimitere către specialist nefrolog"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

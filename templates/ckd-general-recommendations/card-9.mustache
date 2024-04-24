@@ -1,0 +1,107 @@
+{
+  "uuid": "ckd-general-recommendations-card-9",
+  "summary": {
+    "en": "Refer older adults with CKD for specialist assessment, taking into account their wishes and multimorbidities, if they have any of the following.",
+    "es": "Derivar a los adultos mayores con ERC para valoración especializada, teniendo en cuenta sus deseos y multimorbilidades, si tienen cualquiera de los siguientes.",
+    "de": "Überweisen Sie ältere Erwachsene mit chronischer Nierenerkrankung (CKD) unter Berücksichtigung ihrer Wünsche und Multimorbiditäten zur fachärztlichen Untersuchung, wenn einer der folgenden Punkte auf sie zutrifft.",
+    "ro": "Trimiteți pacienții cu BCR la consult de specialitate, luțnd în considerare dorințele pacientului și multimorbiditățile lui, dacă au una din următoarele:"
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "* A 5-year risk of needing renal replacement therapy of greater than 5% (measured using the 4-variable Kidney Failure Risk Equation)\n* An ACR of 70 mg/mmol or more, unless known to be caused by diabetes and already appropriately treated.\n* An ACR of more than 30 mg/mmol (ACR category A3), together with haematuria.\n* A sustained decrease in eGFR of 25% or more and a change in eGFR category within 12 months.\n* A sustained decrease in eGFR of 15 ml/min/1.73 m2 or more per year.\n* Hypertension that remains poorly controlled (above the person's individual target) despite the use of at least 4 antihypertensive medicines at therapeutic doses.\n* Suspected renal artery stenosis.",
+    "es": "* Un riesgo a 5 años de necesitar terapia de reemplazo renal mayor del 5% (medido utilizando la ecuación de fracaso renal de 4 variables).\n* Un cociente albúmina/creatinina en orina de 70mg/mmol o más, a menos que la causa sea la diabetes y se encuentre adecuadamente tratada.\n* Un cociente albúmina/creatinina en orina de más de 30mg/mmol (categoría cociente albúmina/creatinina en orina de A3), junto con hematuria.\n* Una disminución mantenida de FGe del 25% o más o un cambio en categoría de FGe en 12 meses.\n* Una disminución mantenida de FGe de 15ml/min/1,73m2 o más en un año.\n* Hipertensión que se mantiene mal controlada (por encima del objetivo individual del individuo) pese al uso de al menos 4 fármacos antihipertensivos a dosis terapéuticas.\n* Sospecha de estenosis de la arteria renal.",
+    "de": "* Ein 5-Jahres-Risiko, eine Nierenersatztherapie zu benötigen, von mehr als 5 % (gemessen anhand der 4-Variablen-Risiko-Gleichung für Nierenversagen)\n* Ein ACR-Wert von 70 mg/mmol oder mehr, es sei denn, es ist bekannt, dass er durch Diabetes verursacht wird und bereits angemessen behandelt wurde.\n* Ein ACR-Wert von mehr als 30 mg/mmol (ACR-Kategorie A3) in Verbindung mit einer Hämaturie.\n* Eine anhaltende Abnahme der eGFR von 25 % oder mehr und eine Änderung der eGFR-Kategorie innerhalb von 12 Monaten.\n* Eine anhaltende Abnahme der eGFR von 15 ml/min/1,73 m2 oder mehr pro Jahr.\n* Bluthochdruck, der trotz der Einnahme von mindestens vier blutdrucksenkenden Medikamenten in therapeutischer Dosierung schlecht kontrolliert ist (über dem individuellen Zielwert).\n* Verdacht auf Nierenarterienstenose.",
+    "ro": "* Un risc de 5 ani de necesitate a terapiei cu substituție renală mai mare de 5% (măsurat folosind Ecuația cu 4 variabile a riscului de insuficiență renală)\n* Un RAC de 70 mg/mmol sau mai mare, dacă nu este cauzat de diabet sau deja sub tratament.\n* Un RAC mai mare sau egal de 30 mg/mmol (RAC categoria A3), împreună cu hematuria.\n* O scădere susținută a eGFR de 25% sau mai mult și o schimbare a categoriei eGFR în ultimile 12 luni."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.3.1 [pp. 59]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.3.1 [pp. 59]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.3.1 [PP. 59]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.3.1 [pp. 59]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider a Referral for specialist assessment.",
+        "es": "Considere derivación para valoración especializada.",
+        "de": "Ziehen Sie eine Überweisung zur fachlichen Beurteilung in Betracht.",
+        "ro": "Luați în considerare trimitere la consult de specialitate."
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider a Referral for specialist assessment",
+            "es": "Considere derivación para valoración especializada.",
+            "de": "Ziehen Sie eine Überweisung zur fachlichen Beurteilung in Betracht.",
+            "ro": "Luați în considerare trimitere la consult de specialitate."
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "status": "draft",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral to a specialist",
+                  "es": "Derivarción a un especialista",
+                  "de": "Überweisung an einen Spezialisten",
+                  "ro": "Trimitere la specialist"
+                }
+              }
+            ],
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "performerType": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "11911009",
+                  "display": {
+                    "en": "Nephrologist",
+                    "es": "Nefrólogo",
+                    "de": "Nephrologe",
+                    "ro": "Nefrolog"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for specialist assessment",
+                "es": "Derivación para valoración especializada.",
+                "de": "Überweisung zur fachlichen Beurteilung",
+                "ro": "Trimitere la specialist"
+              }
+            },
+            "subject": {
+              "reference": "Patient/{{context.patientId}}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "uuid": "ckd-lab-test-card-2",
+  "summary": {
+    "en": "Proteinuria should be measured with  albumin/creatinine ratio (ACR) in older adults with multimorbidity and cognitive impairment.",
+    "es": "La proteinuria debería ser medida con un cociente albúmina/creatinina en orina (CACu) en adultos mayores con multimorbilidad y deterioro cognitivo.",
+    "de": "Bei älteren Erwachsenen mit Multimorbidität und kognitiven Beeinträchtigungen sollte die Proteinurie mit dem Albumin/Kreatinin-Verhältnis (ACR) gemessen werden.",
+    "ro": "Proteinuria trebuie măsurată cu raportul albumină/creatinină urinar (RAC) la pacienții adulți cu multimorbidități și  tulburări cognitive."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Proteinuria should be measured with ACR the following groups:\n* Older adults with multimorbidity and cognitive impairment\n* Patients with diabetes\n* Adults with an eGFR of less than 60 ml/min/1.73 m2\n* Adults with an eGFR of 60 ml/min/1.73 m2 or more if there is a strong suspicion of CKD",
+    "es": "La proteinuria debería ser medida con un cociente albúmina/creatinina en orina (CACu) en los siguientes grupos:\n* Adultos mayores con multimorbilidad y deterioro cognitivo \n* Pacientes con diabetes\n* Adultos con FGe de menos de 60ml/min/1,73m2\n* Adultos con un FGe de 60ml/mil/1.73m2 o más si existe fuerte sospecha de ERC.",
+    "de": "Die Proteinurie sollte bei den folgenden Gruppen mit ACR gemessen werden:\n* Ältere Erwachsene mit Multimorbidität und kognitiver Beeinträchtigung\n* Patienten mit Diabetes\n* Erwachsene mit einer eGFR von weniger als 60 ml/min/1,73 m2\n* Erwachsene mit einer eGFR von 60 ml/min/1,73 m2 oder mehr, wenn ein starker Verdacht auf chronische Nierenerkrankungen besteht.",
+    "ro": "Proteinuria trebuie măsurată cu RAC la următooarele grupe:\n* Adulți în vârstă cu multimorbidități și tulburări cognitive\n* Pacienți cu diabet\n* Adulți cu eGFR mai mic de 60 mL/min/1.73 m2\n* Adulți cu eGFR mai mare sau egal cu 60 mL/min/1.73 m2 dacă suspicionăm BCR"
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 14.1 [pp. 56]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 14.1 [pp. 56]",
+      "de": "Ganzheitliche patientenzentrierte Carepath-Best-Practice-Richtlinie, Kapitel 14.1 [PP. 56]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 14.1 [pp. 56]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Measure proteinuria with ACR",
+        "es": "Medir proteinuria con cociente albúmina/creatinina en orina.",
+        "de": "Messung der Proteinurie mit ACR",
+        "ro": "Măsoară proteinuria cu RAC"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider ordering a proteinuria test",
+            "es": "Considere solicitar una analítica con proteinuria.",
+            "de": "Anordnung eines Proteinurie-Tests erwägen",
+            "ro": "Luați în considerare cererea unui test pentru proteinurie"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Proteinuria Test",
+                  "es": "Analítica con proteinuria.",
+                  "de": "Proteinurie -Test",
+                  "ro": "Test proteinurie"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{todayPlus1Month}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "lab-request",
+                    "display": {
+                      "en": "Lab request",
+                      "es": "Solicitud de laboratorio",
+                      "de": "Laboranfrage",
+                      "ro": "Cerere de laborator"
+                    }
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2888-6",
+                  "display": {
+                    "en": "Protein [Mass/volume] in Urine",
+                    "es": "Proteína [masa/volumen] en orina.",
+                    "de": "Proteinurie [Masse/Volumen] im Urin",
+                    "ro": "Proteine (masă/volum) în urină"
+                  }
+                }
+              ]
+            },
+            "performer": [
+              {
+                "reference": "Patient/{{context.patientId}}"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Have proteinuria",
+                "es": "Tener proteinuria.",
+                "de": "Proteinurie-Messung durchführen lassen",
+                "ro": "Are proteinurie"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

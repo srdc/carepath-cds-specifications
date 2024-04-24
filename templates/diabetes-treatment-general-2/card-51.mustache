@@ -1,0 +1,90 @@
+{
+  "uuid": "diabetes-treatment-general-card-51",
+  "summary": {
+    "en": "Consider referral for Cognitive behavioural therapy (CBT).",
+    "es": "Considerar la derivación a terapia cognitivo-conductual.",
+    "de": "Erwägen Sie eine Überweisung zur kognitiven Verhaltenstherapie (CBT).",
+    "ro": "Luați în considerare trimiterea la terapie cognitiv-comportamentală (CBT)."
+  },
+  "indicator": "info",
+  "detail": {
+    "en": "Cognitive behaviour therapy can be used to treat depression in individuals with depression, alone or in combination with antidepressant medication, for maintenance treatment to prevent recurrence of depression (red and orange guidelines).",
+    "es": "La terapia cognitiva conductual se puede usar para tratar la depresión en individuos con depresión, solas o en combinación con medicamentos antidepresivos, para el tratamiento de mantenimiento para prevenir la recurrencia de la depresión.",
+    "de": "Die kognitive Verhaltenstherapie kann zur Behandlung von Depressionen allein oder in Kombination mit Antidepressiva zur Erhaltungstherapie eingesetzt werden, um ein Wiederauftreten der Depression zu verhindern (rote und orangefarbene Leitlinien).",
+    "ro": "Terapia cognitiv-comportamentală poate fi utilizată pentru a trata depresia, singură sau în combinație cu medicamente antidepresive, pentru tratamentul de întreținere pentru a preveni reapariția depresiei (ghiduri roșii și portocalii)."
+  },
+  "source": {
+    "label": {
+      "en": "Holistic patient-centred CAREPATH best practice guideline, Chapter 13.1 [pp. 46]",
+      "es": "Guía CAREPATH de mejores prácticas centradas en el paciente, Capítulo 13.1 [pp. 46]",
+      "de": "Ganzheitliche patientenorientierte Carepath-Best-Practice-Richtlinie, Kapitel 13.1 [S. 46]",
+      "ro": "Ghidul holistic al celei mai bune practici centrate pe pacient, Capitolul 13.1 [pp. 46]"
+    },
+    "url": "https://cloud.eclexys.com/index.php/s/5P5Z6wYCZjLDOx7"
+  },
+  "suggestions": [
+    {
+      "uuid": "Suggestion 1",
+      "label": {
+        "en": "Consider Referral for cognitive behaviour therapy",
+        "es": "Considerar la derivación a terapia cognitivo-conductual",
+        "de": "Erwägen Sie eine Überweisung für die kognitive Verhaltenstherapie",
+        "ro": "Luați în considerare trimiterea la terapia cognitiv-comportamentală"
+      },
+      "actions": [
+        {
+          "type": "create",
+          "description": {
+            "en": "Consider Referral for cognitive behaviour therapy",
+            "es": "Considerar la derivación a terapia cognitivo-conductual",
+            "de": "Erwägen Sie eine Überweisung für die kognitive Verhaltenstherapie",
+            "ro": "Luați în considerare trimiterea la terapia cognitiv-comportamentală"
+          },
+          "resource": {
+            "resourceType": "ServiceRequest",
+            "extension": [
+              {
+                "url": "http://kroniq.srdc.com.tr/fhir/StructureDefinition/title",
+                "valueString": {
+                  "en": "Referral for cognitive behaviour therapy",
+                  "es": "Derivación a terapia cognitivo-conductual",
+                  "de": "Überweisung zur kognitiven Verhaltenstherapie",
+                  "ro": "Recomandare pentru terapia cognitiv-comportamentală"
+                }
+              }
+            ],
+            "status": "draft",
+            "intent": "proposal",
+            "occurrenceDateTime": "{{today}}",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://kroniq.srdc.com.tr/fhir/CodeSystem/care-plan-activity-category",
+                    "code": "referral",
+                    "display": {
+                      "en": "Patient referral to specialist",
+                      "es": "Derivación de pacientes al especialista",
+                      "de": "Patientenüberweisung an den Spezialisten",
+                      "ro": "Trimiterea pacientului la specialist"
+                    }
+                  }
+                ]
+              }
+            ],
+            "authoredOn": "{{today}}",
+            "text": {
+              "status": "generated",
+              "div": {
+                "en": "Referral for cognitive behaviour therapy",
+                "es": "Derivación a terapia cognitivo-conductual",
+                "de": "Überweisung zur kognitiven Verhaltenstherapie",
+                "ro": "Recomandare pentru terapia cognitiv-comportamentală"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
