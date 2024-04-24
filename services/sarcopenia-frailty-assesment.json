@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Sarcopenia & frailty assessment service",
+  "description": "",
+  "id": "sarcopenia-frailty-assessment",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "hook": "careplan-create",
+  "title": "Medication Risk Score (MERIS) service",
+  "description": "",
+  "id": "meris",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

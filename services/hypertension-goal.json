@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Hypertension goal service",
+  "description": "",
+  "id": "hypertension-goal",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "medications": "MedicationStatement?patient=Patient/{{context.patientId}}"
+  }
+}

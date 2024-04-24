@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD autofill service for comorbidity",
+  "description": "",
+  "id": "copd-autofill-comorbidity",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

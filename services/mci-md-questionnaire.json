@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "MCI & MD Questionnaire service",
+  "description": "",
+  "id": "mci-md-questionnaire",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

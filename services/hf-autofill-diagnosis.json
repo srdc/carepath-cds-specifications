@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Heart Failure autofill service for diagnosis panel",
+  "description": "",
+  "id": "hf-autofill-diagnosis",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

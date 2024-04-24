@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "CKD Lab test service",
+  "description": "",
+  "id": "ckd-lab-test",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

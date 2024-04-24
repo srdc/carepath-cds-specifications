@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "CAD Emergency service",
+  "description": "",
+  "id": "cad-emergency",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

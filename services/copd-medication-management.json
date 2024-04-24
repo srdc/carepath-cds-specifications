@@ -1,0 +1,12 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD Medication Management",
+  "description": "",
+  "id": "copd-medication-management",
+  "prefetch": {
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "medications": "MedicationStatement?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

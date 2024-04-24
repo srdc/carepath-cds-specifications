@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD autofill service for hospitalization",
+  "description": "",
+  "id": "copd-autofill-hospitalization",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

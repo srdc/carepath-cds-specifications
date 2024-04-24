@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD Assessment for Hospitalization",
+  "description": "",
+  "id": "copd-assessment-for-hospitalization",
+  "prefetch": {
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

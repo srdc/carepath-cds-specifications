@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Stroke Assessment service",
+  "description": "",
+  "id": "stroke-assessment",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

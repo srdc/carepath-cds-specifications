@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Hypertension autofill service for assessment panel",
+  "description": "",
+  "id": "hypertension-autofill-assessment",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

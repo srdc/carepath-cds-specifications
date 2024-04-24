@@ -1,0 +1,12 @@
+{
+  "hook": "careplan-create",
+  "title": "Stroke Medication treatment service",
+  "description": "",
+  "id": "stroke-medication-treatment",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "medications": "MedicationStatement?patient=Patient/{{context.patientId}}"
+  }
+}

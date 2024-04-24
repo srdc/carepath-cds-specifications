@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD Severity",
+  "description": "",
+  "id": "copd-severity",
+  "prefetch": {
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

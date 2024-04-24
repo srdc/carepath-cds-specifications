@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Hypertension grade service when patient is on hypertension treatment",
+  "description": "",
+  "id": "hypertension-treatment-grade",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

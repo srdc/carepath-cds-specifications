@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Diabetes pre medication treatment service",
+  "description": "",
+  "id": "diabetes-pre-medication-treatment",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

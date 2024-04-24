@@ -1,0 +1,9 @@
+{
+  "hook": "careplan-create",
+  "title": "Diabetes complication management service",
+  "description": "",
+  "id": "diabetes-complication-management",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

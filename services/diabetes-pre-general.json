@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Diabetes pre general service",
+  "description": "",
+  "id": "diabetes-pre-general",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

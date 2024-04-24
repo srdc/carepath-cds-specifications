@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD autofill service for symptoms",
+  "description": "",
+  "id": "copd-autofill-symptoms",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

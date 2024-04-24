@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "CKD autofill service for comorbidity panel",
+  "description": "",
+  "id": "ckd-autofill-comorbidity",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}"
+  }
+}

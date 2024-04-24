@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Physical exercise service",
+  "description": "",
+  "id": "physical-exercise",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

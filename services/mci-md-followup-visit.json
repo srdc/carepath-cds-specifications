@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "MCI & MD Follow up visit service",
+  "description": "",
+  "id": "mci-md-followup-visit",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "medications": "MedicationStatement?patient=Patient/{{context.patientId}}"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "Diet Advise",
+  "description": "",
+  "id": "diet-advise",
+  "prefetch": {
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

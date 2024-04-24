@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Heart Failure titration service",
+  "description": "",
+  "id": "hf-titration",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}"
+  }
+}

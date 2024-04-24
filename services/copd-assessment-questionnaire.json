@@ -1,0 +1,10 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD Assessment Questionnaire",
+  "description": "",
+  "id": "copd-assessment-questionnaire",
+  "prefetch": {
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}

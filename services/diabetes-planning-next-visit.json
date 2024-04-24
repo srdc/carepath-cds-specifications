@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "Diabetes planning next visit service",
+  "description": "",
+  "id": "diabetes-planning-next-visit",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "goals": "Goal?patient=Patient/{{context.patientId}}"
+  }
+}

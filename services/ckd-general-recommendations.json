@@ -1,0 +1,12 @@
+{
+  "hook": "careplan-create",
+  "title": "CKD General recommendations service",
+  "description": "",
+  "id": "ckd-general-recommendations",
+  "prefetch": {
+    "patient": "Patient/{{context.patientId}}",
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "familyMemberHistory": "FamilyMemberHistory?patient=Patient/{{context.patientId}}"
+  }
+}

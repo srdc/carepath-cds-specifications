@@ -1,0 +1,11 @@
+{
+  "hook": "careplan-create",
+  "title": "COPD Referral Management",
+  "description": "",
+  "id": "copd-referral-management",
+  "prefetch": {
+    "observations": "Observation?patient=Patient/{{context.patientId}}",
+    "conditions": "Condition?patient=Patient/{{context.patientId}}",
+    "patient": "Patient/{{context.patientId}}"
+  }
+}
